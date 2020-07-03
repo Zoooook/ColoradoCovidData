@@ -16,9 +16,17 @@ countyData = []
 for line in file:
     countyData.append(line)
 
+response = urlopen('https://opendata.arcgis.com/datasets/ca2c4b063f494506a1047d9783789ef7_0.csv')
+file = csv.reader(iterdecode(response, 'utf-8'))
+
+testingData = []
+for line in file:
+    testingData.append(line)
+
 data = {
     'Cases of COVID-19 in Colorado by Date of Illness Onset': {},
     'Cases of COVID-19 in Colorado by Date Reported to the State': {},
+    'Count of people tested by lab': {},
     'Hospitalized Cases of COVID-19 in Colorado by Date of Illness Onset': {},
     'Hospitalized Cases of COVID-19 in Colorado by Date Reported to the State': {},
     'Deaths From COVID-19 in Colorado by Date of Illness': {},
@@ -45,6 +53,8 @@ headers = [
     'Date',
     'Cases by Onset'    , 'Weekly',
     'Cases by Reported' , 'Weekly',
+    'Tests'             , 'Weekly',
+    'Positivity'        , 'Weekly',
     'Hosps by Onset'    , 'Weekly',
     'Hosps by Reported' , 'Weekly',
     'Deaths by Onset'   , 'Weekly',
@@ -78,10 +88,30 @@ for row in countyData[1:]:
             data[key][date] = 0
         data[key][date] += int(row[7])
 
+for row in testingData[1:]:
+    if row[4] in ['Count of people tested by CDPHE lab', 'Count of people tested by non-CDPHE (commercial) lab']:
+        date = formatDate(row[3])
+        if date not in data['Count of people tested by lab']:
+            data['Count of people tested by lab'][date] = 0
+        data['Count of people tested by lab'][date] += int(row[5])
+
 dates = sorted(list(data['Cases of COVID-19 in Colorado by Date of Illness Onset']))
+
+for i in range(len(dates)):
+    date = dates[i]
+    if i > 0:
+        old = data['Count of people tested by lab'][dates[i-1]]
+    else:
+        old = 0
+    if date in data['Count of people tested by lab']:
+        new = data['Count of people tested by lab'][date]
+    else:
+        new = 0
+    data['Count of people tested by lab'][date] = old + new
 
 tsvData = '\t'.join(headers) + '\n'
 
+ratio = {}
 for i in range(len(dates)):
     date = dates[i]
     row = date + '\t'
@@ -106,20 +136,37 @@ for i in range(len(dates)):
         row += str(daily) + '\t' + str(weekly) + '\t'
 
         words = field.split(' ')
+
+        if field in ['Cases of COVID-19 in Colorado by Date Reported to the State', 'Count of people tested by lab']:
+            ratio[words[0]] = {
+                'daily': daily,
+                'weekly': today - lastweek,
+            }
+            if words[0] == 'Count':
+                if ratio['Count']['daily'] > 0:
+                    daily  = str(round(100 * ratio['Cases']['daily']  / ratio['Count']['daily'] , 3))
+                else:
+                    daily = ''
+                if ratio['Count']['weekly'] > 0:
+                    weekly = str(round(100 * ratio['Cases']['weekly'] / ratio['Count']['weekly'], 3))
+                else:
+                    weekly = ''
+                row += daily + '\t' + weekly + '\t'
+
         if ' '.join(words[:2]) in ['El Paso']:
             words = [' '.join(words[:2])] + words[2:]
         if words[0] in counties and words[3] in ['Counts', 'Tests']:
             counties[words[0]][words[3]] = {
                 'daily': daily,
-                'weekly': weekly,
+                'weekly': today - lastweek,
             }
             if words[3] == 'Tests':
                 if counties[words[0]]['Tests']['daily'] > 0:
-                    daily  = str(round(100 * counties[words[0]]['Counts']['daily']  / counties[words[0]]['Tests']['daily'] , 2))
+                    daily  = str(round(100 * counties[words[0]]['Counts']['daily']  / counties[words[0]]['Tests']['daily'] , 3))
                 else:
                     daily = ''
                 if counties[words[0]]['Tests']['weekly'] > 0:
-                    weekly = str(round(100 * counties[words[0]]['Counts']['weekly'] / counties[words[0]]['Tests']['weekly'], 2))
+                    weekly = str(round(100 * counties[words[0]]['Counts']['weekly'] / counties[words[0]]['Tests']['weekly'], 3))
                 else:
                     weekly = ''
                 row += daily + '\t' + weekly + '\t'
