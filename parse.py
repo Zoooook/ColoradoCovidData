@@ -38,6 +38,7 @@ counties = {
     'Weld': {},
     'Pueblo': {},
     'Mesa': {},
+    'Other': {},
 }
 
 headers = [
@@ -67,8 +68,15 @@ for row in stateData[1:]:
         data[row[2][21:]][formatDate(row[4])] = int(row[6])
 
 for row in countyData[1:]:
-    if row[1] in counties and row[1] + ' ' + row[5] in fields and row[6] not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
-        data[row[1] + ' ' + row[5]][formatDate(row[9])] = int(row[7])
+    if row[1] not in counties and row[1] not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
+        row[1] = 'Other'
+    key = row[1] + ' ' + row[5]
+    date = formatDate(row[9])
+
+    if row[1] in counties and key in fields and row[6] not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
+        if date not in data[key]:
+            data[key][date] = 0
+        data[key][date] += int(row[7])
 
 dates = sorted(list(data['Cases of COVID-19 in Colorado by Date of Illness Onset']))
 
