@@ -23,16 +23,38 @@ testingData = []
 for line in file:
     testingData.append(line)
 
+hospitalizationData = []
+with open('Public__Patients_v_discharged_data.csv') as file:
+    for line in csv.reader(file):
+        hospitalizationData.append(line)
+
 data = {
     'Cases of COVID-19 in Colorado by Date of Illness Onset': {},
     'Cases of COVID-19 in Colorado by Date Reported to the State': {},
     'Count of people tested by lab': {},
     'Hospitalized Cases of COVID-19 in Colorado by Date of Illness Onset': {},
     'Hospitalized Cases of COVID-19 in Colorado by Date Reported to the State': {},
+    'Currently hospitalized for confirmed COVID-19': {},
+    'Currently hospitalized as COVID-19 PUIs': {},
     'Deaths From COVID-19 in Colorado by Date of Illness': {},
     'Deaths From COVID-19 in Colorado by Date Reported to the State': {},
     'Deaths From COVID-19 in Colorado by Date of Death': {},
 }
+
+headers = [
+    'Date',
+    'by date of illness onset', '       ',
+    'by date reported'        , '',
+    'Tests'                   , '       ',
+    'Positive %'              , '',
+    'by date of illness onset', '       ',
+    'by date reported'        , '',
+    'Confirmed Cases',
+    'Under Investigation',
+    'by date of illness onset', '       ',
+    'by date reported'        , '       ',
+    'by date of death'        , '',
+]
 
 counties = {
     'Denver': {},
@@ -49,24 +71,11 @@ counties = {
     'Other': {},
 }
 
-headers = [
-    'Date',
-    'Cases by Onset'    , 'Weekly',
-    'Cases by Reported' , 'Weekly',
-    'Tests'             , 'Weekly',
-    'Positivity'        , 'Weekly',
-    'Hosps by Onset'    , 'Weekly',
-    'Hosps by Reported' , 'Weekly',
-    'Deaths by Onset'   , 'Weekly',
-    'Deaths by Reported', 'Weekly',
-    'Deaths by Date'    , 'Weekly',
-]
-
 for county in counties:
     data[county + ' Colorado Case Counts by County'] = {}
     data[county + ' Total COVID-19 Tests Performed in Colorado by County'] = {}
     data[county + ' Number of Deaths by County'] = {}
-    headers.extend([county + ' Cases', 'Weekly', county + ' Tests', 'Weekly', county + ' Positivity', 'Weekly', county + ' Deaths', 'Weekly'])
+    headers.extend([county + ' Cases', '', 'Tests', '       ', 'Positive %', '', county + ' Deaths', ''])
 
 fields = list(data)
 
@@ -109,6 +118,29 @@ for i in range(len(dates)):
         new = 0
     data['Count of people tested by lab'][date] = old + new
 
+monthMap = {
+    'January'  : '01',
+    'February' : '02',
+    'March'    : '03',
+    'April'    : '04',
+    'May'      : '05',
+    'June'     : '06',
+    'July'     : '07',
+    'August'   : '08',
+    'September': '09',
+    'October'  : '10',
+    'November' : '11',
+    'December' : '12',
+}
+
+def formatDateString(date):
+    parts = date.split(' ')
+    return parts[2] + '-' + monthMap[parts[0]] + '-' + parts[1][:-1].zfill(2)
+
+for row in hospitalizationData:
+    if row[1] in fields:
+        data[row[1]][formatDateString(row[0])] = int(row[3])
+
 tsvData = '\t'.join(headers) + '\n'
 
 ratio = {}
@@ -120,6 +152,10 @@ for i in range(len(dates)):
         if date not in data[field]:
             data[field][date] = 0
         today = data[field][date]
+
+        if field in ['Currently hospitalized for confirmed COVID-19', 'Currently hospitalized as COVID-19 PUIs']:
+            row += str(today) + '\t'
+            continue
 
         if i > 0:
             yesterday = data[field][dates[i-1]]
