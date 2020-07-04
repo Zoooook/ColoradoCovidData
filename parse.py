@@ -24,9 +24,12 @@ for line in file:
     testingData.append(line)
 
 hospitalizationData = []
-with open('Public__Patients_v_discharged_data.csv') as file:
-    for line in csv.reader(file):
-        hospitalizationData.append(line)
+with open('Public_ Patients v discharged_crosstab.csv') as file:
+    for line in file.readlines():
+        row = ''
+        for i in range(1, len(line)-1, 2):
+            row += line[i]
+        hospitalizationData.append(row.split('\t'))
 
 data = {
     'Cases of COVID-19 in Colorado by Date of Illness Onset': {},
@@ -138,8 +141,11 @@ def formatDateString(date):
     return parts[2] + '-' + monthMap[parts[0]] + '-' + parts[1][:-1].zfill(2)
 
 for row in hospitalizationData:
-    if row[1] in fields:
-        data[row[1]][formatDateString(row[0])] = int(row[3])
+    if len(row) > 1:
+        if row[3]:
+            data['Currently hospitalized for confirmed COVID-19'][formatDateString(row[0])] = int(row[3])
+        if row[5]:
+            data['Currently hospitalized as COVID-19 PUIs'][formatDateString(row[0])] = int(row[5])
 
 tsvData = '\t'.join(headers) + '\n'
 
