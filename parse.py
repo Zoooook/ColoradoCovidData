@@ -108,6 +108,7 @@ for row in testingData[1:]:
         data['Count of people tested by lab'][date] += int(row[5])
 
 dates = sorted(list(data['Cases of COVID-19 in Colorado by Date of Illness Onset']))
+print(dates[-1])
 
 for i in range(len(dates)):
     date = dates[i]
