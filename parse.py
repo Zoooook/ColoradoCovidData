@@ -1,35 +1,30 @@
 from urllib.request import urlopen
 from codecs import iterdecode
-import csv
+from csv import reader
+from pandas import read_excel
 
 response = urlopen('https://opendata.arcgis.com/datasets/90cc1ace62254550879f18cf94ca216b_0.csv')
-file = csv.reader(iterdecode(response, 'utf-8'))
+file = reader(iterdecode(response, 'utf-8'))
 
 stateData = []
 for line in file:
     stateData.append(line)
 
 response = urlopen('https://opendata.arcgis.com/datasets/1456d8d43486449292e5784dcd9ce4a7_0.csv')
-file = csv.reader(iterdecode(response, 'utf-8'))
+file = reader(iterdecode(response, 'utf-8'))
 
 countyData = []
 for line in file:
     countyData.append(line)
 
 response = urlopen('https://opendata.arcgis.com/datasets/ca2c4b063f494506a1047d9783789ef7_0.csv')
-file = csv.reader(iterdecode(response, 'utf-8'))
+file = reader(iterdecode(response, 'utf-8'))
 
 testingData = []
 for line in file:
     testingData.append(line)
 
-hospitalizationData = []
-with open('Public_ Patients v discharged_crosstab.csv') as file:
-    for line in file.readlines():
-        row = ''
-        for i in range(1, len(line)-1, 2):
-            row += line[i]
-        hospitalizationData.append(row.split('\t'))
+hospitalizationData = read_excel('Public_ Patients v discharged.xlsx').values.tolist()
 
 data = {
     'Cases of COVID-19 in Colorado by Date of Illness Onset': {},
@@ -141,12 +136,9 @@ def formatDateString(date):
     parts = date.split(' ')
     return parts[2] + '-' + monthMap[parts[0]] + '-' + parts[1][:-1].zfill(2)
 
-for row in hospitalizationData:
-    if len(row) > 1:
-        if row[3]:
-            data['Currently hospitalized for confirmed COVID-19'][formatDateString(row[0])] = int(row[3])
-        if row[5]:
-            data['Currently hospitalized as COVID-19 PUIs'][formatDateString(row[0])] = int(row[5])
+for i in range(1, len(hospitalizationData[0])):
+    data['Currently hospitalized for confirmed COVID-19'][formatDateString(hospitalizationData[0][i])] = hospitalizationData[2][i]
+    data['Currently hospitalized as COVID-19 PUIs']      [formatDateString(hospitalizationData[0][i])] = hospitalizationData[1][i]
 
 tsvData = '\t'.join(headers) + '\n'
 
