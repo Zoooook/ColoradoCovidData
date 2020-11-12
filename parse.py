@@ -94,8 +94,8 @@ for filename in listdir():
 with open(hospitalFilename) as file:
     hospitalData = reader(file)
     for row in hospitalData:
-        if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[4] in fields:
-            data[row[4]][row[3]] = int(row[5])
+        if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and row[5] in fields:
+            data[row[5]][row[4]] = int(row[6])
 
 dates = sorted(list(set(data['Cumulative COVID-19 Cases in Colorado by Date of Illness Onset']) | set(data['Cumulative COVID-19 Cases in Colorado by Date Reported to the State'])))
 if hospitalFilename[22:32] < dates[-1]:
