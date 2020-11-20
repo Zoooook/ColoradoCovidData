@@ -4,31 +4,23 @@ from csv import reader
 from os import listdir
 
 data = {
-    'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset': {},
-    'Cumulative COVID-19 Cases in Colorado by Date Reported to the State': {},
-    'Cumulative People Tested at Lab': {},
-    'Hospitalized Cases of COVID-19 in Colorado by Date of Illness Onset': {}, # this no longer exists
-    'Hospitalized Cases of COVID-19 in Colorado by Date Reported to the State': {}, # this no longer exists
     'Confirmed COVID-19': {},
     'COVID-19 Persons Under Investigation': {},
-    'Deaths From COVID-19 in Colorado by Date of Illness': {}, # this no longer exists
-    'Deaths From COVID-19 in Colorado by Date Reported to the State': {}, # this no longer exists
+    'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset': {},
+    'Cumulative COVID-19 Cases in Colorado by Date Reported to the State': {},
     'Cumulative Deaths Among COVID-19 Cases in Colorado by Date of Death': {},
+    'Cumulative People Tested at Lab': {},
 }
 
 headers = [
     'Date',
-    'by date of illness onset', '       ',
-    'by date reported'        , '',
-    'Tests'                   , '       ',
-    'Positive %'              , '',
-    'by date of illness onset', '       ',
-    'by date reported'        , '',
     'Confirmed Cases',
     'Under Investigation',
     'by date of illness onset', '       ',
-    'by date reported'        , '       ',
+    'by date reported'        , '',
     'by date of death'        , '',
+    'Tests'                   , '       ',
+    'Positive %'              , '',
 ]
 
 counties = {
@@ -43,14 +35,15 @@ counties = {
     'Weld': {},
     'Pueblo': {},
     'Mesa': {},
+    'Broomfield': {},
     'Other': {},
 }
 
 for county in counties:
     data[county + ' Cases of COVID-19 in Colorado by County'] = {}
-    data[county + ' Total COVID-19 Tests Performed in Colorado by County'] = {}
     data[county + ' Deaths Among COVID-19 Cases in Colorado by County'] = {}
-    headers.extend([county + ' Cases', '', 'Tests', '       ', 'Positive %', '', county + ' Deaths', ''])
+    data[county + ' Total COVID-19 Tests Performed in Colorado by County'] = {}
+    headers.extend([county + ' Cases', '', county + ' Deaths', '', 'Tests', '       ', 'Positive %', ''])
 
 fields = list(data)
 
