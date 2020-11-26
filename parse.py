@@ -55,8 +55,9 @@ stateData = reader(iterdecode(response, 'utf-8'))
 for row in stateData:
     if row[2] in fields:
         data[row[2]][formatDate(row[3])] = int(row[5])
+print()
 
-response = urlopen('https://opendata.arcgis.com/datasets/1456d8d43486449292e5784dcd9ce4a7_0.csv')
+response = urlopen('https://opendata.arcgis.com/datasets/52fb11a8a07f49c1b28335a9de9ba99f_0.csv')
 countyData = reader(iterdecode(response, 'utf-8'))
 for row in countyData:
     if row[1] not in counties and row[1] not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:

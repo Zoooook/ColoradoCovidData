@@ -1,12 +1,12 @@
 section,category,description,region,date,metric,value
-Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Updating Within Last Day,0.87
-Hospital Data,Hospital Level,Summary,Colorado,NA,Confirmed COVID-19 Patients,1539
-Hospital Data,Hospital Level,Summary,Colorado,NA,COVID-19 Persons Under Investigation,131
-Hospital Data,Hospital Level,Summary,Colorado,NA,Patients Discharged or Transferred Within 24 Hours,183
-Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Anticipating Staff Shortages Within Next Week,0.35
+Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Updating Within Last Day,0.95
+Hospital Data,Hospital Level,Summary,Colorado,NA,Confirmed COVID-19 Patients,1652
+Hospital Data,Hospital Level,Summary,Colorado,NA,COVID-19 Persons Under Investigation,142
+Hospital Data,Hospital Level,Summary,Colorado,NA,Patients Discharged or Transferred Within 24 Hours,198
+Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Anticipating Staff Shortages Within Next Week,0.36
 Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Anticipating PPE Shortages Within Next Week,0.01
-Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Anticipating ICU Bed Shortages Within Next Week,0.11
-Hospital Data,Hospital Level,Summary,Colorado,NA,Adult Critical Care Ventilators in Use,0.47
+Hospital Data,Hospital Level,Summary,Colorado,NA,Facilities Anticipating ICU Bed Shortages Within Next Week,0.14
+Hospital Data,Hospital Level,Summary,Colorado,NA,Adult Critical Care Ventilators in Use,0.5
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-04-05,ICU Hospital Beds in Use,1147
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-04-05,Total ICU Hospital Beds,1592
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-04-05,Percent of ICU Hospital Beds in Use,0.72
@@ -1851,6 +1851,30 @@ Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-22,Acute Care Hos
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-22,Total Acute Care Hospital Beds,8685
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.81
 Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-22,7-Day Average of Percent of Acute Care Hospital Beds in Use,0.82
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,ICU Hospital Beds in Use,1382
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,Total ICU Hospital Beds,1720
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,Percent of ICU Hospital Beds in Use,0.8
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,7-Day Average of Percent of ICU Hospital Beds in Use,0.83
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,Acute Care Hospital Beds in Use,7047
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,Total Acute Care Hospital Beds,8684
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.81
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-23,7-Day Average of Percent of Acute Care Hospital Beds in Use,0.83
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,ICU Hospital Beds in Use,1313
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,Total ICU Hospital Beds,1615
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,Percent of ICU Hospital Beds in Use,0.81
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,7-Day Average of Percent of ICU Hospital Beds in Use,0.83
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,Acute Care Hospital Beds in Use,6686
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,Total Acute Care Hospital Beds,8313
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.8
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-24,7-Day Average of Percent of Acute Care Hospital Beds in Use,0.82
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,ICU Hospital Beds in Use,1386
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,Total ICU Hospital Beds,1707
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,Percent of ICU Hospital Beds in Use,0.81
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,7-Day Average of Percent of ICU Hospital Beds in Use,0.82
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,Acute Care Hospital Beds in Use,7125
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,Total Acute Care Hospital Beds,8662
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,Percent of Acute Care Hospital Beds in Use,0.82
+Hospital Data,Hospital Level,Hospital Bed Use,Colorado,2020-11-25,7-Day Average of Percent of Acute Care Hospital Beds in Use,0.82
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-04-05,Adult Critical Care Ventilators in Use,565
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-04-05,Total Adult Critical Care Ventilators,1758
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-04-05,Percent of Adult Critical Care Ventilators in Use,0.32
@@ -3695,6 +3719,30 @@ Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-22,Pediatric Critic
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-22,Total Pediatric Critical Care Ventilators,153
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-22,Percent of Pediatric Critical Care Ventilators in Use,0.29
 Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-22,7-Day Average of Percent of Pediatric Critical Care Ventilators in Use,0.26
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Adult Critical Care Ventilators in Use,545
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Total Adult Critical Care Ventilators,1170
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Percent of Adult Critical Care Ventilators in Use,0.47
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,7-Day Average of Percent of Adult Critical Care Ventilators in Use,0.47
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Pediatric Critical Care Ventilators in Use,50
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Total Pediatric Critical Care Ventilators,153
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,Percent of Pediatric Critical Care Ventilators in Use,0.33
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-23,7-Day Average of Percent of Pediatric Critical Care Ventilators in Use,0.28
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Adult Critical Care Ventilators in Use,567
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Total Adult Critical Care Ventilators,1188
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Percent of Adult Critical Care Ventilators in Use,0.48
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,7-Day Average of Percent of Adult Critical Care Ventilators in Use,0.47
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Pediatric Critical Care Ventilators in Use,47
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Total Pediatric Critical Care Ventilators,152
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,Percent of Pediatric Critical Care Ventilators in Use,0.31
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-24,7-Day Average of Percent of Pediatric Critical Care Ventilators in Use,0.29
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Adult Critical Care Ventilators in Use,605
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Total Adult Critical Care Ventilators,1211
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Percent of Adult Critical Care Ventilators in Use,0.5
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,7-Day Average of Percent of Adult Critical Care Ventilators in Use,0.47
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Pediatric Critical Care Ventilators in Use,45
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Total Pediatric Critical Care Ventilators,149
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,Percent of Pediatric Critical Care Ventilators in Use,0.3
+Hospital Data,Hospital Level,Ventilator Use,Colorado,2020-11-25,7-Day Average of Percent of Pediatric Critical Care Ventilators in Use,0.3
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-22,Confirmed COVID-19,56
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-22,COVID-19 Persons Under Investigation,43
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-22,Total COVID-19 Patients,99
@@ -4925,6 +4973,21 @@ Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,COVID-19
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,Total COVID-19 Patients,1670
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,Percent Confirmed COVID-19,0.92
 Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,Percent COVID-19 Persons Under Investigation,0.08
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,Confirmed COVID-19,1597
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,Total COVID-19 Patients,1711
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,Percent Confirmed COVID-19,0.93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,Percent COVID-19 Persons Under Investigation,0.07
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,Confirmed COVID-19,1613
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,Total COVID-19 Patients,1739
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,Percent Confirmed COVID-19,0.93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,Percent COVID-19 Persons Under Investigation,0.07
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,Confirmed COVID-19,1652
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,COVID-19 Persons Under Investigation,142
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,Total COVID-19 Patients,1794
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,Percent Confirmed COVID-19,0.92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,Percent COVID-19 Persons Under Investigation,0.08
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-04-12,Patients Admitted to the Hospital,165
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-04-13,Patients Admitted to the Hospital,205
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-04-14,Patients Admitted to the Hospital,285
@@ -5323,7 +5386,7 @@ Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-29,Patients Adm
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-29,7-Day Average of Patients Admitted to the Hospital,95
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-30,Patients Admitted to the Hospital,113
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-30,7-Day Average of Patients Admitted to the Hospital,99
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-31,Patients Admitted to the Hospital,143
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-31,Patients Admitted to the Hospital,144
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-10-31,7-Day Average of Patients Admitted to the Hospital,103
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-01,Patients Admitted to the Hospital,88
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-01,7-Day Average of Patients Admitted to the Hospital,105
@@ -5333,42 +5396,48 @@ Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-03,Patients Adm
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-03,7-Day Average of Patients Admitted to the Hospital,128
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-04,Patients Admitted to the Hospital,149
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-04,7-Day Average of Patients Admitted to the Hospital,131
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-05,Patients Admitted to the Hospital,179
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-05,Patients Admitted to the Hospital,180
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-05,7-Day Average of Patients Admitted to the Hospital,140
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-06,Patients Admitted to the Hospital,169
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-06,Patients Admitted to the Hospital,170
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-06,7-Day Average of Patients Admitted to the Hospital,148
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-07,Patients Admitted to the Hospital,154
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-07,7-Day Average of Patients Admitted to the Hospital,149
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-07,7-Day Average of Patients Admitted to the Hospital,150
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-08,Patients Admitted to the Hospital,170
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-08,7-Day Average of Patients Admitted to the Hospital,161
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-09,Patients Admitted to the Hospital,145
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-09,7-Day Average of Patients Admitted to the Hospital,160
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-10,Patients Admitted to the Hospital,188
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-10,Patients Admitted to the Hospital,189
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-10,7-Day Average of Patients Admitted to the Hospital,165
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-11,Patients Admitted to the Hospital,221
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-11,7-Day Average of Patients Admitted to the Hospital,175
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-12,Patients Admitted to the Hospital,203
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-11,7-Day Average of Patients Admitted to the Hospital,176
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-12,Patients Admitted to the Hospital,205
 Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-12,7-Day Average of Patients Admitted to the Hospital,179
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-13,Patients Admitted to the Hospital,201
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-13,7-Day Average of Patients Admitted to the Hospital,183
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-14,Patients Admitted to the Hospital,227
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-14,7-Day Average of Patients Admitted to the Hospital,194
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-15,Patients Admitted to the Hospital,238
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-15,7-Day Average of Patients Admitted to the Hospital,203
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-16,Patients Admitted to the Hospital,203
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-16,7-Day Average of Patients Admitted to the Hospital,212
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-17,Patients Admitted to the Hospital,272
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-17,7-Day Average of Patients Admitted to the Hospital,224
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-18,Patients Admitted to the Hospital,253
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-18,7-Day Average of Patients Admitted to the Hospital,228
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-19,Patients Admitted to the Hospital,275
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-19,7-Day Average of Patients Admitted to the Hospital,238
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-20,Patients Admitted to the Hospital,293
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-20,7-Day Average of Patients Admitted to the Hospital,252
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-21,Patients Admitted to the Hospital,212
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-21,7-Day Average of Patients Admitted to the Hospital,249
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-22,Patients Admitted to the Hospital,159
-Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-22,7-Day Average of Patients Admitted to the Hospital,238
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-13,Patients Admitted to the Hospital,205
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-13,7-Day Average of Patients Admitted to the Hospital,184
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-14,Patients Admitted to the Hospital,232
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-14,7-Day Average of Patients Admitted to the Hospital,195
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-15,Patients Admitted to the Hospital,244
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-15,7-Day Average of Patients Admitted to the Hospital,206
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-16,Patients Admitted to the Hospital,209
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-16,7-Day Average of Patients Admitted to the Hospital,215
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-17,Patients Admitted to the Hospital,280
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-17,7-Day Average of Patients Admitted to the Hospital,228
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-18,Patients Admitted to the Hospital,262
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-18,7-Day Average of Patients Admitted to the Hospital,234
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-19,Patients Admitted to the Hospital,283
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-19,7-Day Average of Patients Admitted to the Hospital,245
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-20,Patients Admitted to the Hospital,306
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-20,7-Day Average of Patients Admitted to the Hospital,259
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-21,Patients Admitted to the Hospital,219
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-21,7-Day Average of Patients Admitted to the Hospital,258
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-22,Patients Admitted to the Hospital,173
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-22,7-Day Average of Patients Admitted to the Hospital,247
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-23,Patients Admitted to the Hospital,252
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-23,7-Day Average of Patients Admitted to the Hospital,254
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-24,Patients Admitted to the Hospital,248
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-24,7-Day Average of Patients Admitted to the Hospital,249
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-25,Patients Admitted to the Hospital,237
+Hospital Data,Hospital Level,Admissions (Daily),Colorado,2020-11-25,7-Day Average of Patients Admitted to the Hospital,245
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-04-12,Number of New Hospital Admissions,1632
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-04-19,Number of New Hospital Admissions,919
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-04-19,Percent Change,-0.44
@@ -5424,16 +5493,16 @@ Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-11,Number of N
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-11,Percent Change,0.39
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-18,Number of New Hospital Admissions,618
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-18,Percent Change,0.46
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-25,Number of New Hospital Admissions,722
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-25,Number of New Hospital Admissions,723
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-10-25,Percent Change,0.17
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-01,Number of New Hospital Admissions,1046
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-01,Number of New Hospital Admissions,1048
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-01,Percent Change,0.45
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-08,Number of New Hospital Admissions,1355
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-08,Number of New Hospital Admissions,1367
 Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-08,Percent Change,0.3
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-15,Number of New Hospital Admissions,1746
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-15,Percent Change,0.29
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-22,Number of New Hospital Admissions,159
-Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-22,Percent Change,-0.91
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-15,Number of New Hospital Admissions,1803
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-15,Percent Change,0.32
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-22,Number of New Hospital Admissions,910
+Hospital Data,Hospital Level,Admissions (Weekly),Colorado,2020-11-22,Percent Change,-0.5
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-04-12,Patients Discharged or Transferred Within the Last 24 Hours,149
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-04-13,Patients Discharged or Transferred Within the Last 24 Hours,148
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-04-14,Patients Discharged or Transferred Within the Last 24 Hours,203
@@ -5878,6 +5947,12 @@ Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-21,Patients Dis
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-21,7-Day Average of Patients Discharged or Transferred Within the Last 24 Hours,186
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-22,Patients Discharged or Transferred Within the Last 24 Hours,183
 Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-22,7-Day Average of Patients Discharged or Transferred Within the Last 24 Hours,194
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-23,Patients Discharged or Transferred Within the Last 24 Hours,187
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-23,7-Day Average of Patients Discharged or Transferred Within the Last 24 Hours,196
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-24,Patients Discharged or Transferred Within the Last 24 Hours,229
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-24,7-Day Average of Patients Discharged or Transferred Within the Last 24 Hours,204
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-25,Patients Discharged or Transferred Within the Last 24 Hours,198
+Hospital Data,Hospital Level,Discharges (Daily),Colorado,2020-11-25,7-Day Average of Patients Discharged or Transferred Within the Last 24 Hours,205
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-04-12,Number Patients Discharged or Transferred Within the Last 24 Hours,1392
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-04-19,Number Patients Discharged or Transferred Within the Last 24 Hours,694
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-04-19,Percent Change,-0.5
@@ -5941,31 +6016,16 @@ Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-08,Number Pati
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-08,Percent Change,0.62
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-15,Number Patients Discharged or Transferred Within the Last 24 Hours,1303
 Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-15,Percent Change,0.35
-Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-22,Number Patients Discharged or Transferred Within the Last 24 Hours,183
-Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-22,Percent Change,-0.86
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,Total ICU Beds,1724
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Total ICU Beds,-182
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,Currently Available ICU Beds,358
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Available ICU Beds,-5
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,ICU Beds Currently in Use,1366
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of ICU Beds in Use,-177
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,Percent of ICU Beds Currently in Use,0.79
-Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Percent of ICU Beds in Use,-0.02
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-23,ICU Hospital Beds in Use,20
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-23,Percent of ICU Hospital Beds in Use,0.67
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-23,Total ICU Hospital Beds,30
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-23,Percent of Available ICU Hospital Beds,0.33
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-23,ICU Hospital Beds Available,10
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-24,ICU Hospital Beds in Use,19
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-24,Percent of ICU Hospital Beds in Use,0.63
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-24,Total ICU Hospital Beds,30
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-24,Percent of Available ICU Hospital Beds,0.37
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-24,ICU Hospital Beds Available,11
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-25,ICU Hospital Beds in Use,19
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-25,Percent of ICU Hospital Beds in Use,0.63
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-25,Total ICU Hospital Beds,30
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-25,Percent of Available ICU Hospital Beds,0.37
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-25,ICU Hospital Beds Available,11
+Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-22,Number Patients Discharged or Transferred Within the Last 24 Hours,797
+Hospital Data,Hospital Level,Discharges (Weekly),Colorado,2020-11-22,Percent Change,-0.39
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,Total ICU Beds,1615
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Total ICU Beds,-291
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,Currently Available ICU Beds,302
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Available ICU Beds,-134
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,ICU Beds Currently in Use,1313
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of ICU Beds in Use,-157
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,Percent of ICU Beds Currently in Use,0.81
+Hospital Data,Regional Level ICU,Summary,Colorado,NA,30 Day Difference of Percent of ICU Beds in Use,0.04
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-26,ICU Hospital Beds in Use,19
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-26,Percent of ICU Hospital Beds in Use,0.63
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-10-26,Total ICU Hospital Beds,30
@@ -6101,21 +6161,21 @@ Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-21,Perce
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-21,Total ICU Hospital Beds,29
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-21,Percent of Available ICU Hospital Beds,0.28
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-21,ICU Hospital Beds Available,8
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-23,ICU Hospital Beds in Use,1543
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-23,Percent of ICU Hospital Beds in Use,0.81
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-23,Total ICU Hospital Beds,1906
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-23,Percent of Available ICU Hospital Beds,0.19
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-23,ICU Hospital Beds Available,363
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-24,ICU Hospital Beds in Use,1515
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-24,Percent of ICU Hospital Beds in Use,0.79
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-24,Total ICU Hospital Beds,1906
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-24,Percent of Available ICU Hospital Beds,0.21
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-24,ICU Hospital Beds Available,391
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-25,ICU Hospital Beds in Use,1488
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-25,Percent of ICU Hospital Beds in Use,0.78
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-25,Total ICU Hospital Beds,1906
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-25,Percent of Available ICU Hospital Beds,0.22
-Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-25,ICU Hospital Beds Available,418
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-22,ICU Hospital Beds in Use,21
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-22,Percent of ICU Hospital Beds in Use,0.72
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-22,Total ICU Hospital Beds,29
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-22,Percent of Available ICU Hospital Beds,0.28
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-22,ICU Hospital Beds Available,8
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-23,ICU Hospital Beds in Use,21
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-23,Percent of ICU Hospital Beds in Use,0.72
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-23,Total ICU Hospital Beds,29
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-23,Percent of Available ICU Hospital Beds,0.28
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-23,ICU Hospital Beds Available,8
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-24,ICU Hospital Beds in Use,20
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-24,Percent of ICU Hospital Beds in Use,0.69
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-24,Total ICU Hospital Beds,29
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-24,Percent of Available ICU Hospital Beds,0.31
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,2020-11-24,ICU Hospital Beds Available,9
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-26,ICU Hospital Beds in Use,1470
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-26,Percent of ICU Hospital Beds in Use,0.77
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-10-26,Total ICU Hospital Beds,1906
@@ -6251,21 +6311,21 @@ Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-21,Percent of ICU
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-21,Total ICU Hospital Beds,1724
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-21,Percent of Available ICU Hospital Beds,0.21
 Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-21,ICU Hospital Beds Available,358
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-23,ICU Hospital Beds in Use,214
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-23,Percent of ICU Hospital Beds in Use,0.86
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-23,Total ICU Hospital Beds,250
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-23,Percent of Available ICU Hospital Beds,0.14
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-23,ICU Hospital Beds Available,36
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-24,ICU Hospital Beds in Use,212
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-24,Percent of ICU Hospital Beds in Use,0.85
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-24,Total ICU Hospital Beds,250
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-24,Percent of Available ICU Hospital Beds,0.15
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-24,ICU Hospital Beds Available,38
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-25,ICU Hospital Beds in Use,208
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-25,Percent of ICU Hospital Beds in Use,0.83
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-25,Total ICU Hospital Beds,250
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-25,Percent of Available ICU Hospital Beds,0.17
-Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-25,ICU Hospital Beds Available,42
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-22,ICU Hospital Beds in Use,1407
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-22,Percent of ICU Hospital Beds in Use,0.81
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-22,Total ICU Hospital Beds,1734
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-22,Percent of Available ICU Hospital Beds,0.19
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-22,ICU Hospital Beds Available,327
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-23,ICU Hospital Beds in Use,1382
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-23,Percent of ICU Hospital Beds in Use,0.8
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-23,Total ICU Hospital Beds,1720
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-23,Percent of Available ICU Hospital Beds,0.2
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-23,ICU Hospital Beds Available,338
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-24,ICU Hospital Beds in Use,1313
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-24,Percent of ICU Hospital Beds in Use,0.81
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-24,Total ICU Hospital Beds,1615
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-24,Percent of Available ICU Hospital Beds,0.19
+Hospital Data,Regional Level ICU,Regional Map,Colorado,2020-11-24,ICU Hospital Beds Available,302
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-26,ICU Hospital Beds in Use,203
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-26,Percent of ICU Hospital Beds in Use,0.81
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-10-26,Total ICU Hospital Beds,250
@@ -6401,21 +6461,21 @@ Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-21,Total ICU Hospital Beds,261
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-21,Percent of Available ICU Hospital Beds,0.11
 Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-21,ICU Hospital Beds Available,28
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-23,ICU Hospital Beds in Use,867
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-23,Percent of ICU Hospital Beds in Use,0.87
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-23,Total ICU Hospital Beds,1001
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-23,Percent of Available ICU Hospital Beds,0.13
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-23,ICU Hospital Beds Available,134
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-24,ICU Hospital Beds in Use,845
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-24,Percent of ICU Hospital Beds in Use,0.84
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-24,Total ICU Hospital Beds,1001
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-24,Percent of Available ICU Hospital Beds,0.16
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-24,ICU Hospital Beds Available,156
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-25,ICU Hospital Beds in Use,840
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-25,Percent of ICU Hospital Beds in Use,0.84
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-25,Total ICU Hospital Beds,1001
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-25,Percent of Available ICU Hospital Beds,0.16
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-25,ICU Hospital Beds Available,161
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-22,ICU Hospital Beds in Use,229
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-22,Percent of ICU Hospital Beds in Use,0.88
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-22,Total ICU Hospital Beds,261
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-22,Percent of Available ICU Hospital Beds,0.12
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-22,ICU Hospital Beds Available,32
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-23,ICU Hospital Beds in Use,234
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-23,Percent of ICU Hospital Beds in Use,0.9
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-23,Total ICU Hospital Beds,261
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-23,Percent of Available ICU Hospital Beds,0.1
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-23,ICU Hospital Beds Available,27
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-24,ICU Hospital Beds in Use,239
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-24,Percent of ICU Hospital Beds in Use,0.92
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-24,Total ICU Hospital Beds,261
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-24,Percent of Available ICU Hospital Beds,0.08
+Hospital Data,Regional Level ICU,Regional Map,Foothills,2020-11-24,ICU Hospital Beds Available,22
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-26,ICU Hospital Beds in Use,823
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-26,Percent of ICU Hospital Beds in Use,0.82
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-10-26,Total ICU Hospital Beds,1001
@@ -6551,21 +6611,21 @@ Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-21,Total ICU Hospital Beds,862
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-21,Percent of Available ICU Hospital Beds,0.22
 Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-21,ICU Hospital Beds Available,192
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-23,ICU Hospital Beds in Use,104
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-23,Percent of ICU Hospital Beds in Use,0.59
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-23,Total ICU Hospital Beds,175
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-23,Percent of Available ICU Hospital Beds,0.41
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-23,ICU Hospital Beds Available,71
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-24,ICU Hospital Beds in Use,107
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-24,Percent of ICU Hospital Beds in Use,0.61
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-24,Total ICU Hospital Beds,175
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-24,Percent of Available ICU Hospital Beds,0.39
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-24,ICU Hospital Beds Available,68
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-25,ICU Hospital Beds in Use,102
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-25,Percent of ICU Hospital Beds in Use,0.58
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-25,Total ICU Hospital Beds,175
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-25,Percent of Available ICU Hospital Beds,0.42
-Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-25,ICU Hospital Beds Available,73
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-22,ICU Hospital Beds in Use,698
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-22,Percent of ICU Hospital Beds in Use,0.81
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-22,Total ICU Hospital Beds,862
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-22,Percent of Available ICU Hospital Beds,0.19
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-22,ICU Hospital Beds Available,164
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-23,ICU Hospital Beds in Use,685
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-23,Percent of ICU Hospital Beds in Use,0.79
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-23,Total ICU Hospital Beds,862
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-23,Percent of Available ICU Hospital Beds,0.21
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-23,ICU Hospital Beds Available,177
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-24,ICU Hospital Beds in Use,666
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-24,Percent of ICU Hospital Beds in Use,0.78
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-24,Total ICU Hospital Beds,850
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-24,Percent of Available ICU Hospital Beds,0.22
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,2020-11-24,ICU Hospital Beds Available,184
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-26,ICU Hospital Beds in Use,104
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-26,Percent of ICU Hospital Beds in Use,0.59
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-10-26,Total ICU Hospital Beds,175
@@ -6701,21 +6761,21 @@ Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-21,Total ICU Hospital Beds,172
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-21,Percent of Available ICU Hospital Beds,0.16
 Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-21,ICU Hospital Beds Available,27
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-23,ICU Hospital Beds in Use,59
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-23,Percent of ICU Hospital Beds in Use,0.73
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-23,Total ICU Hospital Beds,81
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-23,Percent of Available ICU Hospital Beds,0.27
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-23,ICU Hospital Beds Available,22
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-24,ICU Hospital Beds in Use,60
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-24,Percent of ICU Hospital Beds in Use,0.74
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-24,Total ICU Hospital Beds,81
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-24,Percent of Available ICU Hospital Beds,0.26
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-24,ICU Hospital Beds Available,21
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-25,ICU Hospital Beds in Use,57
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-25,Percent of ICU Hospital Beds in Use,0.7
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-25,Total ICU Hospital Beds,81
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-25,Percent of Available ICU Hospital Beds,0.3
-Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-25,ICU Hospital Beds Available,24
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-22,ICU Hospital Beds in Use,138
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-22,Percent of ICU Hospital Beds in Use,0.76
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-22,Total ICU Hospital Beds,181
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-22,Percent of Available ICU Hospital Beds,0.24
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-22,ICU Hospital Beds Available,43
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-23,ICU Hospital Beds in Use,135
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-23,Percent of ICU Hospital Beds in Use,0.75
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-23,Total ICU Hospital Beds,181
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-23,Percent of Available ICU Hospital Beds,0.25
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-23,ICU Hospital Beds Available,46
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-24,ICU Hospital Beds in Use,149
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-24,Percent of ICU Hospital Beds in Use,0.83
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-24,Total ICU Hospital Beds,179
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-24,Percent of Available ICU Hospital Beds,0.17
+Hospital Data,Regional Level ICU,Regional Map,Northeast,2020-11-24,ICU Hospital Beds Available,30
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-26,ICU Hospital Beds in Use,58
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-26,Percent of ICU Hospital Beds in Use,0.72
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-10-26,Total ICU Hospital Beds,81
@@ -6851,21 +6911,21 @@ Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-21,Total ICU Hospital Beds,83
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-21,Percent of Available ICU Hospital Beds,0.25
 Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-21,ICU Hospital Beds Available,21
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-23,ICU Hospital Beds in Use,178
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-23,Percent of ICU Hospital Beds in Use,0.75
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-23,Total ICU Hospital Beds,238
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-23,Percent of Available ICU Hospital Beds,0.25
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-23,ICU Hospital Beds Available,60
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-24,ICU Hospital Beds in Use,174
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-24,Percent of ICU Hospital Beds in Use,0.73
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-24,Total ICU Hospital Beds,238
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-24,Percent of Available ICU Hospital Beds,0.27
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-24,ICU Hospital Beds Available,64
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-25,ICU Hospital Beds in Use,169
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-25,Percent of ICU Hospital Beds in Use,0.71
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-25,Total ICU Hospital Beds,238
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-25,Percent of Available ICU Hospital Beds,0.29
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-25,ICU Hospital Beds Available,69
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-22,ICU Hospital Beds in Use,61
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-22,Percent of ICU Hospital Beds in Use,0.73
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-22,Total ICU Hospital Beds,83
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-22,Percent of Available ICU Hospital Beds,0.27
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-22,ICU Hospital Beds Available,22
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-23,ICU Hospital Beds in Use,59
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-23,Percent of ICU Hospital Beds in Use,0.71
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-23,Total ICU Hospital Beds,83
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-23,Percent of Available ICU Hospital Beds,0.29
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-23,ICU Hospital Beds Available,24
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-24,ICU Hospital Beds in Use,62
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-24,Percent of ICU Hospital Beds in Use,0.75
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-24,Total ICU Hospital Beds,83
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-24,Percent of Available ICU Hospital Beds,0.25
+Hospital Data,Regional Level ICU,Regional Map,Northwest,2020-11-24,ICU Hospital Beds Available,21
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-26,ICU Hospital Beds in Use,170
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-26,Percent of ICU Hospital Beds in Use,0.71
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-10-26,Total ICU Hospital Beds,238
@@ -7001,21 +7061,21 @@ Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-21,Percent 
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-21,Total ICU Hospital Beds,174
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-21,Percent of Available ICU Hospital Beds,0.34
 Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-21,ICU Hospital Beds Available,59
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-23,ICU Hospital Beds in Use,4
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-23,Percent of ICU Hospital Beds in Use,0.67
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-23,Total ICU Hospital Beds,6
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-23,Percent of Available ICU Hospital Beds,0.33
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-23,ICU Hospital Beds Available,2
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-24,ICU Hospital Beds in Use,3
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-24,Percent of ICU Hospital Beds in Use,0.5
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-24,Total ICU Hospital Beds,6
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-24,Percent of Available ICU Hospital Beds,0.5
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-24,ICU Hospital Beds Available,3
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-25,ICU Hospital Beds in Use,3
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-25,Percent of ICU Hospital Beds in Use,0.5
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-25,Total ICU Hospital Beds,6
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-25,Percent of Available ICU Hospital Beds,0.5
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-25,ICU Hospital Beds Available,3
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-22,ICU Hospital Beds in Use,131
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-22,Percent of ICU Hospital Beds in Use,0.78
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-22,Total ICU Hospital Beds,169
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-22,Percent of Available ICU Hospital Beds,0.22
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-22,ICU Hospital Beds Available,38
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-23,ICU Hospital Beds in Use,133
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-23,Percent of ICU Hospital Beds in Use,0.79
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-23,Total ICU Hospital Beds,169
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-23,Percent of Available ICU Hospital Beds,0.21
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-23,ICU Hospital Beds Available,36
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-24,ICU Hospital Beds in Use,146
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-24,Percent of ICU Hospital Beds in Use,0.86
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-24,Total ICU Hospital Beds,169
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-24,Percent of Available ICU Hospital Beds,0.14
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,2020-11-24,ICU Hospital Beds Available,23
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-26,ICU Hospital Beds in Use,1
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-26,Percent of ICU Hospital Beds in Use,0.17
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-10-26,Total ICU Hospital Beds,6
@@ -7151,21 +7211,21 @@ Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-21,Percent
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-21,Total ICU Hospital Beds,16
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-21,Percent of Available ICU Hospital Beds,0.44
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-21,ICU Hospital Beds Available,7
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-23,ICU Hospital Beds in Use,58
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-23,Percent of ICU Hospital Beds in Use,0.85
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-23,Total ICU Hospital Beds,68
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-23,Percent of Available ICU Hospital Beds,0.15
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-23,ICU Hospital Beds Available,10
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-24,ICU Hospital Beds in Use,53
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-24,Percent of ICU Hospital Beds in Use,0.78
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-24,Total ICU Hospital Beds,68
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-24,Percent of Available ICU Hospital Beds,0.22
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-24,ICU Hospital Beds Available,15
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-25,ICU Hospital Beds in Use,51
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-25,Percent of ICU Hospital Beds in Use,0.75
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-25,Total ICU Hospital Beds,68
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-25,Percent of Available ICU Hospital Beds,0.25
-Hospital Data,Regional Level ICU,Regional Map,South,2020-10-25,ICU Hospital Beds Available,17
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-22,ICU Hospital Beds in Use,16
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-22,Percent of ICU Hospital Beds in Use,1
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-22,Total ICU Hospital Beds,16
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-22,Percent of Available ICU Hospital Beds,0
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-22,ICU Hospital Beds Available,0
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-23,ICU Hospital Beds in Use,6
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-23,Percent of ICU Hospital Beds in Use,0.75
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-23,Total ICU Hospital Beds,8
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-23,Percent of Available ICU Hospital Beds,0.25
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-23,ICU Hospital Beds Available,2
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-24,ICU Hospital Beds in Use,6
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-24,Percent of ICU Hospital Beds in Use,0.75
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-24,Total ICU Hospital Beds,8
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-24,Percent of Available ICU Hospital Beds,0.25
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,2020-11-24,ICU Hospital Beds Available,2
 Hospital Data,Regional Level ICU,Regional Map,South,2020-10-26,ICU Hospital Beds in Use,53
 Hospital Data,Regional Level ICU,Regional Map,South,2020-10-26,Percent of ICU Hospital Beds in Use,0.78
 Hospital Data,Regional Level ICU,Regional Map,South,2020-10-26,Total ICU Hospital Beds,68
@@ -7301,21 +7361,21 @@ Hospital Data,Regional Level ICU,Regional Map,South,2020-11-21,Percent of ICU Ho
 Hospital Data,Regional Level ICU,Regional Map,South,2020-11-21,Total ICU Hospital Beds,79
 Hospital Data,Regional Level ICU,Regional Map,South,2020-11-21,Percent of Available ICU Hospital Beds,0.13
 Hospital Data,Regional Level ICU,Regional Map,South,2020-11-21,ICU Hospital Beds Available,10
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-23,ICU Hospital Beds in Use,8
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-23,Percent of ICU Hospital Beds in Use,0.73
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-23,Total ICU Hospital Beds,11
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-23,Percent of Available ICU Hospital Beds,0.27
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-23,ICU Hospital Beds Available,3
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-24,ICU Hospital Beds in Use,8
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-24,Percent of ICU Hospital Beds in Use,0.73
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-24,Total ICU Hospital Beds,11
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-24,Percent of Available ICU Hospital Beds,0.27
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-24,ICU Hospital Beds Available,3
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-25,ICU Hospital Beds in Use,8
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-25,Percent of ICU Hospital Beds in Use,0.73
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-25,Total ICU Hospital Beds,11
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-25,Percent of Available ICU Hospital Beds,0.27
-Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-25,ICU Hospital Beds Available,3
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-22,ICU Hospital Beds in Use,67
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-22,Percent of ICU Hospital Beds in Use,0.85
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-22,Total ICU Hospital Beds,79
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-22,Percent of Available ICU Hospital Beds,0.15
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-22,ICU Hospital Beds Available,12
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-23,ICU Hospital Beds in Use,68
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-23,Percent of ICU Hospital Beds in Use,0.86
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-23,Total ICU Hospital Beds,79
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-23,Percent of Available ICU Hospital Beds,0.14
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-23,ICU Hospital Beds Available,11
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-24,ICU Hospital Beds in Use,69
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-24,Percent of ICU Hospital Beds in Use,0.87
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-24,Total ICU Hospital Beds,79
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-24,Percent of Available ICU Hospital Beds,0.13
+Hospital Data,Regional Level ICU,Regional Map,South,2020-11-24,ICU Hospital Beds Available,10
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-26,ICU Hospital Beds in Use,8
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-26,Percent of ICU Hospital Beds in Use,0.73
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-10-26,Total ICU Hospital Beds,11
@@ -7451,21 +7511,21 @@ Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-21,Total ICU Hospital Beds,5
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-21,Percent of Available ICU Hospital Beds,0.4
 Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-21,ICU Hospital Beds Available,2
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-23,ICU Hospital Beds in Use,17
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-23,Percent of ICU Hospital Beds in Use,0.61
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-23,Total ICU Hospital Beds,28
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-23,Percent of Available ICU Hospital Beds,0.39
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-23,ICU Hospital Beds Available,11
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-24,ICU Hospital Beds in Use,20
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-24,Percent of ICU Hospital Beds in Use,0.71
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-24,Total ICU Hospital Beds,28
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-24,Percent of Available ICU Hospital Beds,0.29
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-24,ICU Hospital Beds Available,8
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-25,ICU Hospital Beds in Use,17
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-25,Percent of ICU Hospital Beds in Use,0.61
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-25,Total ICU Hospital Beds,28
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-25,Percent of Available ICU Hospital Beds,0.39
-Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-25,ICU Hospital Beds Available,11
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-22,ICU Hospital Beds in Use,2
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-22,Percent of ICU Hospital Beds in Use,0.4
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-22,Total ICU Hospital Beds,5
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-22,Percent of Available ICU Hospital Beds,0.6
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-22,ICU Hospital Beds Available,3
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-23,ICU Hospital Beds in Use,3
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-23,Percent of ICU Hospital Beds in Use,0.6
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-23,Total ICU Hospital Beds,5
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-23,Percent of Available ICU Hospital Beds,0.4
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-23,ICU Hospital Beds Available,2
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-24,ICU Hospital Beds in Use,4
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-24,Percent of ICU Hospital Beds in Use,1
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-24,Total ICU Hospital Beds,4
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-24,Percent of Available ICU Hospital Beds,0
+Hospital Data,Regional Level ICU,Regional Map,Southeast,2020-11-24,ICU Hospital Beds Available,0
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-26,ICU Hospital Beds in Use,17
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-26,Percent of ICU Hospital Beds in Use,0.61
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-10-26,Total ICU Hospital Beds,28
@@ -7601,21 +7661,21 @@ Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-21,Percent of IC
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-21,Total ICU Hospital Beds,25
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-21,Percent of Available ICU Hospital Beds,0
 Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-21,ICU Hospital Beds Available,0
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-23,ICU Hospital Beds in Use,14
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-23,Percent of ICU Hospital Beds in Use,0.78
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-23,Total ICU Hospital Beds,18
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-23,Percent of Available ICU Hospital Beds,0.22
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-23,ICU Hospital Beds Available,4
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-24,ICU Hospital Beds in Use,14
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-24,Percent of ICU Hospital Beds in Use,0.78
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-24,Total ICU Hospital Beds,18
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-24,Percent of Available ICU Hospital Beds,0.22
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-24,ICU Hospital Beds Available,4
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-25,ICU Hospital Beds in Use,14
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-25,Percent of ICU Hospital Beds in Use,0.78
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-25,Total ICU Hospital Beds,18
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-25,Percent of Available ICU Hospital Beds,0.22
-Hospital Data,Regional Level ICU,Regional Map,West,2020-10-25,ICU Hospital Beds Available,4
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-22,ICU Hospital Beds in Use,25
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-22,Percent of ICU Hospital Beds in Use,1
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-22,Total ICU Hospital Beds,25
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-22,Percent of Available ICU Hospital Beds,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-22,ICU Hospital Beds Available,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-23,ICU Hospital Beds in Use,25
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-23,Percent of ICU Hospital Beds in Use,1
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-23,Total ICU Hospital Beds,25
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-23,Percent of Available ICU Hospital Beds,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-23,ICU Hospital Beds Available,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-24,ICU Hospital Beds in Use,14
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-24,Percent of ICU Hospital Beds in Use,1
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-24,Total ICU Hospital Beds,14
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-24,Percent of Available ICU Hospital Beds,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,2020-11-24,ICU Hospital Beds Available,0
 Hospital Data,Regional Level ICU,Regional Map,West,2020-10-26,ICU Hospital Beds in Use,14
 Hospital Data,Regional Level ICU,Regional Map,West,2020-10-26,Percent of ICU Hospital Beds in Use,0.78
 Hospital Data,Regional Level ICU,Regional Map,West,2020-10-26,Total ICU Hospital Beds,18
@@ -7751,41 +7811,56 @@ Hospital Data,Regional Level ICU,Regional Map,West,2020-11-21,Percent of ICU Hos
 Hospital Data,Regional Level ICU,Regional Map,West,2020-11-21,Total ICU Hospital Beds,18
 Hospital Data,Regional Level ICU,Regional Map,West,2020-11-21,Percent of Available ICU Hospital Beds,0.22
 Hospital Data,Regional Level ICU,Regional Map,West,2020-11-21,ICU Hospital Beds Available,4
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-22,ICU Hospital Beds in Use,19
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-22,Percent of ICU Hospital Beds in Use,0.79
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-22,Total ICU Hospital Beds,24
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-22,Percent of Available ICU Hospital Beds,0.21
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-22,ICU Hospital Beds Available,5
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-23,ICU Hospital Beds in Use,13
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-23,Percent of ICU Hospital Beds in Use,0.72
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-23,Total ICU Hospital Beds,18
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-23,Percent of Available ICU Hospital Beds,0.28
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-23,ICU Hospital Beds Available,5
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-24,ICU Hospital Beds in Use,17
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-24,Percent of ICU Hospital Beds in Use,0.94
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-24,Total ICU Hospital Beds,18
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-24,Percent of Available ICU Hospital Beds,0.06
+Hospital Data,Regional Level ICU,Regional Map,West,2020-11-24,ICU Hospital Beds Available,1
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,NA,30 Day Difference in ICU Beds in Use,1
-Hospital Data,Regional Level ICU,Regional Map,Central Mountains,NA,30 Day Difference in Percent of Available ICU Beds,-0.05
+Hospital Data,Regional Level ICU,Regional Map,Central Mountains,NA,30 Day Difference in Percent of Available ICU Beds,-0.06
 Hospital Data,Regional Level ICU,Regional Map,Central Mountains,NA,30 Day Difference in Total ICU Beds,-1
-Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in ICU Beds in Use,-177
-Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in Percent of Available ICU Beds,0.02
-Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in Total ICU Beds,-182
-Hospital Data,Regional Level ICU,Regional Map,Foothills,NA,30 Day Difference in ICU Beds in Use,19
-Hospital Data,Regional Level ICU,Regional Map,Foothills,NA,30 Day Difference in Percent of Available ICU Beds,-0.03
+Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in ICU Beds in Use,-157
+Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in Percent of Available ICU Beds,-0.04
+Hospital Data,Regional Level ICU,Regional Map,Colorado,NA,30 Day Difference in Total ICU Beds,-291
+Hospital Data,Regional Level ICU,Regional Map,Foothills,NA,30 Day Difference in ICU Beds in Use,36
+Hospital Data,Regional Level ICU,Regional Map,Foothills,NA,30 Day Difference in Percent of Available ICU Beds,-0.11
 Hospital Data,Regional Level ICU,Regional Map,Foothills,NA,30 Day Difference in Total ICU Beds,11
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in ICU Beds in Use,-197
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in Percent of Available ICU Beds,0.09
-Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in Total ICU Beds,-139
-Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in ICU Beds in Use,41
-Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in Percent of Available ICU Beds,-0.25
-Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in Total ICU Beds,-3
-Hospital Data,Regional Level ICU,Regional Map,Northwest,NA,30 Day Difference in ICU Beds in Use,3
-Hospital Data,Regional Level ICU,Regional Map,Northwest,NA,30 Day Difference in Percent of Available ICU Beds,-0.02
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in ICU Beds in Use,-157
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in Percent of Available ICU Beds,0.04
+Hospital Data,Regional Level ICU,Regional Map,Mile-High,NA,30 Day Difference in Total ICU Beds,-151
+Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in ICU Beds in Use,45
+Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in Percent of Available ICU Beds,-0.24
+Hospital Data,Regional Level ICU,Regional Map,Northeast,NA,30 Day Difference in Total ICU Beds,4
+Hospital Data,Regional Level ICU,Regional Map,Northwest,NA,30 Day Difference in ICU Beds in Use,4
+Hospital Data,Regional Level ICU,Regional Map,Northwest,NA,30 Day Difference in Percent of Available ICU Beds,-0.03
 Hospital Data,Regional Level ICU,Regional Map,Northwest,NA,30 Day Difference in Total ICU Beds,2
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in ICU Beds in Use,-63
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in Percent of Available ICU Beds,0.09
-Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in Total ICU Beds,-64
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in ICU Beds in Use,-24
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in Percent of Available ICU Beds,-0.15
+Hospital Data,Regional Level ICU,Regional Map,Plains to Peak,NA,30 Day Difference in Total ICU Beds,-69
 Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,NA,30 Day Difference in ICU Beds in Use,5
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,NA,30 Day Difference in Percent of Available ICU Beds,0.11
-Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,NA,30 Day Difference in Total ICU Beds,10
-Hospital Data,Regional Level ICU,Regional Map,South,NA,30 Day Difference in ICU Beds in Use,11
-Hospital Data,Regional Level ICU,Regional Map,South,NA,30 Day Difference in Percent of Available ICU Beds,-0.02
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,NA,30 Day Difference in Percent of Available ICU Beds,-0.58
+Hospital Data,Regional Level ICU,Regional Map,San Luis Valley,NA,30 Day Difference in Total ICU Beds,2
+Hospital Data,Regional Level ICU,Regional Map,South,NA,30 Day Difference in ICU Beds in Use,16
+Hospital Data,Regional Level ICU,Regional Map,South,NA,30 Day Difference in Percent of Available ICU Beds,-0.09
 Hospital Data,Regional Level ICU,Regional Map,South,NA,30 Day Difference in Total ICU Beds,11
-Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in ICU Beds in Use,-5
-Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in Percent of Available ICU Beds,0.13
-Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in Total ICU Beds,-6
-Hospital Data,Regional Level ICU,Regional Map,Southwest,NA,30 Day Difference in ICU Beds in Use,8
+Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in ICU Beds in Use,-4
+Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in Percent of Available ICU Beds,-0.27
+Hospital Data,Regional Level ICU,Regional Map,Southeast,NA,30 Day Difference in Total ICU Beds,-7
+Hospital Data,Regional Level ICU,Regional Map,Southwest,NA,30 Day Difference in ICU Beds in Use,-3
 Hospital Data,Regional Level ICU,Regional Map,Southwest,NA,30 Day Difference in Percent of Available ICU Beds,-0.39
-Hospital Data,Regional Level ICU,Regional Map,Southwest,NA,30 Day Difference in Total ICU Beds,-3
-Hospital Data,Regional Level ICU,Regional Map,West,NA,30 Day Difference in ICU Beds in Use,0
-Hospital Data,Regional Level ICU,Regional Map,West,NA,30 Day Difference in Percent of Available ICU Beds,0
+Hospital Data,Regional Level ICU,Regional Map,Southwest,NA,30 Day Difference in Total ICU Beds,-14
+Hospital Data,Regional Level ICU,Regional Map,West,NA,30 Day Difference in ICU Beds in Use,3
+Hospital Data,Regional Level ICU,Regional Map,West,NA,30 Day Difference in Percent of Available ICU Beds,-0.16
 Hospital Data,Regional Level ICU,Regional Map,West,NA,30 Day Difference in Total ICU Beds,0
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,Central Mountains,NA,Eagle,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,Central Mountains,NA,Summit,NA
@@ -7851,29 +7926,14 @@ Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,Ouray,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,Hinsdale,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,San Miguel,NA
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Total Acute Care Beds,8640
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Total Acute Care Beds,-657
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Currently Available Acute Care Beds,1531
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Available Acute Care Beds,-311
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Acute Care Beds Currently in Use,7109
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Acute Care Beds in Use,-346
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Percent of Acute Care Beds Currently in Use,0.82
-Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Percent of Acute Care Beds in Use,0.02
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-23,Acute Care Hospital Beds in Use,81
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.56
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-23,Total Acute Care Hospital Beds,145
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-23,Percent of Available Acute Care Hospital Beds,0.44
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-23,Acute Care Hospital Beds Available,64
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-24,Acute Care Hospital Beds in Use,80
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.55
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-24,Total Acute Care Hospital Beds,145
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-24,Percent of Available Acute Care Hospital Beds,0.45
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-24,Acute Care Hospital Beds Available,65
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-25,Acute Care Hospital Beds in Use,82
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.57
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-25,Total Acute Care Hospital Beds,145
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-25,Percent of Available Acute Care Hospital Beds,0.43
-Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-25,Acute Care Hospital Beds Available,63
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Total Acute Care Beds,8313
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Total Acute Care Beds,-977
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Currently Available Acute Care Beds,1627
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Available Acute Care Beds,-569
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Acute Care Beds Currently in Use,6686
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Acute Care Beds in Use,-408
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,Percent of Acute Care Beds Currently in Use,0.8
+Hospital Data,Regional Level Acute Care,Summary,Colorado,NA,30 Day Difference of Percent of Acute Care Beds in Use,0.04
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-26,Acute Care Hospital Beds in Use,82
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.57
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-10-26,Total Acute Care Hospital Beds,145
@@ -8009,21 +8069,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-2
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-21,Total Acute Care Hospital Beds,143
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-21,Percent of Available Acute Care Hospital Beds,0.4
 Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-21,Acute Care Hospital Beds Available,57
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-23,Acute Care Hospital Beds in Use,7455
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.8
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-23,Total Acute Care Hospital Beds,9297
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-23,Percent of Available Acute Care Hospital Beds,0.2
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-23,Acute Care Hospital Beds Available,1842
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-24,Acute Care Hospital Beds in Use,7282
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.78
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-24,Total Acute Care Hospital Beds,9297
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-24,Percent of Available Acute Care Hospital Beds,0.22
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-24,Acute Care Hospital Beds Available,2015
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-25,Acute Care Hospital Beds in Use,7126
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.77
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-25,Total Acute Care Hospital Beds,9290
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-25,Percent of Available Acute Care Hospital Beds,0.23
-Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-25,Acute Care Hospital Beds Available,2164
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-22,Acute Care Hospital Beds in Use,84
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.59
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-22,Total Acute Care Hospital Beds,143
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-22,Percent of Available Acute Care Hospital Beds,0.41
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-22,Acute Care Hospital Beds Available,59
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-23,Acute Care Hospital Beds in Use,84
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.58
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-23,Total Acute Care Hospital Beds,144
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-23,Percent of Available Acute Care Hospital Beds,0.42
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-23,Acute Care Hospital Beds Available,60
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-24,Acute Care Hospital Beds in Use,85
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.59
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-24,Total Acute Care Hospital Beds,144
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-24,Percent of Available Acute Care Hospital Beds,0.41
+Hospital Data,Regional Level Actue Care,Regional Map,Central Mountains,2020-11-24,Acute Care Hospital Beds Available,59
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-26,Acute Care Hospital Beds in Use,7094
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.76
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-10-26,Total Acute Care Hospital Beds,9290
@@ -8159,21 +8219,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-21,Percent
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-21,Total Acute Care Hospital Beds,8640
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-21,Percent of Available Acute Care Hospital Beds,0.18
 Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-21,Acute Care Hospital Beds Available,1531
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-23,Acute Care Hospital Beds in Use,746
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.71
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-23,Total Acute Care Hospital Beds,1049
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-23,Percent of Available Acute Care Hospital Beds,0.29
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-23,Acute Care Hospital Beds Available,303
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-24,Acute Care Hospital Beds in Use,745
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.71
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-24,Total Acute Care Hospital Beds,1049
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-24,Percent of Available Acute Care Hospital Beds,0.29
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-24,Acute Care Hospital Beds Available,304
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-25,Acute Care Hospital Beds in Use,724
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.69
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-25,Total Acute Care Hospital Beds,1049
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-25,Percent of Available Acute Care Hospital Beds,0.31
-Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-25,Acute Care Hospital Beds Available,325
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-22,Acute Care Hospital Beds in Use,7020
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.81
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-22,Total Acute Care Hospital Beds,8685
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-22,Percent of Available Acute Care Hospital Beds,0.19
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-22,Acute Care Hospital Beds Available,1665
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-23,Acute Care Hospital Beds in Use,7047
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.81
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-23,Total Acute Care Hospital Beds,8684
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-23,Percent of Available Acute Care Hospital Beds,0.19
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-23,Acute Care Hospital Beds Available,1637
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-24,Acute Care Hospital Beds in Use,6686
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.8
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-24,Total Acute Care Hospital Beds,8313
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-24,Percent of Available Acute Care Hospital Beds,0.2
+Hospital Data,Regional Level Actue Care,Regional Map,Colorado,2020-11-24,Acute Care Hospital Beds Available,1627
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-26,Acute Care Hospital Beds in Use,728
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.69
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-10-26,Total Acute Care Hospital Beds,1049
@@ -8309,21 +8369,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-21,Total Acute Care Hospital Beds,1041
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-21,Percent of Available Acute Care Hospital Beds,0.27
 Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-21,Acute Care Hospital Beds Available,285
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-23,Acute Care Hospital Beds in Use,3780
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.87
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-23,Total Acute Care Hospital Beds,4357
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-23,Percent of Available Acute Care Hospital Beds,0.13
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-23,Acute Care Hospital Beds Available,577
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-24,Acute Care Hospital Beds in Use,3684
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.85
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-24,Total Acute Care Hospital Beds,4357
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-24,Percent of Available Acute Care Hospital Beds,0.15
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-24,Acute Care Hospital Beds Available,673
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-25,Acute Care Hospital Beds in Use,3637
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.83
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-25,Total Acute Care Hospital Beds,4357
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-25,Percent of Available Acute Care Hospital Beds,0.17
-Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-25,Acute Care Hospital Beds Available,720
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-22,Acute Care Hospital Beds in Use,764
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.73
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-22,Total Acute Care Hospital Beds,1047
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-22,Percent of Available Acute Care Hospital Beds,0.27
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-22,Acute Care Hospital Beds Available,283
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-23,Acute Care Hospital Beds in Use,773
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.74
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-23,Total Acute Care Hospital Beds,1049
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-23,Percent of Available Acute Care Hospital Beds,0.26
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-23,Acute Care Hospital Beds Available,276
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-24,Acute Care Hospital Beds in Use,790
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.75
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-24,Total Acute Care Hospital Beds,1047
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-24,Percent of Available Acute Care Hospital Beds,0.25
+Hospital Data,Regional Level Actue Care,Regional Map,Foothills,2020-11-24,Acute Care Hospital Beds Available,257
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-26,Acute Care Hospital Beds in Use,3600
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.83
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-10-26,Total Acute Care Hospital Beds,4357
@@ -8459,21 +8519,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-21,Total Acute Care Hospital Beds,4146
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-21,Percent of Available Acute Care Hospital Beds,0.14
 Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-21,Acute Care Hospital Beds Available,573
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-23,Acute Care Hospital Beds in Use,827
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.69
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-23,Total Acute Care Hospital Beds,1197
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-23,Percent of Available Acute Care Hospital Beds,0.31
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-23,Acute Care Hospital Beds Available,370
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-24,Acute Care Hospital Beds in Use,799
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.67
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-24,Total Acute Care Hospital Beds,1197
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-24,Percent of Available Acute Care Hospital Beds,0.33
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-24,Acute Care Hospital Beds Available,398
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-25,Acute Care Hospital Beds in Use,781
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.65
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-25,Total Acute Care Hospital Beds,1197
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-25,Percent of Available Acute Care Hospital Beds,0.35
-Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-25,Acute Care Hospital Beds Available,416
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-22,Acute Care Hospital Beds in Use,3459
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.83
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-22,Total Acute Care Hospital Beds,4146
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-22,Percent of Available Acute Care Hospital Beds,0.17
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-22,Acute Care Hospital Beds Available,687
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-23,Acute Care Hospital Beds in Use,3441
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.83
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-23,Total Acute Care Hospital Beds,4146
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-23,Percent of Available Acute Care Hospital Beds,0.17
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-23,Acute Care Hospital Beds Available,705
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-24,Acute Care Hospital Beds in Use,3442
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.83
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-24,Total Acute Care Hospital Beds,4130
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-24,Percent of Available Acute Care Hospital Beds,0.17
+Hospital Data,Regional Level Actue Care,Regional Map,Mile-High,2020-11-24,Acute Care Hospital Beds Available,688
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-26,Acute Care Hospital Beds in Use,769
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.64
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-10-26,Total Acute Care Hospital Beds,1197
@@ -8609,21 +8669,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-21,Total Acute Care Hospital Beds,1013
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-21,Percent of Available Acute Care Hospital Beds,0.11
 Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-21,Acute Care Hospital Beds Available,110
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-23,Acute Care Hospital Beds in Use,316
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.63
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-23,Total Acute Care Hospital Beds,500
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-23,Percent of Available Acute Care Hospital Beds,0.37
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-23,Acute Care Hospital Beds Available,184
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-24,Acute Care Hospital Beds in Use,308
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.62
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-24,Total Acute Care Hospital Beds,500
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-24,Percent of Available Acute Care Hospital Beds,0.38
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-24,Acute Care Hospital Beds Available,192
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-25,Acute Care Hospital Beds in Use,308
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.62
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-25,Total Acute Care Hospital Beds,500
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-25,Percent of Available Acute Care Hospital Beds,0.38
-Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-25,Acute Care Hospital Beds Available,192
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-22,Acute Care Hospital Beds in Use,926
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.88
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-22,Total Acute Care Hospital Beds,1049
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-22,Percent of Available Acute Care Hospital Beds,0.12
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-22,Acute Care Hospital Beds Available,123
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-23,Acute Care Hospital Beds in Use,936
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.89
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-23,Total Acute Care Hospital Beds,1049
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-23,Percent of Available Acute Care Hospital Beds,0.11
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-23,Acute Care Hospital Beds Available,113
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-24,Acute Care Hospital Beds in Use,891
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.85
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-24,Total Acute Care Hospital Beds,1049
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-24,Percent of Available Acute Care Hospital Beds,0.15
+Hospital Data,Regional Level Actue Care,Regional Map,Northeast,2020-11-24,Acute Care Hospital Beds Available,158
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-26,Acute Care Hospital Beds in Use,304
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.61
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-10-26,Total Acute Care Hospital Beds,500
@@ -8759,21 +8819,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-21,Total Acute Care Hospital Beds,503
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-21,Percent of Available Acute Care Hospital Beds,0.35
 Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-21,Acute Care Hospital Beds Available,174
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-23,Acute Care Hospital Beds in Use,1227
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.9
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-23,Total Acute Care Hospital Beds,1365
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-23,Percent of Available Acute Care Hospital Beds,0.1
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-23,Acute Care Hospital Beds Available,138
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-24,Acute Care Hospital Beds in Use,1212
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.89
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-24,Total Acute Care Hospital Beds,1365
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-24,Percent of Available Acute Care Hospital Beds,0.11
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-24,Acute Care Hospital Beds Available,153
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-25,Acute Care Hospital Beds in Use,1158
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.85
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-25,Total Acute Care Hospital Beds,1365
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-25,Percent of Available Acute Care Hospital Beds,0.15
-Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-25,Acute Care Hospital Beds Available,207
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-22,Acute Care Hospital Beds in Use,324
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.64
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-22,Total Acute Care Hospital Beds,503
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-22,Percent of Available Acute Care Hospital Beds,0.36
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-22,Acute Care Hospital Beds Available,179
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-23,Acute Care Hospital Beds in Use,333
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.65
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-23,Total Acute Care Hospital Beds,511
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-23,Percent of Available Acute Care Hospital Beds,0.35
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-23,Acute Care Hospital Beds Available,178
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-24,Acute Care Hospital Beds in Use,348
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.68
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-24,Total Acute Care Hospital Beds,511
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-24,Percent of Available Acute Care Hospital Beds,0.32
+Hospital Data,Regional Level Actue Care,Regional Map,Northwest,2020-11-24,Acute Care Hospital Beds Available,163
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-26,Acute Care Hospital Beds in Use,1154
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.85
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-10-26,Total Acute Care Hospital Beds,1365
@@ -8909,21 +8969,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-21,P
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-21,Total Acute Care Hospital Beds,1129
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-21,Percent of Available Acute Care Hospital Beds,0.16
 Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-21,Acute Care Hospital Beds Available,183
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-23,Acute Care Hospital Beds in Use,38
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.52
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-23,Total Acute Care Hospital Beds,73
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-23,Percent of Available Acute Care Hospital Beds,0.48
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-23,Acute Care Hospital Beds Available,35
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-24,Acute Care Hospital Beds in Use,43
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.59
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-24,Total Acute Care Hospital Beds,73
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-24,Percent of Available Acute Care Hospital Beds,0.41
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-24,Acute Care Hospital Beds Available,30
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-25,Acute Care Hospital Beds in Use,45
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.62
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-25,Total Acute Care Hospital Beds,73
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-25,Percent of Available Acute Care Hospital Beds,0.38
-Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-25,Acute Care Hospital Beds Available,28
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-22,Acute Care Hospital Beds in Use,974
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.86
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-22,Total Acute Care Hospital Beds,1132
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-22,Percent of Available Acute Care Hospital Beds,0.14
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-22,Acute Care Hospital Beds Available,158
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-23,Acute Care Hospital Beds in Use,1005
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.89
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-23,Total Acute Care Hospital Beds,1132
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-23,Percent of Available Acute Care Hospital Beds,0.11
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-23,Acute Care Hospital Beds Available,127
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-24,Acute Care Hospital Beds in Use,1014
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.9
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-24,Total Acute Care Hospital Beds,1132
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-24,Percent of Available Acute Care Hospital Beds,0.1
+Hospital Data,Regional Level Actue Care,Regional Map,Plains to Peak,2020-11-24,Acute Care Hospital Beds Available,118
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-26,Acute Care Hospital Beds in Use,43
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.59
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-10-26,Total Acute Care Hospital Beds,73
@@ -9059,21 +9119,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-21,
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-21,Total Acute Care Hospital Beds,66
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-21,Percent of Available Acute Care Hospital Beds,0.24
 Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-21,Acute Care Hospital Beds Available,16
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-23,Acute Care Hospital Beds in Use,243
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.79
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-23,Total Acute Care Hospital Beds,307
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-23,Percent of Available Acute Care Hospital Beds,0.21
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-23,Acute Care Hospital Beds Available,64
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-24,Acute Care Hospital Beds in Use,233
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.76
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-24,Total Acute Care Hospital Beds,307
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-24,Percent of Available Acute Care Hospital Beds,0.24
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-24,Acute Care Hospital Beds Available,74
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-25,Acute Care Hospital Beds in Use,222
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.72
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-25,Total Acute Care Hospital Beds,307
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-25,Percent of Available Acute Care Hospital Beds,0.28
-Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-25,Acute Care Hospital Beds Available,85
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-22,Acute Care Hospital Beds in Use,46
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.7
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-22,Total Acute Care Hospital Beds,66
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-22,Percent of Available Acute Care Hospital Beds,0.3
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-22,Acute Care Hospital Beds Available,20
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-23,Acute Care Hospital Beds in Use,46
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.7
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-23,Total Acute Care Hospital Beds,66
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-23,Percent of Available Acute Care Hospital Beds,0.3
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-23,Acute Care Hospital Beds Available,20
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-24,Acute Care Hospital Beds in Use,39
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.59
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-24,Total Acute Care Hospital Beds,66
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-24,Percent of Available Acute Care Hospital Beds,0.41
+Hospital Data,Regional Level Actue Care,Regional Map,San Luis Valley,2020-11-24,Acute Care Hospital Beds Available,27
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-26,Acute Care Hospital Beds in Use,231
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.75
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-10-26,Total Acute Care Hospital Beds,307
@@ -9209,21 +9269,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-21,Percent of
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-21,Total Acute Care Hospital Beds,317
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-21,Percent of Available Acute Care Hospital Beds,0.1
 Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-21,Acute Care Hospital Beds Available,31
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-23,Acute Care Hospital Beds in Use,26
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.4
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-23,Total Acute Care Hospital Beds,65
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-23,Percent of Available Acute Care Hospital Beds,0.6
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-23,Acute Care Hospital Beds Available,39
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-24,Acute Care Hospital Beds in Use,25
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.38
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-24,Total Acute Care Hospital Beds,65
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-24,Percent of Available Acute Care Hospital Beds,0.62
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-24,Acute Care Hospital Beds Available,40
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-25,Acute Care Hospital Beds in Use,25
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.38
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-25,Total Acute Care Hospital Beds,65
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-25,Percent of Available Acute Care Hospital Beds,0.62
-Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-25,Acute Care Hospital Beds Available,40
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-22,Acute Care Hospital Beds in Use,273
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.86
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-22,Total Acute Care Hospital Beds,317
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-22,Percent of Available Acute Care Hospital Beds,0.14
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-22,Acute Care Hospital Beds Available,44
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-23,Acute Care Hospital Beds in Use,273
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.86
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-23,Total Acute Care Hospital Beds,317
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-23,Percent of Available Acute Care Hospital Beds,0.14
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-23,Acute Care Hospital Beds Available,44
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-24,Acute Care Hospital Beds in Use,268
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.85
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-24,Total Acute Care Hospital Beds,317
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-24,Percent of Available Acute Care Hospital Beds,0.15
+Hospital Data,Regional Level Actue Care,Regional Map,South,2020-11-24,Acute Care Hospital Beds Available,49
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-26,Acute Care Hospital Beds in Use,31
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.48
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-10-26,Total Acute Care Hospital Beds,65
@@ -9359,21 +9419,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-21,Total Acute Care Hospital Beds,52
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-21,Percent of Available Acute Care Hospital Beds,0.54
 Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-21,Acute Care Hospital Beds Available,28
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-23,Acute Care Hospital Beds in Use,93
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.69
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-23,Total Acute Care Hospital Beds,134
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-23,Percent of Available Acute Care Hospital Beds,0.31
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-23,Acute Care Hospital Beds Available,41
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-24,Acute Care Hospital Beds in Use,75
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.56
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-24,Total Acute Care Hospital Beds,134
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-24,Percent of Available Acute Care Hospital Beds,0.44
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-24,Acute Care Hospital Beds Available,59
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-25,Acute Care Hospital Beds in Use,74
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.55
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-25,Total Acute Care Hospital Beds,134
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-25,Percent of Available Acute Care Hospital Beds,0.45
-Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-25,Acute Care Hospital Beds Available,60
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-22,Acute Care Hospital Beds in Use,22
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.42
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-22,Total Acute Care Hospital Beds,52
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-22,Percent of Available Acute Care Hospital Beds,0.58
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-22,Acute Care Hospital Beds Available,30
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-23,Acute Care Hospital Beds in Use,21
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.4
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-23,Total Acute Care Hospital Beds,52
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-23,Percent of Available Acute Care Hospital Beds,0.6
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-23,Acute Care Hospital Beds Available,31
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-24,Acute Care Hospital Beds in Use,29
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.57
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-24,Total Acute Care Hospital Beds,51
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-24,Percent of Available Acute Care Hospital Beds,0.43
+Hospital Data,Regional Level Actue Care,Regional Map,Southeast,2020-11-24,Acute Care Hospital Beds Available,22
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-26,Acute Care Hospital Beds in Use,84
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.63
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-10-26,Total Acute Care Hospital Beds,134
@@ -9509,21 +9569,21 @@ Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-21,Percen
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-21,Total Acute Care Hospital Beds,128
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-21,Percent of Available Acute Care Hospital Beds,0.34
 Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-21,Acute Care Hospital Beds Available,43
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-23,Acute Care Hospital Beds in Use,78
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-23,Percent of Acute Care Hospital Beds in Use,0.74
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-23,Total Acute Care Hospital Beds,105
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-23,Percent of Available Acute Care Hospital Beds,0.26
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-23,Acute Care Hospital Beds Available,27
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-24,Acute Care Hospital Beds in Use,78
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-24,Percent of Acute Care Hospital Beds in Use,0.74
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-24,Total Acute Care Hospital Beds,105
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-24,Percent of Available Acute Care Hospital Beds,0.26
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-24,Acute Care Hospital Beds Available,27
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-25,Acute Care Hospital Beds in Use,70
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-25,Percent of Acute Care Hospital Beds in Use,0.71
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-25,Total Acute Care Hospital Beds,98
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-25,Percent of Available Acute Care Hospital Beds,0.29
-Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-25,Acute Care Hospital Beds Available,28
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-22,Acute Care Hospital Beds in Use,82
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.64
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-22,Total Acute Care Hospital Beds,128
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-22,Percent of Available Acute Care Hospital Beds,0.36
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-22,Acute Care Hospital Beds Available,46
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-23,Acute Care Hospital Beds in Use,85
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.66
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-23,Total Acute Care Hospital Beds,128
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-23,Percent of Available Acute Care Hospital Beds,0.34
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-23,Acute Care Hospital Beds Available,43
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-24,Acute Care Hospital Beds in Use,58
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.55
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-24,Total Acute Care Hospital Beds,105
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-24,Percent of Available Acute Care Hospital Beds,0.45
+Hospital Data,Regional Level Actue Care,Regional Map,Southwest,2020-11-24,Acute Care Hospital Beds Available,47
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-26,Acute Care Hospital Beds in Use,68
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-26,Percent of Acute Care Hospital Beds in Use,0.69
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-10-26,Total Acute Care Hospital Beds,98
@@ -9659,42 +9719,57 @@ Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-21,Percent of 
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-21,Total Acute Care Hospital Beds,102
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-21,Percent of Available Acute Care Hospital Beds,0.3
 Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-21,Acute Care Hospital Beds Available,31
-Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Acute Care Beds in Use,5
-Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.04
-Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Total Acute Care Beds,-2
-Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Acute Care Beds in Use,-346
-Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.02
-Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Total Acute Care Beds,-657
-Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Acute Care Beds in Use,10
-Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.02
-Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Total Acute Care Beds,-8
-Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Acute Care Beds in Use,-207
-Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Percent of Available Acute Care Beds,0.01
-Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Total Acute Care Beds,-211
-Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Acute Care Beds in Use,76
-Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.2
-Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Total Acute Care Beds,-184
-Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Acute Care Beds in Use,13
-Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.02
-Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Total Acute Care Beds,3
-Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Acute Care Beds in Use,-281
-Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Percent of Available Acute Care Beds,0.06
-Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Total Acute Care Beds,-236
-Hospital Data,Regional Level Acute Care,Regional Map,San Luis Valley,NA,30 Day Difference in Acute Care Beds in Use,12
-Hospital Data,Regional Level Acute Care,Regional Map,San Luis Valley,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.24
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-22,Acute Care Hospital Beds in Use,66
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-22,Percent of Acute Care Hospital Beds in Use,0.65
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-22,Total Acute Care Hospital Beds,102
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-22,Percent of Available Acute Care Hospital Beds,0.35
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-22,Acute Care Hospital Beds Available,36
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-23,Acute Care Hospital Beds in Use,50
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-23,Percent of Acute Care Hospital Beds in Use,0.56
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-23,Total Acute Care Hospital Beds,90
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-23,Percent of Available Acute Care Hospital Beds,0.44
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-23,Acute Care Hospital Beds Available,40
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-24,Acute Care Hospital Beds in Use,39
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-24,Percent of Acute Care Hospital Beds in Use,0.5
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-24,Total Acute Care Hospital Beds,78
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-24,Percent of Available Acute Care Hospital Beds,0.5
+Hospital Data,Regional Level Actue Care,Regional Map,West,2020-11-24,Acute Care Hospital Beds Available,39
+Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Acute Care Beds in Use,3
+Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.02
+Hospital Data,Regional Level Acute Care,Regional Map,Central Mountains,NA,30 Day Difference in Total Acute Care Beds,-1
+Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Acute Care Beds in Use,-408
+Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.04
+Hospital Data,Regional Level Acute Care,Regional Map,Colorado,NA,30 Day Difference in Total Acute Care Beds,-977
+Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Acute Care Beds in Use,62
+Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.06
+Hospital Data,Regional Level Acute Care,Regional Map,Foothills,NA,30 Day Difference in Total Acute Care Beds,-2
+Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Acute Care Beds in Use,-158
+Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Percent of Available Acute Care Beds,0
+Hospital Data,Regional Level Acute Care,Regional Map,Mile-High,NA,30 Day Difference in Total Acute Care Beds,-227
+Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Acute Care Beds in Use,122
+Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.21
+Hospital Data,Regional Level Acute Care,Regional Map,Northeast,NA,30 Day Difference in Total Acute Care Beds,-148
+Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Acute Care Beds in Use,44
+Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.07
+Hospital Data,Regional Level Acute Care,Regional Map,Northwest,NA,30 Day Difference in Total Acute Care Beds,11
+Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Acute Care Beds in Use,-140
+Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.05
+Hospital Data,Regional Level Acute Care,Regional Map,Plains to Peak,NA,30 Day Difference in Total Acute Care Beds,-233
+Hospital Data,Regional Level Acute Care,Regional Map,San Luis Valley,NA,30 Day Difference in Acute Care Beds in Use,-4
+Hospital Data,Regional Level Acute Care,Regional Map,San Luis Valley,NA,30 Day Difference in Percent of Available Acute Care Beds,0
 Hospital Data,Regional Level Acute Care,Regional Map,San Luis Valley,NA,30 Day Difference in Total Acute Care Beds,-7
-Hospital Data,Regional Level Acute Care,Regional Map,South,NA,30 Day Difference in Acute Care Beds in Use,43
-Hospital Data,Regional Level Acute Care,Regional Map,South,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.11
+Hospital Data,Regional Level Acute Care,Regional Map,South,NA,30 Day Difference in Acute Care Beds in Use,37
+Hospital Data,Regional Level Acute Care,Regional Map,South,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.1
 Hospital Data,Regional Level Acute Care,Regional Map,South,NA,30 Day Difference in Total Acute Care Beds,10
 Hospital Data,Regional Level Acute Care,Regional Map,Southeast,NA,30 Day Difference in Acute Care Beds in Use,-2
-Hospital Data,Regional Level Acute Care,Regional Map,Southeast,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.06
-Hospital Data,Regional Level Acute Care,Regional Map,Southeast,NA,30 Day Difference in Total Acute Care Beds,-13
-Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Acute Care Beds in Use,-8
-Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Percent of Available Acute Care Beds,0.03
-Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Total Acute Care Beds,-6
-Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Acute Care Beds in Use,-7
-Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Percent of Available Acute Care Beds,0.04
-Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Total Acute Care Beds,-3
+Hospital Data,Regional Level Acute Care,Regional Map,Southeast,NA,30 Day Difference in Percent of Available Acute Care Beds,-0.09
+Hospital Data,Regional Level Acute Care,Regional Map,Southeast,NA,30 Day Difference in Total Acute Care Beds,-14
+Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Acute Care Beds in Use,-26
+Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Percent of Available Acute Care Beds,0.08
+Hospital Data,Regional Level Acute Care,Regional Map,Southwest,NA,30 Day Difference in Total Acute Care Beds,-29
+Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Acute Care Beds in Use,-29
+Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Percent of Available Acute Care Beds,0.19
+Hospital Data,Regional Level Acute Care,Regional Map,West,NA,30 Day Difference in Total Acute Care Beds,-20
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,Central Mountains,NA,Eagle,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,Central Mountains,NA,Summit,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,Central Mountains,NA,Park,NA
@@ -9759,7 +9834,7 @@ Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,Ouray,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,Hinsdale,NA
 Hospital Data,Regional Level ICU,Colorado RETACs and corresponding counties,West,NA,San Miguel,NA
-Hospital Data,Patient Level,Summary,Colorado,NA,Facilities Reporting Patient Data,0.75
+Hospital Data,Patient Level,Summary,Colorado,NA,Facilities Reporting Patient Data,0.76
 Hospital Data,Patient Level,Summary,Colorado,NA,Hospitalized Patients With Data,0.93
 Hospital Data,Patient Level,Summary,Colorado,NA,Patients Requiring Invasive Ventilators,0.16
 Hospital Data,Patient Level,Summary,Colorado,NA,Admitted to the ICU,0.28
@@ -9767,16 +9842,16 @@ Hospital Data,Patient Level,Summary,Colorado,NA,ICU Patients Died,0.17
 Hospital Data,Patient Level,Summary,Colorado,NA,Non-ICU Patients Died,0.05
 Hospital Data,Patient Level,Summary,Colorado,NA,Average Days Hospitalized Before Discharge,8
 Hospital Data,Patient Level,Summary,Colorado,NA,With a Reported Positive COVID-19 Test,0.92
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,0-9 Years,0.0109
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,10-19 Years,0.0197
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,0-9 Years,0.0107
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,10-19 Years,0.0191
 Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,20-29 Years,0.0638
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,30-39 Years,0.0894
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,40-49 Years,0.1248
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,50-59 Years,0.1837
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,60-69 Years,0.1967
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,70-79 Years,0.1699
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,30-39 Years,0.0891
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,40-49 Years,0.1236
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,50-59 Years,0.1826
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,60-69 Years,0.1975
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,70-79 Years,0.1725
 Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,80+ Years,0.1411
-Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,NA Years,3e-4
+Hospital Data,Patient Level,Hospital Admissions by Age Group,Colorado,NA,NA Years,2e-4
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-01,20-39,0.25
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-01,40-59,0.5
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-01,80+,0.25
@@ -9793,16 +9868,16 @@ Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-22,40-59,0.3245
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-22,60-79,0.4041
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-22,80+,0.1435
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,0-19,0.016
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,20-39,0.1324
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,40-59,0.3168
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,60-79,0.3971
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,80+,0.1377
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,0-19,0.0174
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,20-39,0.1322
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,40-59,0.3164
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,60-79,0.3965
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-03-29,80+,0.1375
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,0-19,0.016
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,20-39,0.1264
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,40-59,0.3296
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,60-79,0.384
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,80+,0.144
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,20-39,0.1262
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,40-59,0.3307
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,60-79,0.3834
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-05,80+,0.1438
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-12,0-19,0.0135
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-12,20-39,0.1568
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-04-12,40-59,0.3339
@@ -9833,11 +9908,11 @@ Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-17,40-59,0.3602
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-17,60-79,0.2682
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-17,80+,0.1418
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,0-19,0.0497
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,20-39,0.1823
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,40-59,0.3702
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,60-79,0.2707
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,80+,0.1271
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,0-19,0.0495
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,20-39,0.1813
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,40-59,0.3736
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,60-79,0.2692
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-24,80+,0.1264
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-31,0-19,0.0614
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-31,20-39,0.2018
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-05-31,40-59,0.2982
@@ -9944,28 +10019,32 @@ Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-18,40-59,0.2834
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-18,60-79,0.4415
 Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-18,80+,0.1355
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,0-19,0.0294
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,20-39,0.1258
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,40-59,0.281
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,60-79,0.4101
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,80+,0.1536
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,0-19,0.0264
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,20-39,0.133
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,40-59,0.2703
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,60-79,0.4055
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,80+,0.1648
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,0-19,0.032
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,20-39,0.1307
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,40-59,0.2623
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,60-79,0.4031
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,80+,0.1718
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,0-19,0.0259
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,20-39,0.1295
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,40-59,0.2707
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,60-79,0.3951
-Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,80+,0.1788
-Hospital Data,Patient Level,Hospital Admissions by Sex,Colorado,NA,Female,0.4733
-Hospital Data,Patient Level,Hospital Admissions by Sex,Colorado,NA,Male,0.5266
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,0-19,0.0293
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,20-39,0.1268
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,40-59,0.2829
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,60-79,0.4081
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-10-25,80+,0.1528
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,0-19,0.0263
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,20-39,0.1339
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,40-59,0.27
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,60-79,0.4061
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-01,80+,0.1636
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,0-19,0.0318
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,20-39,0.1299
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,40-59,0.2616
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,60-79,0.4042
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-08,80+,0.1726
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,0-19,0.0228
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,20-39,0.1389
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,40-59,0.2617
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,60-79,0.4101
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-15,80+,0.1665
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-22,20-39,0.1047
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-22,40-59,0.25
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-22,60-79,0.4884
+Hospital Data,Patient Level,Hospital Admissions by Age Group (weekly),Colorado,2020-11-22,80+,0.157
+Hospital Data,Patient Level,Hospital Admissions by Sex,Colorado,NA,Female,0.4729
+Hospital Data,Patient Level,Hospital Admissions by Sex,Colorado,NA,Male,0.5271
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-01,Female,0.75
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-01,Male,0.25
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-08,Female,0.54
@@ -9974,10 +10053,10 @@ Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-15,Male,0.5854
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-22,Female,0.4438
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-22,Male,0.5562
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-29,Female,0.4479
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-29,Male,0.5521
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-05,Female,0.4112
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-05,Male,0.5888
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-29,Female,0.4486
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-03-29,Male,0.5514
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-05,Female,0.4105
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-05,Male,0.5895
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-12,Female,0.4739
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-12,Male,0.5261
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-04-19,Female,0.4982
@@ -9990,8 +10069,8 @@ Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-10,Male,0.5207
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-17,Female,0.5096
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-17,Male,0.4904
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-24,Female,0.4475
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-24,Male,0.5525
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-24,Female,0.4505
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-24,Male,0.5495
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-31,Female,0.5351
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-05-31,Male,0.4649
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-06-07,Female,0.5233
@@ -10034,23 +10113,25 @@ Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-11,Male,0.5508
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-18,Female,0.462
 Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-18,Male,0.538
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-25,Female,0.469
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-25,Male,0.531
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-01,Female,0.4758
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-01,Male,0.5242
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-08,Female,0.4753
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-08,Male,0.5247
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-15,Female,0.4955
-Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-15,Male,0.5045
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-25,Female,0.4683
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-10-25,Male,0.5317
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-01,Female,0.4764
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-01,Male,0.5236
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-08,Female,0.4741
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-08,Male,0.5259
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-15,Female,0.4857
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-15,Male,0.5143
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-22,Female,0.4535
+Hospital Data,Patient Level,Hospital Admissions by Sex (weekly),Colorado,2020-11-22,Male,0.5465
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,American Indian or Alaskan Native,0.0097
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Asian,0.0293
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Black,0.0724
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,"Hispanic, All Races",0.3562
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,More than one Race,0.0026
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Other,0.0386
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Asian,0.0292
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Black,0.0725
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,"Hispanic, All Races",0.3529
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,More than one Race,0.0025
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Other,0.0381
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Pacific Islander or Native Hawaiian,0.0035
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Unknown,0.0316
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,White,0.4564
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,Unknown,0.0318
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity,Colorado,NA,White,0.46
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-01,Black,0.25
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-01,White,0.75
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-08,Black,0.02
@@ -10068,16 +10149,16 @@ Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Color
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-22,Other,0.103
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-22,Unknown,0.0187
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-22,White,0.468
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,Black,0.139
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,"Hispanic, All Races",0.2995
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,Other,0.0856
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,Black,0.1389
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,"Hispanic, All Races",0.3004
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,Other,0.0854
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,Unknown,0.0187
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,White,0.4572
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,Black,0.08
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,"Hispanic, All Races",0.3936
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,Other,0.1024
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-03-29,White,0.4566
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,Black,0.0799
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,"Hispanic, All Races",0.393
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,Other,0.1022
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,Unknown,0.0176
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,White,0.4064
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-05,White,0.4073
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-12,Black,0.0809
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-12,"Hispanic, All Races",0.4081
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-04-12,Other,0.0911
@@ -10108,11 +10189,11 @@ Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Color
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-17,Other,0.0996
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-17,Unknown,0.0192
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-17,White,0.3065
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Black,0.0387
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,"Hispanic, All Races",0.4088
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Other,0.116
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Unknown,0.0442
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,White,0.3923
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Black,0.0385
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,"Hispanic, All Races",0.4066
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Other,0.1154
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,Unknown,0.044
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-24,White,0.3956
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-31,Black,0.0789
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-31,"Hispanic, All Races",0.4912
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-05-31,Other,0.0702
@@ -10163,10 +10244,10 @@ Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Color
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-02,Other,0.0833
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-02,Unknown,0.0152
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-02,White,0.3864
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,Black,0.0678
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,Black,0.0763
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,"Hispanic, All Races",0.4831
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,Other,0.0424
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,Unknown,0.0593
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,Unknown,0.0508
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-09,White,0.3475
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-16,Black,0.0708
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-08-16,"Hispanic, All Races",0.3982
@@ -10218,32 +10299,37 @@ Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Color
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-18,Other,0.0862
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-18,Unknown,0.0452
 Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-18,White,0.501
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Black,0.0408
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,"Hispanic, All Races",0.2941
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Other,0.0817
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Unknown,0.0458
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,White,0.5376
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Black,0.0407
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,"Hispanic, All Races",0.3264
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Other,0.0703
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Unknown,0.0418
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,White,0.5209
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Black,0.0494
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,"Hispanic, All Races",0.2952
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Other,0.0658
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Unknown,0.0448
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,White,0.5448
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Black,0.0415
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,"Hispanic, All Races",0.2707
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Other,0.0687
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Unknown,0.0622
-Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,White,0.557
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Another Hospital,0.0333
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Died,0.0853
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Home,0.6461
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Long Term Acute Care,0.0129
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Other,0.1591
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Skilled Nursing Facility,0.0728
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Black,0.0407
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,"Hispanic, All Races",0.2959
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Other,0.0813
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,Unknown,0.0455
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-10-25,White,0.5366
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Black,0.0417
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,"Hispanic, All Races",0.3271
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Other,0.0692
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,Unknown,0.0406
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-01,White,0.5214
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Black,0.05
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,"Hispanic, All Races",0.2961
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Other,0.0663
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,Unknown,0.0427
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-08,White,0.545
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Black,0.0485
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,"Hispanic, All Races",0.2664
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Other,0.0723
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,Unknown,0.0618
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-15,White,0.5509
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-22,Black,0.0698
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-22,"Hispanic, All Races",0.2733
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-22,Other,0.0465
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-22,Unknown,0.0349
+Hospital Data,Patient Level,Hospital Admissions by Race/Ethnicity (weekly),Colorado,2020-11-22,White,0.5756
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Another Hospital,0.0334
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Died,0.0848
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Home,0.6476
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Long Term Acute Care,0.0127
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Other,0.1593
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients,Colorado,NA,Skilled Nursing Facility,0.0716
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-01,Died,0.25
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-01,Home,0.25
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-01,Long Term Acute Care,0.25
@@ -10266,18 +10352,18 @@ Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Col
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-22,Long Term Acute Care,0.0125
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-22,Other,0.0499
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-22,Skilled Nursing Facility,0.0484
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Another Hospital,0.0602
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Died,0.135
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Home,0.6751
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Another Hospital,0.0601
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Died,0.1348
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Home,0.6756
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Long Term Acute Care,0.0174
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Other,0.0468
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Skilled Nursing Facility,0.0655
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Another Hospital,0.064
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Died,0.1472
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Home,0.6096
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Other,0.0467
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-03-29,Skilled Nursing Facility,0.0654
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Another Hospital,0.0639
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Died,0.147
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Home,0.6086
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Long Term Acute Care,0.0208
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Other,0.0832
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Skilled Nursing Facility,0.0752
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Other,0.0847
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-05,Skilled Nursing Facility,0.0751
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-12,Another Hospital,0.0388
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-12,Died,0.1147
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-04-12,Home,0.6206
@@ -10314,12 +10400,12 @@ Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Col
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-17,Long Term Acute Care,0.0038
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-17,Other,0.0496
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-17,Skilled Nursing Facility,0.0992
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Another Hospital,0.022
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Died,0.1154
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Home,0.6484
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Long Term Acute Care,0.022
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Other,0.0769
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Skilled Nursing Facility,0.1154
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Another Hospital,0.0219
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Died,0.1148
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Home,0.6448
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Long Term Acute Care,0.0219
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Other,0.082
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-24,Skilled Nursing Facility,0.1148
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-31,Another Hospital,0.0435
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-31,Died,0.0522
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-05-31,Home,0.7478
@@ -10338,9 +10424,9 @@ Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Col
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-14,Other,0.0928
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-14,Skilled Nursing Facility,0.0515
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Died,0.0286
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Home,0.781
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Home,0.7905
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Long Term Acute Care,0.0095
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Other,0.0857
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Other,0.0762
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-21,Skilled Nursing Facility,0.0952
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-28,Another Hospital,0.0161
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-06-28,Died,0.1129
@@ -10439,30 +10525,35 @@ Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Col
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-11,Skilled Nursing Facility,0.0491
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Another Hospital,0.0308
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Died,0.0862
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Home,0.7125
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Home,0.7187
 Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Long Term Acute Care,0.0062
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Other,0.1006
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Skilled Nursing Facility,0.0637
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Another Hospital,0.0326
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Died,0.0881
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Home,0.6623
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Long Term Acute Care,0.0163
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Other,0.124
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Skilled Nursing Facility,0.0767
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Another Hospital,0.0186
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Died,0.0461
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Home,0.6623
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Long Term Acute Care,0.0044
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Other,0.2029
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Skilled Nursing Facility,0.0658
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Another Hospital,0.0155
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Died,0.0356
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Home,0.5725
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Long Term Acute Care,0.0018
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Other,0.34
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Skilled Nursing Facility,0.0346
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Another Hospital,0.009
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Died,0.0155
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Home,0.1964
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Other,0.7726
-Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Skilled Nursing Facility,0.0065
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Other,0.0924
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-18,Skilled Nursing Facility,0.0657
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Another Hospital,0.0341
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Died,0.0909
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Home,0.6607
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Long Term Acute Care,0.0162
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Other,0.1201
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-10-25,Skilled Nursing Facility,0.0779
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Another Hospital,0.0208
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Died,0.0559
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Home,0.6692
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Long Term Acute Care,0.0055
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Other,0.1742
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-01,Skilled Nursing Facility,0.0745
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Another Hospital,0.019
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Died,0.0435
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Home,0.6168
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Long Term Acute Care,0.0036
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Other,0.279
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-08,Skilled Nursing Facility,0.038
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Another Hospital,0.0152
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Died,0.0228
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Home,0.3751
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Long Term Acute Care,9e-4
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Other,0.5764
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-15,Skilled Nursing Facility,0.0095
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-22,Another Hospital,0.0058
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-22,Died,0.0058
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-22,Home,0.0465
+Hospital Data,Patient Level,Post-Hospitalization Status of Patients (weekly),Colorado,2020-11-22,Other,0.9419
