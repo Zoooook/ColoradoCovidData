@@ -92,6 +92,7 @@ with open(hospitalFilename) as file:
             data[row[5]][row[4]] = int(row[6])
 
 dates = sorted(list(set(data['Cumulative COVID-19 Cases in Colorado by Date of Illness Onset']) | set(data['Cumulative COVID-19 Cases in Colorado by Date Reported to the State'])))
+dates = dates[dates.index('2020-03-01'):]
 if hospitalFilename[22:32] < dates[-1]:
     print('Update hospital data')
     exit()
