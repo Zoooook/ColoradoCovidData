@@ -53,34 +53,34 @@ def formatDate(date):
 response = urlopen('https://opendata.arcgis.com/datasets/331ca20801e545c7a656158aaad6f8af_0.csv')
 stateData = reader(iterdecode(response, 'utf-8'))
 for row in stateData:
-    if row[2] in fields:
-        data[row[2]][formatDate(row[3])] = int(row[5])
+    if row[3] in fields:
+        data[row[3]][formatDate(row[4])] = int(row[6])
 print()
 
 response = urlopen('https://opendata.arcgis.com/datasets/52fb11a8a07f49c1b28335a9de9ba99f_0.csv')
 countyData = reader(iterdecode(response, 'utf-8'))
 for row in countyData:
-    if row[1] not in counties and row[1] not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
-        row[1] = 'Other'
-    if row[5] == 'Cases of COVID-19 in Colorado by County' and row[6] == 'Deaths': # errors in the data
-        row[5] = 'Deaths Among COVID-19 Cases in Colorado by County'
-    key = row[1] + ' ' + row[5]
-    date = formatDate(row[9])
+    if row[2] not in counties and row[2] not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
+        row[2] = 'Other'
+    if row[6] == 'Cases of COVID-19 in Colorado by County' and row[7] == 'Deaths': # errors in the data
+        row[6] = 'Deaths Among COVID-19 Cases in Colorado by County'
+    key = row[2] + ' ' + row[6]
+    date = formatDate(row[10])
 
-    if row[1] in counties and key in fields and row[6] not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
+    if row[2] in counties and key in fields and row[7] not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
         if date not in data[key]:
             data[key][date] = 0
-        data[key][date] += int(row[7])
+        data[key][date] += int(row[8])
 
 response = urlopen('https://opendata.arcgis.com/datasets/ca2c4b063f494506a1047d9783789ef7_0.csv')
 testingData = reader(iterdecode(response, 'utf-8'))
 key = 'Cumulative People Tested at Lab'
 for row in testingData:
-    if row[2] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[4] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
-        date = formatDate(row[3])
+    if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
+        date = formatDate(row[2])
         if date not in data[key]:
             data[key][date] = 0
-        data[key][date] += int(row[5])
+        data[key][date] += int(row[4])
 
 for filename in listdir():
     if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
