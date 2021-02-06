@@ -102,6 +102,23 @@ for row in stateData:
     if field in stateFields:
         data['Colorado'][fieldMap[field]][formatDate(row[4])] = int(row[6])
 
+dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
+
+# https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
+for filename in listdir():
+    if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
+        hospitalFilename = filename
+if hospitalFilename[22:32] < dates[-1]:
+    print('\nUpdate hospital data')
+    exit()
+with open(hospitalFilename) as file:
+    hospitalData = reader(file)
+    print('Processing hospital data', flush=True)
+    for row in hospitalData:
+        field = row[5]
+        if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and field in stateFields:
+            data['Colorado'][fieldMap[field]][row[4]] = int(row[6])
+
 print('Getting county data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
@@ -137,23 +154,6 @@ for row in testingData:
         if date not in data['Colorado'][fieldMap[field]]:
             data['Colorado'][fieldMap[field]][date] = 0
         data['Colorado'][fieldMap[field]][date] += int(row[4])
-
-# https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
-for filename in listdir():
-    if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
-        hospitalFilename = filename
-with open(hospitalFilename) as file:
-    hospitalData = reader(file)
-    print('Processing hospital data', flush=True)
-    for row in hospitalData:
-        field = row[5]
-        if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and field in stateFields:
-            data['Colorado'][fieldMap[field]][row[4]] = int(row[6])
-
-dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
-if hospitalFilename[22:32] < dates[-1]:
-    print('Update hospital data')
-    exit()
 
 tsvData = '\t'.join(headers) + '\n'
 
