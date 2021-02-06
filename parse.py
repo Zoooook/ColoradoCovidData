@@ -4,6 +4,8 @@ from csv import reader
 from os import listdir
 
 fieldMap = {
+    'People Immunized with One Dose'                                     : 'First Dose',
+    'People Immunized with Two Doses'                                    : 'Second Dose',
     'Confirmed COVID-19'                                                 : 'Confirmed',
     'COVID-19 Persons Under Investigation'                               : 'Under Investigation',
     'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset'     : 'Cases by Onset',
@@ -14,25 +16,28 @@ fieldMap = {
     'Deaths Among COVID-19 Cases in Colorado by County'                  : 'Deaths',
     'Total COVID-19 Tests Performed in Colorado by County'               : 'Tests',
 }
-fields = ['Cases', 'Deaths', 'Tests']
-stateFields = list(fieldMap)[:6]
-countyFields = list(fieldMap)[6:]
+stateFields = list(fieldMap)[:8]
+countyFields = list(fieldMap)[8:]
 
 data = {
     'Colorado': {
-        'Confirmed': {},
+        'First Dose'         : {},
+        'Second Dose'        : {},
+        'Confirmed'          : {},
         'Under Investigation': {},
-        'Cases by Onset': {},
-        'Cases': {},
-        'Deaths': {},
-        'Tests': {},
+        'Cases by Onset'     : {},
+        'Cases'              : {},
+        'Deaths'             : {},
+        'Tests'              : {},
     }
 }
 
 headers = [
-    'Date',
-    'Confirmed Cases',
-    'Under Investigation',
+    'Date'                    ,
+    'First Dose'              , '', '%       ',
+    'Second Dose'             , '', '%       ',
+    'Confirmed Cases'         ,
+    'Under Investigation'     ,
     'by date of illness onset', '       ',
     'by date reported'        , '',
     'by date of death'        , '',
@@ -41,52 +46,41 @@ headers = [
 ]
 
 counties = {
-    'Denver': {},
-    'El Paso': {},
-    'Arapahoe': {},
-    'Jefferson': {},
-    'Adams': {},
-    'Larimer': {},
-    'Douglas': {},
-    'Boulder': {},
-    'Weld': {},
-    'Pueblo': {},
-    'Mesa': {},
+    'Denver'    : {},
+    'El Paso'   : {},
+    'Arapahoe'  : {},
+    'Jefferson' : {},
+    'Adams'     : {},
+    'Larimer'   : {},
+    'Douglas'   : {},
+    'Boulder'   : {},
+    'Weld'      : {},
+    'Pueblo'    : {},
+    'Mesa'      : {},
     'Broomfield': {},
-    'Other': {},
+    'Other'     : {},
 }
 
 for county in counties:
     data[county] = {
-        'Cases': {},
+        'Cases' : {},
         'Deaths': {},
-        'Tests': {},
+        'Tests' : {},
     }
 
-headers.extend(['Cases', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Weekly Cases', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Deaths', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Weekly Deaths', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Tests', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Weekly Tests', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Positive %', 'Colorado'])
-for county in counties:
-    headers.extend([county])
-headers.extend(['Weekly Positive %', 'Colorado'])
-for county in counties:
-    headers.extend([county])
+def extendHeaders(titles):
+    headers.extend(titles)
+    for county in counties:
+        headers.extend([county])
+
+extendHeaders(['Cases'            , 'Colorado'])
+extendHeaders(['Weekly Cases'     , 'Colorado'])
+extendHeaders(['Deaths'           , 'Colorado'])
+extendHeaders(['Weekly Deaths'    , 'Colorado'])
+extendHeaders(['Tests'            , 'Colorado'])
+extendHeaders(['Weekly Tests'     , 'Colorado'])
+extendHeaders(['Positive %'       , 'Colorado'])
+extendHeaders(['Weekly Positive %', 'Colorado'])
 
 def formatDate(date):
     return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
@@ -119,6 +113,32 @@ with open(hospitalFilename) as file:
         if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and field in stateFields:
             data['Colorado'][fieldMap[field]][row[4]] = int(row[6])
 
+print('Getting vaccine data', flush=True)
+# CDPHE COVID19 Vaccine Daily Summary Statistics
+# https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-vaccine-daily-summary-statistics
+response = urlopen('https://opendata.arcgis.com/datasets/74c39c7b7b834352b62299c68cf19e0c_0.csv')
+vaccineData = reader(iterdecode(response, 'utf-8'))
+print('Processing vaccine data', flush=True)
+for row in vaccineData:
+    field = row[3]
+    if row[1] == 'State Data' and row[2] == 'Cumulative counts to date' and field in stateFields:
+        data['Colorado'][fieldMap[field]][formatDate(row[7])] = int(row[6])
+
+
+print('Getting testing data', flush=True)
+# COVID19 Positivity Data from Clinical Laboratories
+# https://data-cdphe.opendata.arcgis.com/datasets/-covid19-positivity-data-from-clinical-laboratories
+response = urlopen('https://opendata.arcgis.com/datasets/51839032444c40a9b4430b4d6a37a6d3_0.csv')
+testingData = reader(iterdecode(response, 'utf-8'))
+print('Processing testing data', flush=True)
+field = 'Cumulative People Tested at Lab'
+for row in testingData:
+    if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
+        date = formatDate(row[2])
+        if date not in data['Colorado'][fieldMap[field]]:
+            data['Colorado'][fieldMap[field]][date] = 0
+        data['Colorado'][fieldMap[field]][date] += int(row[4])
+
 print('Getting county data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
@@ -140,20 +160,6 @@ for row in countyData:
         if date not in data[county][fieldMap[field]]:
             data[county][fieldMap[field]][date] = 0
         data[county][fieldMap[field]][date] += int(row[8])
-
-print('Getting testing data', flush=True)
-# COVID19 Positivity Data from Clinical Laboratories
-# https://data-cdphe.opendata.arcgis.com/datasets/-covid19-positivity-data-from-clinical-laboratories
-response = urlopen('https://opendata.arcgis.com/datasets/51839032444c40a9b4430b4d6a37a6d3_0.csv')
-testingData = reader(iterdecode(response, 'utf-8'))
-print('Processing testing data', flush=True)
-field = 'Cumulative People Tested at Lab'
-for row in testingData:
-    if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
-        date = formatDate(row[2])
-        if date not in data['Colorado'][fieldMap[field]]:
-            data['Colorado'][fieldMap[field]][date] = 0
-        data['Colorado'][fieldMap[field]][date] += int(row[4])
 
 tsvData = '\t'.join(headers) + '\n'
 
@@ -203,6 +209,13 @@ for i in range(len(dates)):
         continue
 
     row = date + '\t'
+
+    for field in ['First Dose', 'Second Dose']:
+        row += str(daily('Colorado', field, i)) + '\t' + strRound(weekly('Colorado', field, i)) + '\t'
+        if date in data['Colorado'][field]:
+            row += str(round(100 * data['Colorado'][field][date] / 5763976, 3))
+        row += '\t'
+
     if date in data['Colorado']['Confirmed']:
         row += str(data['Colorado']['Confirmed'][date])
     row += '\t'
@@ -210,7 +223,7 @@ for i in range(len(dates)):
         row += str(data['Colorado']['Under Investigation'][date])
     row += '\t'
 
-    for field in ['Cases by Onset'] + fields:
+    for field in ['Cases by Onset', 'Cases', 'Deaths', 'Tests']:
         row += str(daily('Colorado', field, i)) + '\t' + strRound(weekly('Colorado', field, i)) + '\t'
 
     if daily ('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
@@ -226,7 +239,7 @@ for i in range(len(dates)):
             row += '0'
     row += '\t'
 
-    for field in fields:
+    for field in ['Cases', 'Deaths', 'Tests']:
         row += '\t'
         for region in ['Colorado'] + list(counties):
             row += str(daily(region, field, i)) + '\t'
