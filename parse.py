@@ -157,73 +157,102 @@ for row in testingData:
 
 tsvData = '\t'.join(headers) + '\n'
 
-def getDaily(region, field, i):
+def daily(region, field, i):
+    if dates[i] not in data[region][field]:
+        return ''
+
     today = data[region][field][dates[i]]
-    if i > 0:
+    if i > 0 and dates[i-1] in data[region][field]:
         yesterday = data[region][field][dates[i-1]]
     else:
         yesterday = 0
     return max(0, today - yesterday)
 
-def getWeekly(region, field, i):
+def weekly(region, field, i):
+    if dates[i] not in data[region][field]:
+        return ''
+
     today = data[region][field][dates[i]]
-    if i > 6:
+    if i > 6 and dates[i-7] in data[region][field]:
         lastweek = data[region][field][dates[i-7]]
     else:
         lastweek = 0
     return max(0, today - lastweek)
 
-print('Building output', flush=True)
+def strRound(num):
+    if num == '':
+        return ''
+
+    return str(round(num/7, 3))
+
+print('Building output\n', flush=True)
 
 for i in range(len(dates)):
     date = dates[i]
 
-    for field in stateFields:
-        if date not in data['Colorado'][fieldMap[field]]:
-            data['Colorado'][fieldMap[field]][date] = 0
-    for field in countyFields:
-        for county in counties:
-            if date not in data[county][fieldMap[field]]:
-                data[county][fieldMap[field]][date] = 0
+    if i>0:
+        for field in stateFields:
+            if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
+                data['Colorado'][fieldMap[field]][date] = 0
+        for field in countyFields:
+            for county in counties:
+                if date not in data[county][fieldMap[field]] and dates[i-1] in data[county][fieldMap[field]]:
+                    data[county][fieldMap[field]][date] = 0
 
     if i < dates.index('2020-03-01'):
         continue
 
     row = date + '\t'
-    row += str(data['Colorado']['Confirmed'][date]) + '\t'
-    row += str(data['Colorado']['Under Investigation'][date]) + '\t'
+    if date in data['Colorado']['Confirmed']:
+        row += str(data['Colorado']['Confirmed'][date])
+    row += '\t'
+    if date in data['Colorado']['Under Investigation']:
+        row += str(data['Colorado']['Under Investigation'][date])
+    row += '\t'
 
     for field in ['Cases by Onset'] + fields:
-        row += str(getDaily('Colorado', field, i)) + '\t' + str(round(getWeekly('Colorado', field, i) / 7, 3)) + '\t'
+        row += str(daily('Colorado', field, i)) + '\t' + strRound(weekly('Colorado', field, i)) + '\t'
 
-    if getDaily('Colorado', 'Tests', i) > 0:
-        row += str(round(100 * getDaily('Colorado', 'Cases', i) / getDaily('Colorado', 'Tests', i) , 3))
+    if daily ('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
+        if daily('Colorado', 'Cases', i) != '':
+            row += str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3))
+        else:
+            row += '0'
     row += '\t'
-    if getWeekly('Colorado', 'Tests', i) > 0:
-        row += str(round(100 * getWeekly('Colorado', 'Cases', i) / getWeekly('Colorado', 'Tests', i), 3))
+    if weekly('Colorado', 'Tests', i) != '' and weekly('Colorado', 'Tests', i) > 0:
+        if weekly('Colorado', 'Cases', i) != '':
+            row += str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3))
+        else:
+            row += '0'
     row += '\t'
 
     for field in fields:
         row += '\t'
         for region in ['Colorado'] + list(counties):
-            row += str(getDaily(region, field, i)) + '\t'
+            row += str(daily(region, field, i)) + '\t'
         row += '\t'
         for region in ['Colorado'] + list(counties):
-            row += str(round(getWeekly(region, field, i) / 7, 3)) + '\t'
+            row += strRound(weekly(region, field, i)) + '\t'
 
     row += '\t'
     for region in ['Colorado'] + list(counties):
-        if getDaily(region, 'Tests', i) > 0:
-            row += str(round(100 * getDaily(region, 'Cases', i) / getDaily(region, 'Tests', i) , 3))
+        if daily(region, 'Tests', i) != '' and daily(region, 'Tests', i) > 0:
+            if daily(region, 'Cases', i) != '':
+                row += str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3))
+            else:
+                row += '0'
         row += '\t'
     row += '\t'
     for region in ['Colorado'] + list(counties):
-        if getWeekly(region, 'Tests', i) > 0:
-            row += str(round(100 * getWeekly(region, 'Cases', i) / getWeekly(region, 'Tests', i), 3))
+        if weekly(region, 'Tests', i) != '' and weekly(region, 'Tests', i) > 0:
+            if weekly(region, 'Cases', i) != '':
+                row += str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3))
+            else:
+                row += '0'
         row += '\t'
 
     tsvData += row[:-1] + '\n'
 
 with open('data.tsv', 'w') as newFile:
     newFile.write(tsvData)
-print('\n' + dates[-1])
+print(dates[-1])
