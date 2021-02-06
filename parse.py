@@ -50,15 +50,18 @@ fields = list(data)
 def formatDate(date):
     return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
-response = urlopen('https://opendata.arcgis.com/datasets/331ca20801e545c7a656158aaad6f8af_0.csv')
+print('\nGetting state data', flush=True)
+response = urlopen('https://opendata.arcgis.com/datasets/20f9abcce0ed4a6c85a04cf14182f6a5_0.csv')
 stateData = reader(iterdecode(response, 'utf-8'))
+print('Processing state data', flush=True)
 for row in stateData:
     if row[3] in fields:
         data[row[3]][formatDate(row[4])] = int(row[6])
-print()
 
-response = urlopen('https://opendata.arcgis.com/datasets/52fb11a8a07f49c1b28335a9de9ba99f_0.csv')
+print('Getting county data', flush=True)
+response = urlopen('https://opendata.arcgis.com/datasets/890ee7d8bb42419bb745c03eb76a2ba5_0.csv')
 countyData = reader(iterdecode(response, 'utf-8'))
+print('Processing county data', flush=True)
 for row in countyData:
     if row[2] not in counties and row[2] not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
         row[2] = 'Other'
@@ -72,8 +75,10 @@ for row in countyData:
             data[key][date] = 0
         data[key][date] += int(row[8])
 
-response = urlopen('https://opendata.arcgis.com/datasets/ca2c4b063f494506a1047d9783789ef7_0.csv')
+print('Getting testing data', flush=True)
+response = urlopen('https://opendata.arcgis.com/datasets/51839032444c40a9b4430b4d6a37a6d3_0.csv')
 testingData = reader(iterdecode(response, 'utf-8'))
+print('Processing testing data', flush=True)
 key = 'Cumulative People Tested at Lab'
 for row in testingData:
     if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
@@ -87,6 +92,7 @@ for filename in listdir():
         hospitalFilename = filename
 with open(hospitalFilename) as file:
     hospitalData = reader(file)
+    print('Processing hospital data', flush=True)
     for row in hospitalData:
         if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and row[5] in fields:
             data[row[5]][row[4]] = int(row[6])
@@ -96,10 +102,10 @@ dates = dates[dates.index('2020-03-01'):]
 if hospitalFilename[22:32] < dates[-1]:
     print('Update hospital data')
     exit()
-print(dates[-1])
 
 tsvData = '\t'.join(headers) + '\n'
 
+print('Building output', flush=True)
 ratio = {}
 for i in range(len(dates)):
     date = dates[i]
@@ -184,3 +190,4 @@ for i in range(len(dates)):
 
 with open('data.tsv', 'w') as newFile:
     newFile.write(tsvData)
+print('\n' + dates[-1])
