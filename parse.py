@@ -143,7 +143,7 @@ for row in testingData:
 print('Getting    county   data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
-response = urlopen('https://opendata.arcgis.com/datasets/890ee7d8bb42419bb745c03eb76a2ba5_0.csv')
+response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
 countyData = reader(iterdecode(response, 'utf-8'))
 print('Processing county   data', flush=True)
 for row in countyData:
