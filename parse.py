@@ -85,19 +85,19 @@ extendHeaders(['Weekly Positive %', 'Colorado'])
 def formatDate(date):
     return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
-print('\nGetting state data', flush=True)
+print('\nGetting    state    data', flush=True)
 # CDPHE COVID19 State-Level Expanded Case Data
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-state-level-expanded-case-data
 response = urlopen('https://opendata.arcgis.com/datasets/3421410bd96549538517b438d24be4da_0.csv')
 stateData = reader(iterdecode(response, 'utf-8'))
-print('Processing state data', flush=True)
+print('Processing state    data', flush=True)
 for row in stateData:
     field = row[3]
     if field in stateFields:
         data['Colorado'][fieldMap[field]][formatDate(row[4])] = int(row[6])
 
 dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
-print('Data is available through', dates[-1])
+print('\nData is available through', dates[-1], '\n')
 
 # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
 for filename in listdir():
@@ -114,24 +114,24 @@ with open(hospitalFilename) as file:
         if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and field in stateFields:
             data['Colorado'][fieldMap[field]][row[4]] = int(row[6])
 
-print('Getting vaccine data', flush=True)
+print('Getting    vaccine  data', flush=True)
 # CDPHE COVID19 Vaccine Daily Summary Statistics
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-vaccine-daily-summary-statistics
 response = urlopen('https://opendata.arcgis.com/datasets/74c39c7b7b834352b62299c68cf19e0c_0.csv')
 vaccineData = reader(iterdecode(response, 'utf-8'))
-print('Processing vaccine data', flush=True)
+print('Processing vaccine  data', flush=True)
 for row in vaccineData:
     field = row[3]
     if row[1] == 'State Data' and row[2] == 'Cumulative counts to date' and field in stateFields:
         data['Colorado'][fieldMap[field]][formatDate(row[7])] = int(row[6])
 
 
-print('Getting testing data', flush=True)
+print('Getting    testing  data', flush=True)
 # COVID19 Positivity Data from Clinical Laboratories
 # https://data-cdphe.opendata.arcgis.com/datasets/-covid19-positivity-data-from-clinical-laboratories
 response = urlopen('https://opendata.arcgis.com/datasets/51839032444c40a9b4430b4d6a37a6d3_0.csv')
 testingData = reader(iterdecode(response, 'utf-8'))
-print('Processing testing data', flush=True)
+print('Processing testing  data', flush=True)
 field = 'Cumulative People Tested at Lab'
 for row in testingData:
     if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
@@ -140,12 +140,12 @@ for row in testingData:
             data['Colorado'][fieldMap[field]][date] = 0
         data['Colorado'][fieldMap[field]][date] += int(row[4])
 
-print('Getting county data', flush=True)
+print('Getting    county   data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
 response = urlopen('https://opendata.arcgis.com/datasets/890ee7d8bb42419bb745c03eb76a2ba5_0.csv')
 countyData = reader(iterdecode(response, 'utf-8'))
-print('Processing county data', flush=True)
+print('Processing county   data', flush=True)
 for row in countyData:
     county = row[2]
     if county not in counties and county not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
@@ -192,7 +192,7 @@ def strRound(num):
 
     return str(round(num/7, 3))
 
-print('Building output', flush=True)
+print('\nBuilding output', flush=True)
 
 for i in range(len(dates)):
     date = dates[i]
