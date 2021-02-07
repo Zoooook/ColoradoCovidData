@@ -92,9 +92,12 @@ response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2
 stateData = reader(iterdecode(response, 'utf-8'))
 print('Processing state    data', flush=True)
 for row in stateData:
-    field = row[2]
-    if field in stateFields:
-        data['Colorado'][fieldMap[field]][formatDate(row[3])] = int(row[5])
+    description = row[2]
+    date        = row[3]
+    value       = row[5]
+
+    if description in stateFields:
+        data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
 
 dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
 print('\nData is available through', dates[-1], '\n')
@@ -104,15 +107,21 @@ for filename in listdir():
     if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
         hospitalFilename = filename
 if hospitalFilename[22:32] < dates[-1]:
-    print('\nUpdate hospital data')
+    print('Update hospital data')
     exit()
 with open(hospitalFilename) as file:
     hospitalData = reader(file)
     print('Processing hospital data', flush=True)
     for row in hospitalData:
-        field = row[5]
-        if row[1] == 'Hospital Level' and row[2] == 'Currently Hospitalized' and row[3] == 'Colorado' and field in stateFields:
-            data['Colorado'][fieldMap[field]][row[4]] = int(row[6])
+        category    = row[1]
+        description = row[2]
+        region      = row[3]
+        date        = row[4]
+        metric      = row[5]
+        value       = row[6]
+
+        if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
+            data['Colorado'][fieldMap[metric]][date] = int(value)
 
 print('Getting    vaccine  data', flush=True)
 # CDPHE COVID19 Vaccine Daily Summary Statistics
@@ -121,9 +130,14 @@ response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb
 vaccineData = reader(iterdecode(response, 'utf-8'))
 print('Processing vaccine  data', flush=True)
 for row in vaccineData:
-    field = row[3]
-    if row[1] == 'State Data' and row[2] == 'Cumulative counts to date' and field in stateFields:
-        data['Colorado'][fieldMap[field]][formatDate(row[7])] = int(row[6])
+    section      = row[0]
+    category     = row[1]
+    metric       = row[2]
+    value        = row[5]
+    publish_date = row[6]
+
+    if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
+        data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
 
 print('Getting    testing  data', flush=True)
@@ -134,11 +148,16 @@ testingData = reader(iterdecode(response, 'utf-8'))
 print('Processing testing  data', flush=True)
 field = 'Cumulative People Tested at Lab'
 for row in testingData:
-    if row[1] == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and row[3] in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
-        date = formatDate(row[2])
+    Desc_     = row[2]
+    Attr_Date = row[3]
+    Metric    = row[4]
+    Value     = row[5]
+
+    if Desc_ == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and Metric in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
+        date = formatDate(Attr_Date)
         if date not in data['Colorado'][fieldMap[field]]:
             data['Colorado'][fieldMap[field]][date] = 0
-        data['Colorado'][fieldMap[field]][date] += int(row[4])
+        data['Colorado'][fieldMap[field]][date] += int(Value)
 
 print('Getting    county   data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
@@ -147,20 +166,21 @@ response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018
 countyData = reader(iterdecode(response, 'utf-8'))
 print('Processing county   data', flush=True)
 for row in countyData:
-    county = row[2]
-    if county not in counties and county not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
-        county = 'Other'
+    LABEL  = row[1]
+    Desc_  = row[5]
+    Metric = row[6]
+    Value  = row[7]
+    Date   = row[9]
 
-    field = row[6]
-    if field == 'Cases of COVID-19 in Colorado by County' and row[7] == 'Deaths': # errors in the data
-        field = 'Deaths Among COVID-19 Cases in Colorado by County'
-
-    date = formatDate(row[10])
-
-    if county in counties and field in countyFields and row[7] not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
-        if date not in data[county][fieldMap[field]]:
-            data[county][fieldMap[field]][date] = 0
-        data[county][fieldMap[field]][date] += int(row[8])
+    if LABEL not in counties and LABEL not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
+        LABEL = 'Other'
+    if Desc_ == 'Cases of COVID-19 in Colorado by County' and Metric == 'Deaths': # errors in the data
+        Desc_ = 'Deaths Among COVID-19 Cases in Colorado by County'
+    date = formatDate(Date)
+    if LABEL in counties and Desc_ in countyFields and Metric not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
+        if date not in data[LABEL][fieldMap[Desc_]]:
+            data[LABEL][fieldMap[Desc_]][date] = 0
+        data[LABEL][fieldMap[Desc_]][date] += int(Value)
 
 tsvData = '\t'.join(headers) + '\n'
 
