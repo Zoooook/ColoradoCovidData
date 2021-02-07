@@ -89,12 +89,20 @@ print('\nGetting    state    data', flush=True)
 # CDPHE COVID19 State-Level Expanded Case Data
 # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
 response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
-stateData = reader(iterdecode(response, 'utf-8'))
+stateData = reader(iterdecode(response, 'utf-8-sig'))
 print('Processing state    data', flush=True)
+
+readFields = True
 for row in stateData:
-    description = row[2]
-    date        = row[3]
-    value       = row[5]
+    if readFields:
+        idescription = row.index('description')
+        idate        = row.index('date')
+        ivalue       = row.index('value')
+        readFields = False
+
+    description = row[idescription]
+    date        = row[idate]
+    value       = row[ivalue]
 
     if description in stateFields:
         data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
@@ -112,13 +120,24 @@ if hospitalFilename[22:32] < dates[-1]:
 with open(hospitalFilename) as file:
     hospitalData = reader(file)
     print('Processing hospital data', flush=True)
+
+    readFields = True
     for row in hospitalData:
-        category    = row[1]
-        description = row[2]
-        region      = row[3]
-        date        = row[4]
-        metric      = row[5]
-        value       = row[6]
+        if readFields:
+            icategory    = row.index('category')
+            idescription = row.index('description')
+            iregion      = row.index('region')
+            idate        = row.index('date')
+            imetric      = row.index('metric')
+            ivalue       = row.index('value')
+            readFields = False
+
+        category    = row[icategory]
+        description = row[idescription]
+        region      = row[iregion]
+        date        = row[idate]
+        metric      = row[imetric]
+        value       = row[ivalue]
 
         if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
             data['Colorado'][fieldMap[metric]][date] = int(value)
@@ -127,14 +146,24 @@ print('Getting    vaccine  data', flush=True)
 # CDPHE COVID19 Vaccine Daily Summary Statistics
 # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
 response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
-vaccineData = reader(iterdecode(response, 'utf-8'))
+vaccineData = reader(iterdecode(response, 'utf-8-sig'))
 print('Processing vaccine  data', flush=True)
+
+readFields = True
 for row in vaccineData:
-    section      = row[0]
-    category     = row[1]
-    metric       = row[2]
-    value        = row[5]
-    publish_date = row[6]
+    if readFields:
+        isection      = row.index('section')
+        icategory     = row.index('category')
+        imetric       = row.index('metric')
+        ivalue        = row.index('value')
+        ipublish_date = row.index('publish_date')
+        readFields = False
+
+    section      = row[isection]
+    category     = row[icategory]
+    metric       = row[imetric]
+    value        = row[ivalue]
+    publish_date = row[ipublish_date]
 
     if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
         data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
@@ -144,14 +173,23 @@ print('Getting    testing  data', flush=True)
 # COVID19 Positivity Data from Clinical Laboratories
 # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
 response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
-testingData = reader(iterdecode(response, 'utf-8'))
+testingData = reader(iterdecode(response, 'utf-8-sig'))
 print('Processing testing  data', flush=True)
+
 field = 'Cumulative People Tested at Lab'
+readFields = True
 for row in testingData:
-    Desc_     = row[2]
-    Attr_Date = row[3]
-    Metric    = row[4]
-    Value     = row[5]
+    if readFields:
+        iDesc_     = row.index('Desc_')
+        iAttr_Date = row.index('Attr_Date')
+        iMetric    = row.index('Metric')
+        iValue     = row.index('Value')
+        readFields = False
+
+    Desc_     = row[iDesc_]
+    Attr_Date = row[iAttr_Date]
+    Metric    = row[iMetric]
+    Value     = row[iValue]
 
     if Desc_ == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and Metric in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
         date = formatDate(Attr_Date)
@@ -163,14 +201,24 @@ print('Getting    county   data', flush=True)
 # CDPHE COVID19 County-Level Open Data Repository
 # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
 response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
-countyData = reader(iterdecode(response, 'utf-8'))
+countyData = reader(iterdecode(response, 'utf-8-sig'))
 print('Processing county   data', flush=True)
+
+readFields = True
 for row in countyData:
-    LABEL  = row[1]
-    Desc_  = row[5]
-    Metric = row[6]
-    Value  = row[7]
-    Date   = row[9]
+    if readFields:
+        iLABEL  = row.index('LABEL')
+        iDesc_  = row.index('Desc_')
+        iMetric = row.index('Metric')
+        iValue  = row.index('Value')
+        iDate   = row.index('Date')
+        readFields = False
+
+    LABEL  = row[iLABEL]
+    Desc_  = row[iDesc_]
+    Metric = row[iMetric]
+    Value  = row[iValue]
+    Date   = row[iDate]
 
     if LABEL not in counties and LABEL not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
         LABEL = 'Other'
