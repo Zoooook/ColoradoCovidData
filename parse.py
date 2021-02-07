@@ -97,6 +97,7 @@ for row in stateData:
         data['Colorado'][fieldMap[field]][formatDate(row[4])] = int(row[6])
 
 dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
+print('Data is available through', dates[-1])
 
 # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
 for filename in listdir():
@@ -191,7 +192,7 @@ def strRound(num):
 
     return str(round(num/7, 3))
 
-print('Building output\n', flush=True)
+print('Building output', flush=True)
 
 for i in range(len(dates)):
     date = dates[i]
@@ -268,4 +269,3 @@ for i in range(len(dates)):
 
 with open('data.tsv', 'w') as newFile:
     newFile.write(tsvData)
-print(dates[-1])
