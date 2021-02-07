@@ -87,14 +87,14 @@ def formatDate(date):
 
 print('\nGetting    state    data', flush=True)
 # CDPHE COVID19 State-Level Expanded Case Data
-# https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-state-level-expanded-case-data
-response = urlopen('https://opendata.arcgis.com/datasets/3421410bd96549538517b438d24be4da_0.csv')
+# https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
+response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
 stateData = reader(iterdecode(response, 'utf-8'))
 print('Processing state    data', flush=True)
 for row in stateData:
-    field = row[3]
+    field = row[2]
     if field in stateFields:
-        data['Colorado'][fieldMap[field]][formatDate(row[4])] = int(row[6])
+        data['Colorado'][fieldMap[field]][formatDate(row[3])] = int(row[5])
 
 dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
 print('\nData is available through', dates[-1], '\n')
@@ -116,8 +116,8 @@ with open(hospitalFilename) as file:
 
 print('Getting    vaccine  data', flush=True)
 # CDPHE COVID19 Vaccine Daily Summary Statistics
-# https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-vaccine-daily-summary-statistics
-response = urlopen('https://opendata.arcgis.com/datasets/74c39c7b7b834352b62299c68cf19e0c_0.csv')
+# https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
+response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
 vaccineData = reader(iterdecode(response, 'utf-8'))
 print('Processing vaccine  data', flush=True)
 for row in vaccineData:
@@ -128,8 +128,8 @@ for row in vaccineData:
 
 print('Getting    testing  data', flush=True)
 # COVID19 Positivity Data from Clinical Laboratories
-# https://data-cdphe.opendata.arcgis.com/datasets/-covid19-positivity-data-from-clinical-laboratories
-response = urlopen('https://opendata.arcgis.com/datasets/51839032444c40a9b4430b4d6a37a6d3_0.csv')
+# https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
+response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
 testingData = reader(iterdecode(response, 'utf-8'))
 print('Processing testing  data', flush=True)
 field = 'Cumulative People Tested at Lab'
