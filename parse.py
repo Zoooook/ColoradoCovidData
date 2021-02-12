@@ -3,6 +3,7 @@ logging = False
 from pickle import load
 from googleapiclient.discovery import build
 from urllib.request import urlopen
+from urllib.error import HTTPError
 from codecs import iterdecode
 from csv import reader
 from os import listdir
@@ -83,6 +84,7 @@ lastDate = ''
 while True:
     if not firstRun:
         sleep(3)
+    firstRun = False
 
     foundHospitalFile = False
     if updateHospitalData:
@@ -127,7 +129,11 @@ while True:
     # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
     if logging:
         printNow('Getting    state    data')
-    response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
+    try:
+        response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
+    except HTTPError as e:
+        printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
+        continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing state    data')
@@ -195,7 +201,11 @@ while True:
     # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
     if logging:
         printNow('Getting    vaccine  data')
-    response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
+    try:
+        response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
+    except HTTPError as e:
+        printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
+        continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing vaccine  data')
@@ -224,7 +234,11 @@ while True:
     # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
     if logging:
         printNow('Getting    testing  data')
-    response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
+    try:
+        response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
+    except HTTPError as e:
+        printNow(str(datetime.now())[:19], '-- Error getting testing data:', e.code)
+        continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing testing  data')
@@ -254,7 +268,11 @@ while True:
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
     if logging:
         printNow('Getting    county   data')
-    response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
+    try:
+        response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
+    except HTTPError as e:
+        printNow(str(datetime.now())[:19], '-- Error getting county data:', e.code)
+        continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing county   data')
@@ -442,5 +460,4 @@ while True:
     ).execute()
 
     printNow(str(datetime.now())[:19], '-- Data is current through', dates[-1])
-    firstRun = False
     logging = False
