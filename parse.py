@@ -1,11 +1,17 @@
 logging = False
 
+from pickle import load
+from googleapiclient.discovery import build
 from urllib.request import urlopen
 from codecs import iterdecode
 from csv import reader
 from os import listdir
 from time import sleep
 from datetime import datetime
+
+with open('token.pickle', 'rb') as token:
+    creds = load(token)
+service = build('sheets', 'v4', credentials=creds)
 
 fieldMap = {
     'People Immunized with One Dose'                                     : 'First Dose',
@@ -55,7 +61,7 @@ counties = {
 def extendHeaders(titles):
     headers.extend(titles)
     for county in counties:
-        headers.extend([county])
+        headers.append(county)
 
 extendHeaders(['Cases'            , 'Colorado'])
 extendHeaders(['Weekly Cases'     , 'Colorado'])
@@ -280,6 +286,7 @@ while True:
             data[LABEL][fieldMap[Desc_]][date] += int(Value)
 
     tsvData = '\t'.join(headers) + '\n'
+    sheetData = [headers]
 
     def daily(region, field, i):
         if dates[i] not in data[region][field]:
@@ -328,65 +335,111 @@ while True:
             continue
 
         row = date + '\t'
+        sheetRow = [date]
 
         for field in ['First Dose', 'Second Dose']:
             row += str(daily('Colorado', field, i)) + '\t' + strRound(weekly('Colorado', field, i)) + '\t'
+            sheetRow.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
+
             if date in data['Colorado'][field]:
                 row += str(round(100 * data['Colorado'][field][date] / 5763976, 3))
+                sheetRow.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
+            else:
+                sheetRow.append('')
             row += '\t'
 
         if date in data['Colorado']['Confirmed']:
             row += str(data['Colorado']['Confirmed'][date])
+            sheetRow.append(str(data['Colorado']['Confirmed'][date]))
+        else:
+            sheetRow.append('')
         row += '\t'
         if date in data['Colorado']['Under Investigation']:
             row += str(data['Colorado']['Under Investigation'][date])
+            sheetRow.append(str(data['Colorado']['Under Investigation'][date]))
+        else:
+            sheetRow.append('')
         row += '\t'
 
         for field in ['Cases by Onset', 'Cases', 'Deaths', 'Tests']:
             row += str(daily('Colorado', field, i)) + '\t' + strRound(weekly('Colorado', field, i)) + '\t'
+            sheetRow.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
         if daily ('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
             if daily('Colorado', 'Cases', i) != '':
                 row += str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3))
+                sheetRow.append(str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3)))
             else:
                 row += '0'
+                sheetRow.append('0')
+        else:
+            sheetRow.append('')
         row += '\t'
         if weekly('Colorado', 'Tests', i) != '' and weekly('Colorado', 'Tests', i) > 0:
             if weekly('Colorado', 'Cases', i) != '':
                 row += str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3))
+                sheetRow.append(str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3)))
             else:
                 row += '0'
+                sheetRow.append('0')
+        else:
+            sheetRow.append('')
         row += '\t'
 
         for field in ['Cases', 'Deaths', 'Tests']:
             row += '\t'
+            sheetRow.append('')
             for region in ['Colorado'] + list(counties):
                 row += str(daily(region, field, i)) + '\t'
+                sheetRow.append(str(daily(region, field, i)))
             row += '\t'
+            sheetRow.append('')
             for region in ['Colorado'] + list(counties):
                 row += strRound(weekly(region, field, i)) + '\t'
+                sheetRow.append(strRound(weekly(region, field, i)))
 
         row += '\t'
+        sheetRow.append('')
         for region in ['Colorado'] + list(counties):
             if daily(region, 'Tests', i) != '' and daily(region, 'Tests', i) > 0:
                 if daily(region, 'Cases', i) != '':
                     row += str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3))
+                    sheetRow.append(str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3)))
                 else:
                     row += '0'
+                    sheetRow.append('0')
+            else:
+                sheetRow.append('')
             row += '\t'
         row += '\t'
+        sheetRow.append('')
         for region in ['Colorado'] + list(counties):
             if weekly(region, 'Tests', i) != '' and weekly(region, 'Tests', i) > 0:
                 if weekly(region, 'Cases', i) != '':
                     row += str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3))
+                    sheetRow.append(str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3)))
                 else:
                     row += '0'
+                    sheetRow.append('0')
+            else:
+                sheetRow.append('')
             row += '\t'
 
         tsvData += row[:-1] + '\n'
+        sheetData.append(sheetRow)
 
     with open('data.tsv', 'w') as newFile:
         newFile.write(tsvData)
+
+    service.spreadsheets().values().update(
+        spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
+        valueInputOption = 'USER_ENTERED',
+        range = 'Data!A1:EI',
+        body = dict(
+            majorDimension = 'ROWS',
+            values = sheetData
+        )
+    ).execute()
 
     printNow(str(datetime.now())[:19], '-- Data is current through', dates[-1])
     firstRun = False
