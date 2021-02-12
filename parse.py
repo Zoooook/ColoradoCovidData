@@ -1,4 +1,4 @@
-logging = False
+logging = True
 
 from pickle import load
 from googleapiclient.discovery import build
@@ -77,6 +77,7 @@ def printNow(*message):
     print(*message, flush=True)
 
 firstRun = True
+failedLastRun = False
 updateHospitalData = False
 lastRun = ''
 lastDate = ''
@@ -133,6 +134,7 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
+        failedLastRun = True
         continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -154,7 +156,7 @@ while True:
             data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
 
     dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
-    if dates[-1] == lastDate:
+    if dates[-1] == lastDate and not failedLastRun:
         continue
     lastDate = dates[-1]
 
@@ -205,6 +207,7 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
+        failedLastRun = True
         continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -238,6 +241,7 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting testing data:', e.code)
+        failedLastRun = True
         continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -272,6 +276,7 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting county data:', e.code)
+        failedLastRun = True
         continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
