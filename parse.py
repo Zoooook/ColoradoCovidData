@@ -381,11 +381,17 @@ while True:
         if i>0:
             for field in stateFields:
                 if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
-                    data['Colorado'][fieldMap[field]][date] = 0
+                    for j in range(i+1, len(dates)):
+                        if dates[j] in data['Colorado'][fieldMap[field]]:
+                            data['Colorado'][fieldMap[field]][date] = 0
+                            break
             for field in countyFields:
                 for county in counties:
                     if date not in data[county][fieldMap[field]] and dates[i-1] in data[county][fieldMap[field]]:
-                        data[county][fieldMap[field]][date] = 0
+                        for j in range(i+1, len(dates)):
+                            if dates[j] in data[county][fieldMap[field]]:
+                                data[county][fieldMap[field]][date] = 0
+                                break
 
         if i < dates.index('2020-03-01'):
             continue
