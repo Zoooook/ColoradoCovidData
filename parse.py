@@ -1,4 +1,4 @@
-logging = True
+logging = False
 
 from pickle import load
 from googleapiclient.discovery import build
@@ -465,4 +465,5 @@ while True:
     ).execute()
 
     printNow(str(datetime.now())[:19], '-- Data is current through', dates[-1])
+    failedLastRun = False
     logging = False
