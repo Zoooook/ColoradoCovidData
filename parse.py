@@ -324,7 +324,7 @@ while True:
 
     countyDates = []
     for county in counties:
-        countyDates = sorted(list(set(countyDates) | set(data['Denver']['Cases']) | set(data['Denver']['Deaths']) | set(data['Denver']['Tests'])))
+        countyDates = sorted(list(set(countyDates) | set(data[county]['Cases']) | set(data[county]['Deaths']) | set(data[county]['Tests'])))
     if countyDates[-1] != lastCountyDate:
         updateData = True
         lastCountyDate = countyDates[-1]
