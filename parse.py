@@ -322,7 +322,9 @@ while True:
                 data[LABEL][fieldMap[Desc_]][date] = 0
             data[LABEL][fieldMap[Desc_]][date] += int(Value)
 
-    countyDates = sorted(list(set(data['Denver']['Cases']) | set(data['Denver']['Deaths']) | set(data['Denver']['Tests'])))
+    countyDates = []
+    for county in counties:
+        countyDates = sorted(list(set(countyDates) | set(data['Denver']['Cases']) | set(data['Denver']['Deaths']) | set(data['Denver']['Tests'])))
     if countyDates[-1] != lastCountyDate:
         updateData = True
         lastCountyDate = countyDates[-1]
