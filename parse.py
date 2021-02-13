@@ -85,7 +85,12 @@ def printNow(*message):
 firstRun = True
 failedLastRun = False
 lastRun = ''
-lastDate = ''
+lastVaccineDate = ''
+lastHospitalDate = ''
+lastStateDate = ''
+lastTestDate = ''
+lastCountyDate = ''
+updateData = True
 
 while True:
     if not firstRun:
@@ -149,10 +154,11 @@ while True:
         if description in stateFields:
             data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
 
-    dates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases'])))
-    if dates[-1] == lastDate and not failedLastRun:
-        continue
-    lastDate = dates[-1]
+    stateDates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases']) | set(data['Colorado']['Deaths'])))
+    if stateDates[-1] != lastStateDate:
+        updateData = True
+        lastStateDate = stateDates[-1]
+        printNow('State    data updated to', lastStateDate)
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
     if logging:
@@ -196,6 +202,12 @@ while True:
                 data['Colorado'][fieldMap[metric]][date] = int(value)
     remove('hospitalData.csv')
 
+    hospitalDates = sorted(list(set(data['Colorado']['Confirmed']) | set(data['Colorado']['Under Investigation'])))
+    if hospitalDates[-1] != lastHospitalDate:
+        updateData = True
+        lastHospitalDate = hospitalDates[-1]
+        printNow('Hospital data updated to', lastHospitalDate)
+
     # CDPHE COVID19 Vaccine Daily Summary Statistics
     # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
     if logging:
@@ -229,6 +241,11 @@ while True:
         if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
             data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
+    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['Second Dose'])))
+    if vaccineDates[-1] != lastVaccineDate:
+        updateData = True
+        lastVaccineDate = vaccineDates[-1]
+        printNow('Vaccine  data updated to', lastVaccineDate)
 
     # COVID19 Positivity Data from Clinical Laboratories
     # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
@@ -264,6 +281,12 @@ while True:
             if date not in data['Colorado'][fieldMap[field]]:
                 data['Colorado'][fieldMap[field]][date] = 0
             data['Colorado'][fieldMap[field]][date] += int(Value)
+
+    testDates = sorted(list(data['Colorado']['Tests']))
+    if testDates[-1] != lastTestDate:
+        updateData = True
+        lastTestDate = testDates[-1]
+        printNow('Test     data updated to', lastTestDate)
 
     # CDPHE COVID19 County-Level Open Data Repository
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
@@ -304,6 +327,19 @@ while True:
             if date not in data[LABEL][fieldMap[Desc_]]:
                 data[LABEL][fieldMap[Desc_]][date] = 0
             data[LABEL][fieldMap[Desc_]][date] += int(Value)
+
+    countyDates = sorted(list(set(data['Denver']['Cases']) | set(data['Denver']['Deaths']) | set(data['Denver']['Tests'])))
+    if countyDates[-1] != lastCountyDate:
+        updateData = True
+        lastCountyDate = countyDates[-1]
+        printNow('County   data updated to', lastCountyDate)
+
+    dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
+
+    if not updateData and not failedLastRun:
+        continue
+
+
 
     tsvData = '\t'.join(headers) + '\n'
     sheetData = [headers]
@@ -461,6 +497,7 @@ while True:
         )
     ).execute()
 
-    printNow(str(datetime.now())[:19], '-- Data is current through', dates[-1])
+    printNow(str(datetime.now())[:19], '-- Spreadsheet updated')
     failedLastRun = False
+    updateData = False
     logging = False
