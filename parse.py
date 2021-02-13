@@ -401,19 +401,16 @@ while True:
             else:
                 row.append('')
 
-        if date in data['Colorado']['Confirmed']:
-            row.append(str(data['Colorado']['Confirmed'][date]))
-        else:
-            row.append('')
-        if date in data['Colorado']['Under Investigation']:
-            row.append(str(data['Colorado']['Under Investigation'][date]))
-        else:
-            row.append('')
+        for field in ['Confirmed', 'Under Investigation']:
+            if date in data['Colorado'][field]:
+                row.append(str(data['Colorado'][field][date]))
+            else:
+                row.append('')
 
         for field in ['Cases by Onset', 'Cases', 'Deaths', 'Tests']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
-        if daily ('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
+        if daily('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
             if daily('Colorado', 'Cases', i) != '':
                 row.append(str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3)))
             else:
