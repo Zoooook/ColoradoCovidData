@@ -125,40 +125,44 @@ while True:
     def formatDate(date):
         return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
-    # CDPHE COVID19 State-Level Expanded Case Data
-    # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
+    # CDPHE COVID19 Vaccine Daily Summary Statistics
+    # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
     if logging:
-        printNow('Getting    state    data')
+        printNow('Getting    vaccine  data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
+        printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
         failedLastRun = True
         continue
-    stateData = reader(iterdecode(response, 'utf-8-sig'))
+    vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
-        printNow('Processing state    data')
+        printNow('Processing vaccine  data')
 
     readFields = True
-    for row in stateData:
+    for row in vaccineData:
         if readFields:
-            idescription = row.index('description')
-            idate        = row.index('date')
-            ivalue       = row.index('value')
+            isection      = row.index('section')
+            icategory     = row.index('category')
+            imetric       = row.index('metric')
+            ivalue        = row.index('value')
+            ipublish_date = row.index('publish_date')
             readFields = False
 
-        description = row[idescription]
-        date        = row[idate]
-        value       = row[ivalue]
+        section      = row[isection]
+        category     = row[icategory]
+        metric       = row[imetric]
+        value        = row[ivalue]
+        publish_date = row[ipublish_date]
 
-        if description in stateFields:
-            data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
+        if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
+            data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
-    stateDates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases']) | set(data['Colorado']['Deaths'])))
-    if stateDates[-1] != lastStateDate:
+    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['Second Dose'])))
+    if vaccineDates[-1] != lastVaccineDate:
         updateData = True
-        lastStateDate = stateDates[-1]
-        printNow('State    data updated to', lastStateDate)
+        lastVaccineDate = vaccineDates[-1]
+        printNow('Vaccine  data updated to', lastVaccineDate)
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
     if logging:
@@ -208,44 +212,40 @@ while True:
         lastHospitalDate = hospitalDates[-1]
         printNow('Hospital data updated to', lastHospitalDate)
 
-    # CDPHE COVID19 Vaccine Daily Summary Statistics
-    # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
+    # CDPHE COVID19 State-Level Expanded Case Data
+    # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
     if logging:
-        printNow('Getting    vaccine  data')
+        printNow('Getting    state    data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
+        printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
         failedLastRun = True
         continue
-    vaccineData = reader(iterdecode(response, 'utf-8-sig'))
+    stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
-        printNow('Processing vaccine  data')
+        printNow('Processing state    data')
 
     readFields = True
-    for row in vaccineData:
+    for row in stateData:
         if readFields:
-            isection      = row.index('section')
-            icategory     = row.index('category')
-            imetric       = row.index('metric')
-            ivalue        = row.index('value')
-            ipublish_date = row.index('publish_date')
+            idescription = row.index('description')
+            idate        = row.index('date')
+            ivalue       = row.index('value')
             readFields = False
 
-        section      = row[isection]
-        category     = row[icategory]
-        metric       = row[imetric]
-        value        = row[ivalue]
-        publish_date = row[ipublish_date]
+        description = row[idescription]
+        date        = row[idate]
+        value       = row[ivalue]
 
-        if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
-            data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
+        if description in stateFields:
+            data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
 
-    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['Second Dose'])))
-    if vaccineDates[-1] != lastVaccineDate:
+    stateDates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases']) | set(data['Colorado']['Deaths'])))
+    if stateDates[-1] != lastStateDate:
         updateData = True
-        lastVaccineDate = vaccineDates[-1]
-        printNow('Vaccine  data updated to', lastVaccineDate)
+        lastStateDate = stateDates[-1]
+        printNow('State    data updated to', lastStateDate)
 
     # COVID19 Positivity Data from Clinical Laboratories
     # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
@@ -286,7 +286,7 @@ while True:
     if testDates[-1] != lastTestDate:
         updateData = True
         lastTestDate = testDates[-1]
-        printNow('Test     data updated to', lastTestDate)
+        printNow('Testing  data updated to', lastTestDate)
 
     # CDPHE COVID19 County-Level Open Data Repository
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
