@@ -37,6 +37,7 @@ stateFields = list(fieldMap)[:8]
 countyFields = list(fieldMap)[8:]
 
 headers = [
+    'Last Updated'            ,
     'Date'                    ,
     'First Dose'              , '', '%       ',
     'Second Dose'             , '', '%       ',
@@ -395,7 +396,7 @@ while True:
         if i < dates.index('2020-03-01'):
             continue
 
-        row = [date]
+        row = ['', date]
 
         for field in ['First Dose', 'Second Dose']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
@@ -461,17 +462,20 @@ while True:
 
         sheetData.append(row)
 
+    now = str(datetime.now())[:19]
+    sheetData[1][0] = '\'' + now
+
     service.spreadsheets().values().update(
         spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
         valueInputOption = 'USER_ENTERED',
-        range = 'Data!A1:EI',
+        range = 'Data!A1:EJ',
         body = dict(
             majorDimension = 'ROWS',
             values = sheetData
         )
     ).execute()
 
-    printNow(str(datetime.now())[:19], '-- Spreadsheet updated')
+    printNow(now, '-- Spreadsheet updated')
     failedLastRun = False
     updateData = False
     logging = False
