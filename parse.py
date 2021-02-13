@@ -84,7 +84,6 @@ def printNow(*message):
     print(*message, flush=True)
 
 firstRun = True
-failedLastRun = False
 lastRun = ''
 lastVaccineDate = ''
 lastHospitalDate = ''
@@ -134,7 +133,6 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
-        failedLastRun = True
         continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -177,7 +175,6 @@ while True:
         fh.close()
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting hospital data:', e.code)
-        failedLastRun = True
         continue
 
     with open('hospitalData.csv') as file:
@@ -221,7 +218,6 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
-        failedLastRun = True
         continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -256,7 +252,6 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting testing data:', e.code)
-        failedLastRun = True
         continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -297,7 +292,6 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:19], '-- Error getting county data:', e.code)
-        failedLastRun = True
         continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -337,7 +331,7 @@ while True:
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
-    if not updateData and not failedLastRun:
+    if not updateData:
         continue
 
 
