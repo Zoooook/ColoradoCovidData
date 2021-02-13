@@ -2,17 +2,23 @@ logging = False
 
 from pickle import load
 from googleapiclient.discovery import build
+from io import FileIO
+from googleapiclient.http import MediaIoBaseDownload
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from codecs import iterdecode
 from csv import reader
-from os import listdir
+from os import listdir, remove
 from time import sleep
 from datetime import datetime
 
 with open('token.pickle', 'rb') as token:
     creds = load(token)
 service = build('sheets', 'v4', credentials=creds)
+
+with open('api.key', 'r') as key:
+    apiKey = key.read()
+drive = build('drive', 'v3', developerKey=apiKey)
 
 fieldMap = {
     'People Immunized with One Dose'                                     : 'First Dose',
@@ -78,7 +84,6 @@ def printNow(*message):
 
 firstRun = True
 failedLastRun = False
-updateHospitalData = False
 lastRun = ''
 lastDate = ''
 
@@ -86,17 +91,6 @@ while True:
     if not firstRun:
         sleep(3)
     firstRun = False
-
-    foundHospitalFile = False
-    if updateHospitalData:
-        for filename in listdir():
-            if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
-                foundHospitalFile = True
-                hospitalFilename = filename
-        if not foundHospitalFile or hospitalFilename[22:32] < dates[-1]:
-            continue
-        else:
-            updateHospitalData = False
 
     thisRun = str(datetime.now())[:15]
     if thisRun == lastRun:
@@ -161,19 +155,21 @@ while True:
     lastDate = dates[-1]
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
-    foundHospitalFile = False
-    for filename in listdir():
-        if filename[:25] == 'covid19_hospital_data_202' and filename[-4:] == '.csv':
-            foundHospitalFile = True
-            hospitalFilename = filename
-    if not foundHospitalFile or hospitalFilename[22:32] < dates[-1]:
-        printNow(str(datetime.now())[:19], '-- Update hospital data')
-        updateHospitalData = True
-        lastRun = ''
-        lastDate = ''
+    if logging:
+        printNow('Getting    hospital data')
+    try:
+        hospitalFileId = drive.files().list(q="'1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw' in parents", fields="files(id,name)", orderBy="name", pageSize=1000).execute()['files'][-1]['id']
+        fh = FileIO('hospitalData.csv', 'w')
+        downloader = MediaIoBaseDownload(fh, drive.files().get_media(fileId=hospitalFileId))
+        while not downloader.next_chunk():
+            pass
+        fh.close()
+    except HTTPError as e:
+        printNow(str(datetime.now())[:19], '-- Error getting hospital data:', e.code)
+        failedLastRun = True
         continue
 
-    with open(hospitalFilename) as file:
+    with open('hospitalData.csv') as file:
         hospitalData = reader(file)
         if logging:
             printNow('Processing hospital data')
@@ -198,6 +194,7 @@ while True:
 
             if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
                 data['Colorado'][fieldMap[metric]][date] = int(value)
+    remove('hospitalData.csv')
 
     # CDPHE COVID19 Vaccine Daily Summary Statistics
     # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
