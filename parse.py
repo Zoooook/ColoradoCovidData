@@ -163,7 +163,7 @@ while True:
     if vaccineDates[-1] != lastVaccineDate:
         updateData = True
         lastVaccineDate = vaccineDates[-1]
-        printNow('Vaccine  data updated to', lastVaccineDate)
+        printNow('Vaccine  data updated to', lastVaccineDate[5:])
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
     if logging:
@@ -211,7 +211,7 @@ while True:
     if hospitalDates[-1] != lastHospitalDate:
         updateData = True
         lastHospitalDate = hospitalDates[-1]
-        printNow('Hospital data updated to', lastHospitalDate)
+        printNow('Hospital data updated to', lastHospitalDate[5:])
 
     # CDPHE COVID19 State-Level Expanded Case Data
     # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
@@ -246,7 +246,7 @@ while True:
     if stateDates[-1] != lastStateDate:
         updateData = True
         lastStateDate = stateDates[-1]
-        printNow('State    data updated to', lastStateDate)
+        printNow('State    data updated to', lastStateDate[5:])
 
     # COVID19 Positivity Data from Clinical Laboratories
     # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
@@ -287,7 +287,7 @@ while True:
     if testDates[-1] != lastTestDate:
         updateData = True
         lastTestDate = testDates[-1]
-        printNow('Testing  data updated to', lastTestDate)
+        printNow('Testing  data updated to', lastTestDate[5:])
 
     # CDPHE COVID19 County-Level Open Data Repository
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
@@ -333,7 +333,7 @@ while True:
     if countyDates[-1] != lastCountyDate:
         updateData = True
         lastCountyDate = countyDates[-1]
-        printNow('County   data updated to', lastCountyDate)
+        printNow('County   data updated to', lastCountyDate[5:])
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
