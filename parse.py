@@ -395,71 +395,71 @@ while True:
         if i < dates.index('2020-03-01'):
             continue
 
-        sheetRow = [date]
+        row = [date]
 
         for field in ['First Dose', 'Second Dose']:
-            sheetRow.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
+            row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
             if date in data['Colorado'][field]:
-                sheetRow.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
+                row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
             else:
-                sheetRow.append('')
+                row.append('')
 
         if date in data['Colorado']['Confirmed']:
-            sheetRow.append(str(data['Colorado']['Confirmed'][date]))
+            row.append(str(data['Colorado']['Confirmed'][date]))
         else:
-            sheetRow.append('')
+            row.append('')
         if date in data['Colorado']['Under Investigation']:
-            sheetRow.append(str(data['Colorado']['Under Investigation'][date]))
+            row.append(str(data['Colorado']['Under Investigation'][date]))
         else:
-            sheetRow.append('')
+            row.append('')
 
         for field in ['Cases by Onset', 'Cases', 'Deaths', 'Tests']:
-            sheetRow.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
+            row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
         if daily ('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
             if daily('Colorado', 'Cases', i) != '':
-                sheetRow.append(str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3)))
+                row.append(str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3)))
             else:
-                sheetRow.append('0')
+                row.append('0')
         else:
-            sheetRow.append('')
+            row.append('')
         if weekly('Colorado', 'Tests', i) != '' and weekly('Colorado', 'Tests', i) > 0:
             if weekly('Colorado', 'Cases', i) != '':
-                sheetRow.append(str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3)))
+                row.append(str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3)))
             else:
-                sheetRow.append('0')
+                row.append('0')
         else:
-            sheetRow.append('')
+            row.append('')
 
         for field in ['Cases', 'Deaths', 'Tests']:
-            sheetRow.append('')
+            row.append('')
             for region in ['Colorado'] + list(counties):
-                sheetRow.append(str(daily(region, field, i)))
-            sheetRow.append('')
+                row.append(str(daily(region, field, i)))
+            row.append('')
             for region in ['Colorado'] + list(counties):
-                sheetRow.append(strRound(weekly(region, field, i)))
+                row.append(strRound(weekly(region, field, i)))
 
-        sheetRow.append('')
+        row.append('')
         for region in ['Colorado'] + list(counties):
             if daily(region, 'Tests', i) != '' and daily(region, 'Tests', i) > 0:
                 if daily(region, 'Cases', i) != '':
-                    sheetRow.append(str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3)))
+                    row.append(str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3)))
                 else:
-                    sheetRow.append('0')
+                    row.append('0')
             else:
-                sheetRow.append('')
-        sheetRow.append('')
+                row.append('')
+        row.append('')
         for region in ['Colorado'] + list(counties):
             if weekly(region, 'Tests', i) != '' and weekly(region, 'Tests', i) > 0:
                 if weekly(region, 'Cases', i) != '':
-                    sheetRow.append(str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3)))
+                    row.append(str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3)))
                 else:
-                    sheetRow.append('0')
+                    row.append('0')
             else:
-                sheetRow.append('')
+                row.append('')
 
-        sheetData.append(sheetRow)
+        sheetData.append(row)
 
     service.spreadsheets().values().update(
         spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
