@@ -83,14 +83,13 @@ extendHeaders(['Weekly Positive %', 'Colorado'])
 def printNow(*message):
     print(*message, flush=True)
 
-firstRun = True
-lastRun = ''
-lastVaccineDate = ''
+firstRun         = True
+lastRun          = ''
+lastVaccineDate  = ''
 lastHospitalDate = ''
-lastStateDate = ''
-lastTestDate = ''
-lastCountyDate = ''
-updateData = True
+lastStateDate    = ''
+lastTestDate     = ''
+lastCountyDate   = ''
 
 while True:
     if not firstRun:
@@ -470,6 +469,5 @@ while True:
     ).execute()
 
     printNow(now, '-- Spreadsheet updated')
-    failedLastRun = False
     updateData = False
     logging = False
