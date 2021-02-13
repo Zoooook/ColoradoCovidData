@@ -50,21 +50,21 @@ headers = [
     'Positive %'              , '',
 ]
 
-counties = {
-    'Denver'    : {},
-    'El Paso'   : {},
-    'Arapahoe'  : {},
-    'Jefferson' : {},
-    'Adams'     : {},
-    'Larimer'   : {},
-    'Douglas'   : {},
-    'Boulder'   : {},
-    'Weld'      : {},
-    'Pueblo'    : {},
-    'Mesa'      : {},
-    'Broomfield': {},
-    'Other'     : {},
-}
+counties = [
+    'Denver',
+    'El Paso',
+    'Arapahoe',
+    'Jefferson',
+    'Adams',
+    'Larimer',
+    'Douglas',
+    'Boulder',
+    'Weld',
+    'Pueblo',
+    'Mesa',
+    'Broomfield',
+    'Other',
+]
 
 def extendHeaders(titles):
     headers.extend(titles)
@@ -312,7 +312,7 @@ while True:
         Value  = row[iValue]
         Date   = row[iDate]
 
-        if LABEL not in counties and LABEL not in ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
+        if LABEL not in counties + ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
             LABEL = 'Other'
         if Desc_ == 'Cases of COVID-19 in Colorado by County' and Metric == 'Deaths': # errors in the data
             Desc_ = 'Deaths Among COVID-19 Cases in Colorado by County'
@@ -428,14 +428,14 @@ while True:
 
         for field in ['Cases', 'Deaths', 'Tests']:
             row.append('')
-            for region in ['Colorado'] + list(counties):
+            for region in ['Colorado'] + counties:
                 row.append(str(daily(region, field, i)))
             row.append('')
-            for region in ['Colorado'] + list(counties):
+            for region in ['Colorado'] + counties:
                 row.append(strRound(weekly(region, field, i)))
 
         row.append('')
-        for region in ['Colorado'] + list(counties):
+        for region in ['Colorado'] + counties:
             if daily(region, 'Tests', i) != '' and daily(region, 'Tests', i) > 0:
                 if daily(region, 'Cases', i) != '':
                     row.append(str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3)))
@@ -444,7 +444,7 @@ while True:
             else:
                 row.append('')
         row.append('')
-        for region in ['Colorado'] + list(counties):
+        for region in ['Colorado'] + counties:
             if weekly(region, 'Tests', i) != '' and weekly(region, 'Tests', i) > 0:
                 if weekly(region, 'Cases', i) != '':
                     row.append(str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3)))
