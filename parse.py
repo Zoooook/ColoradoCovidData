@@ -454,7 +454,7 @@ while True:
 
         sheetData.append(row)
 
-    now = str(datetime.now())[:19]
+    now = str(datetime.now())[:16]
     sheetData[1][0] = '\'' + now
 
     service.spreadsheets().values().update(
