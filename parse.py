@@ -131,7 +131,7 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting vaccine data:', e.code)
+        printNow(str(datetime.now())[:16], '-- Error getting vaccine data:', e.code)
         continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -173,8 +173,10 @@ while True:
             pass
         fh.close()
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting hospital data:', e.code)
+        printNow(str(datetime.now())[:16], '-- Error getting hospital data:', e.code)
         continue
+    except Exception as e:
+        printNow(str(datetime.now())[:1], '-- Error getting hospital data:', str(e))
 
     with open('hospitalData.csv') as file:
         hospitalData = reader(file)
@@ -216,7 +218,7 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting state data:', e.code)
+        printNow(str(datetime.now())[:16], '-- Error getting state data:', e.code)
         continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -250,7 +252,7 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting testing data:', e.code)
+        printNow(str(datetime.now())[:16], '-- Error getting testing data:', e.code)
         continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -290,7 +292,7 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:19], '-- Error getting county data:', e.code)
+        printNow(str(datetime.now())[:16], '-- Error getting county data:', e.code)
         continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
