@@ -176,7 +176,8 @@ while True:
         printNow(str(datetime.now())[:16], '-- Error getting hospital data:', e.code)
         continue
     except Exception as e:
-        printNow(str(datetime.now())[:1], '-- Error getting hospital data:', str(e))
+        printNow(str(datetime.now())[:16], '-- Error getting hospital data:', str(e))
+        continue
 
     with open('hospitalData.csv') as file:
         hospitalData = reader(file)
@@ -459,15 +460,19 @@ while True:
     now = str(datetime.now())[:16]
     sheetData[1][0] = '\'' + now
 
-    service.spreadsheets().values().update(
-        spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
-        valueInputOption = 'USER_ENTERED',
-        range = 'Data!A1:EJ',
-        body = dict(
-            majorDimension = 'ROWS',
-            values = sheetData
-        )
-    ).execute()
+    try:
+        service.spreadsheets().values().update(
+            spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
+            valueInputOption = 'USER_ENTERED',
+            range = 'Data!A1:EJ',
+            body = dict(
+                majorDimension = 'ROWS',
+                values = sheetData
+            )
+        ).execute()
+    except Exception as e:
+        printNow(str(datetime.now())[:16], '-- Error updating spreadsheet:', str(e))
+        continue
 
     printNow(now, '-- Spreadsheet updated')
     updateData = False
