@@ -163,20 +163,29 @@ while True:
         printNow('Vaccine  data updated to', lastVaccineDate[5:])
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
+    def getHospitalData():
+        try:
+            hospitalFileId = drive.files().list(q="'1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw' in parents", fields="files(id,name)", orderBy="name", pageSize=1000).execute()['files'][-1]['id']
+            fh = FileIO('hospitalData.csv', 'w')
+            downloader = MediaIoBaseDownload(fh, drive.files().get_media(fileId=hospitalFileId))
+            while not downloader.next_chunk():
+                pass
+            fh.close()
+            return True
+        except HTTPError as e:
+            printNow(str(datetime.now())[:16], '-- Error getting hospital data:', e.code)
+            return False
+        except Exception as e:
+            if str(e) == '[WinError 10053] An established connection was aborted by the software in your host machine':
+                sleep(1)
+                return getHospitalData()
+            else:
+                printNow(str(datetime.now())[:16], '-- Error getting hospital data:', str(e))
+                return False
+
     if logging:
         printNow('Getting    hospital data')
-    try:
-        hospitalFileId = drive.files().list(q="'1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw' in parents", fields="files(id,name)", orderBy="name", pageSize=1000).execute()['files'][-1]['id']
-        fh = FileIO('hospitalData.csv', 'w')
-        downloader = MediaIoBaseDownload(fh, drive.files().get_media(fileId=hospitalFileId))
-        while not downloader.next_chunk():
-            pass
-        fh.close()
-    except HTTPError as e:
-        printNow(str(datetime.now())[:16], '-- Error getting hospital data:', e.code)
-        continue
-    except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error getting hospital data:', str(e))
+    if not getHospitalData():
         continue
 
     with open('hospitalData.csv') as file:
@@ -460,18 +469,27 @@ while True:
     now = str(datetime.now())[:16]
     sheetData[1][0] = '\'' + now
 
-    try:
-        service.spreadsheets().values().update(
-            spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
-            valueInputOption = 'USER_ENTERED',
-            range = 'Data!A1:EJ',
-            body = dict(
-                majorDimension = 'ROWS',
-                values = sheetData
-            )
-        ).execute()
-    except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error updating spreadsheet:', str(e))
+    def updateSpreadsheet():
+        try:
+            service.spreadsheets().values().update(
+                spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
+                valueInputOption = 'USER_ENTERED',
+                range = 'Data!A1:EJ',
+                body = dict(
+                    majorDimension = 'ROWS',
+                    values = sheetData
+                )
+            ).execute()
+            return True
+        except Exception as e:
+            if str(e) == '[WinError 10053] An established connection was aborted by the software in your host machine':
+                sleep(1)
+                return updateSpreadsheet()
+            else:
+                printNow(now, '-- Error updating spreadsheet:', str(e))
+                return False
+
+    if not updateSpreadsheet():
         continue
 
     printNow(now, '-- Spreadsheet updated')
