@@ -133,6 +133,9 @@ while True:
     except HTTPError as e:
         printNow(str(datetime.now())[:16], '-- Error getting vaccine data:', e.code)
         continue
+    except Exception as e:
+        printNow(str(datetime.now())[:16], '-- Error getting vaccine data:', str(e))
+        continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing vaccine  data')
@@ -230,6 +233,9 @@ while True:
     except HTTPError as e:
         printNow(str(datetime.now())[:16], '-- Error getting state data:', e.code)
         continue
+    except Exception as e:
+        printNow(str(datetime.now())[:16], '-- Error getting state data:', str(e))
+        continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
         printNow('Processing state    data')
@@ -263,6 +269,9 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:16], '-- Error getting testing data:', e.code)
+        continue
+    except Exception as e:
+        printNow(str(datetime.now())[:16], '-- Error getting testing data:', str(e))
         continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -303,6 +312,9 @@ while True:
         response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
     except HTTPError as e:
         printNow(str(datetime.now())[:16], '-- Error getting county data:', e.code)
+        continue
+    except Exception as e:
+        printNow(str(datetime.now())[:16], '-- Error getting county data:', str(e))
         continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
