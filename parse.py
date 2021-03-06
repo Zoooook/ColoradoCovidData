@@ -22,7 +22,7 @@ drive = build('drive', 'v3', developerKey=apiKey)
 
 fieldMap = {
     'People Immunized with One Dose'                                     : 'First Dose',
-    'People Immunized with Two Doses'                                    : 'Second Dose',
+    'People Fully Immunized'                                             : 'All Doses',
     'Confirmed COVID-19'                                                 : 'Confirmed',
     'COVID-19 Persons Under Investigation'                               : 'Under Investigation',
     'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset'     : 'Cases by Onset',
@@ -40,7 +40,7 @@ headers = [
     'Last Updated'            ,
     'Date'                    ,
     'First Dose'              , '', '%       ',
-    'Second Dose'             , '', '%       ',
+    'All Doses'               , '', '%       ',
     'Confirmed Cases'         ,
     'Under Investigation'     ,
     'by date of illness onset', '       ',
@@ -104,7 +104,7 @@ while True:
     data = {
         'Colorado': {
             'First Dose'         : {},
-            'Second Dose'        : {},
+            'All Doses'          : {},
             'Confirmed'          : {},
             'Under Investigation': {},
             'Cases by Onset'     : {},
@@ -159,7 +159,7 @@ while True:
         if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
             data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
-    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['Second Dose'])))
+    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['All Doses'])))
     if vaccineDates[-1] != lastVaccineDate:
         updateData = True
         lastVaccineDate = vaccineDates[-1]
@@ -417,7 +417,7 @@ while True:
 
         row = ['', date]
 
-        for field in ['First Dose', 'Second Dose']:
+        for field in ['First Dose', 'All Doses']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
             if date in data['Colorado'][field]:
