@@ -38,7 +38,7 @@ countyFields = list(fieldMap)[8:]
 
 headers = [
     'Last Updated'            ,
-    'Date'                    , ''
+    'Date'                    , '',
     'First Dose'              , '%       ', '',
     'All Doses'               , '%       ',
     'Confirmed Cases'         ,
