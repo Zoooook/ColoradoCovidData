@@ -42,7 +42,7 @@ headers = [
     'First Dose'              , '%       ', '',
     'All Doses'               , '%       ',
     'Confirmed Cases'         ,
-    'Under Investigation'     , ''
+    'Under Investigation'     , '',
     'by date of illness onset', '       ',
     'by date reported'        , '',
     'by date of death'        , '',
