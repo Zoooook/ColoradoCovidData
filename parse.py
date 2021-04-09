@@ -90,6 +90,7 @@ lastHospitalDate = ''
 lastStateDate    = ''
 lastTestDate     = ''
 lastCountyDate   = ''
+lastUpdated      = ['', '', '', '', '']
 
 while True:
     if not firstRun:
@@ -100,6 +101,11 @@ while True:
     if thisRun == lastRun:
         continue
     lastRun = thisRun
+
+    now = str(datetime.now())[:16]
+    for i in range(5):
+        if not lastUpdated[i]:
+            lastUpdated[i] = now
 
     data = {
         'Colorado': {
@@ -131,10 +137,10 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:16], '-- Error getting vaccine data:', e.code)
+        printNow(now, '-- Error getting vaccine data:', e.code)
         continue
     except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error getting vaccine data:', str(e))
+        printNow(now, '-- Error getting vaccine data:', str(e))
         continue
     vaccineData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -163,6 +169,7 @@ while True:
     if vaccineDates[-1] != lastVaccineDate:
         updateData = True
         lastVaccineDate = vaccineDates[-1]
+        lastUpdated[0] = now
         printNow('Vaccine  data updated to', lastVaccineDate[5:])
 
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
@@ -176,14 +183,14 @@ while True:
             fh.close()
             return True
         except HTTPError as e:
-            printNow(str(datetime.now())[:16], '-- Error getting hospital data:', e.code)
+            printNow(now, '-- Error getting hospital data:', e.code)
             return False
         except Exception as e:
             if str(e) == '[WinError 10053] An established connection was aborted by the software in your host machine':
                 sleep(1)
                 return getHospitalData()
             else:
-                printNow(str(datetime.now())[:16], '-- Error getting hospital data:', str(e))
+                printNow(now, '-- Error getting hospital data:', str(e))
                 return False
 
     if logging:
@@ -222,6 +229,7 @@ while True:
     if hospitalDates[-1] != lastHospitalDate:
         updateData = True
         lastHospitalDate = hospitalDates[-1]
+        lastUpdated[1] = now
         printNow('Hospital data updated to', lastHospitalDate[5:])
 
     # CDPHE COVID19 State-Level Expanded Case Data
@@ -231,10 +239,10 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:16], '-- Error getting state data:', e.code)
+        printNow(now, '-- Error getting state data:', e.code)
         continue
     except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error getting state data:', str(e))
+        printNow(now, '-- Error getting state data:', str(e))
         continue
     stateData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -259,6 +267,7 @@ while True:
     if stateDates[-1] != lastStateDate:
         updateData = True
         lastStateDate = stateDates[-1]
+        lastUpdated[2] = now
         printNow('State    data updated to', lastStateDate[5:])
 
     # COVID19 Positivity Data from Clinical Laboratories
@@ -268,10 +277,10 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:16], '-- Error getting testing data:', e.code)
+        printNow(now, '-- Error getting testing data:', e.code)
         continue
     except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error getting testing data:', str(e))
+        printNow(now, '-- Error getting testing data:', str(e))
         continue
     testingData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -302,6 +311,7 @@ while True:
     if testDates[-1] != lastTestDate:
         updateData = True
         lastTestDate = testDates[-1]
+        lastUpdated[3] = now
         printNow('Testing  data updated to', lastTestDate[5:])
 
     # CDPHE COVID19 County-Level Open Data Repository
@@ -311,10 +321,10 @@ while True:
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
     except HTTPError as e:
-        printNow(str(datetime.now())[:16], '-- Error getting county data:', e.code)
+        printNow(now, '-- Error getting county data:', e.code)
         continue
     except Exception as e:
-        printNow(str(datetime.now())[:16], '-- Error getting county data:', str(e))
+        printNow(now, '-- Error getting county data:', str(e))
         continue
     countyData = reader(iterdecode(response, 'utf-8-sig'))
     if logging:
@@ -352,6 +362,7 @@ while True:
     if countyDates[-1] != lastCountyDate:
         updateData = True
         lastCountyDate = countyDates[-1]
+        lastUpdated[4] = now
         printNow('County   data updated to', lastCountyDate[5:])
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
@@ -478,8 +489,8 @@ while True:
 
         sheetData.append(row)
 
-    now = str(datetime.now())[:16]
-    sheetData[1][0] = '\'' + now
+    for i in range(5):
+        sheetData[i+1][0] = '\'' + lastUpdated[i]
 
     def updateSpreadsheet():
         try:
