@@ -131,11 +131,11 @@ while True:
         return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
     # CDPHE COVID19 Vaccine Daily Summary Statistics
-    # https://data-cdphe.opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0
+    # https://data-cdphe.opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0
     if logging:
         printNow('Getting    vaccine  data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/a681d9e9f61144b2977badb89149198c_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0.csv')
     except HTTPError as e:
         printNow(now, '-- Error getting vaccine data:', e.code)
         continue
