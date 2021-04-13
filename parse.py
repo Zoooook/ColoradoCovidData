@@ -233,11 +233,11 @@ while True:
         printNow('Hospital data updated to', lastHospitalDate[5:])
 
     # CDPHE COVID19 State-Level Expanded Case Data
-    # https://data-cdphe.opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0
+    # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-state-level-expanded-case-data
     if logging:
         printNow('Getting    state    data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/15883575464d46f686044d2c1aa84ef9_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/a0f52ab12eb4466bb6a76cc175923e62_0.csv')
     except HTTPError as e:
         printNow(now, '-- Error getting state data:', e.code)
         continue
@@ -271,11 +271,11 @@ while True:
         printNow('State    data updated to', lastStateDate[5:])
 
     # COVID19 Positivity Data from Clinical Laboratories
-    # https://data-cdphe.opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0
+    # https://data-cdphe.opendata.arcgis.com/datasets/covid19-positivity-data-from-clinical-laboratories
     if logging:
         printNow('Getting    testing  data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/667a028c66e64be79d1f801cd6e6f304_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/75d55e87fdc2430baf445fb29cec6de0_0.csv')
     except HTTPError as e:
         printNow(now, '-- Error getting testing data:', e.code)
         continue
@@ -319,7 +319,7 @@ while True:
     if logging:
         printNow('Getting    county   data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/8ff1603466cb4fadaff7018612dc58a0_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/efd7f5f77efa4122a70a0c5c405ce8be_0.csv')
     except HTTPError as e:
         printNow(now, '-- Error getting county data:', e.code)
         continue
