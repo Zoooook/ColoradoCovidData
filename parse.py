@@ -103,6 +103,10 @@ while True:
     lastRun = thisRun
 
     now = str(datetime.now())[:16]
+
+    if now[-5:] == '00:00':
+        printNow('')
+
     for i in range(5):
         if not lastUpdated[i]:
             lastUpdated[i] = now
