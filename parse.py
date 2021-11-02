@@ -358,6 +358,8 @@ while True:
         if LABEL in counties and Desc_ in countyFields and Metric not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
             if date not in data[LABEL][fieldMap[Desc_]]:
                 data[LABEL][fieldMap[Desc_]][date] = 0
+            if Value == '1.00E+06':
+                Value = '1000000'
             data[LABEL][fieldMap[Desc_]][date] += int(Value)
 
     countyDates = []
