@@ -23,6 +23,7 @@ drive = build('drive', 'v3', developerKey=apiKey)
 fieldMap = {
     'People Immunized with One Dose'                                     : 'First Dose',
     'People Fully Immunized'                                             : 'All Doses',
+    'People with Additional Doses'                                       : 'Additional Doses',
     'Confirmed COVID-19'                                                 : 'Confirmed',
     'COVID-19 Persons Under Investigation'                               : 'Under Investigation',
     'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset'     : 'Cases by Onset',
@@ -33,14 +34,15 @@ fieldMap = {
     'Deaths Among COVID-19 Cases in Colorado by County'                  : 'Deaths',
     'Total COVID-19 Tests Performed in Colorado by County'               : 'Tests',
 }
-stateFields = list(fieldMap)[:8]
-countyFields = list(fieldMap)[8:]
+stateFields = list(fieldMap)[:9]
+countyFields = list(fieldMap)[9:]
 
 headers = [
     'Last Updated'            ,
     'Date'                    , '',
     'First Dose'              , '%       ', '',
-    'All Doses'               , '%       ',
+    'All Doses'               , '%       ', '',
+    'Additional Doses'        , '%       ',
     'Confirmed Cases'         ,
     'Under Investigation'     , '',
     'by date of illness onset', '       ',
@@ -115,6 +117,7 @@ while True:
         'Colorado': {
             'First Dose'         : {},
             'All Doses'          : {},
+            'Additional Doses'   : {},
             'Confirmed'          : {},
             'Under Investigation': {},
             'Cases by Onset'     : {},
@@ -434,7 +437,7 @@ while True:
 
         row = ['', date]
 
-        for field in ['First Dose', 'All Doses']:
+        for field in ['First Dose', 'All Doses', 'Additional Doses']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
             if date in data['Colorado'][field]:
@@ -503,7 +506,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!A1:EJ',
+                range = 'Data!A1:EM',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = sheetData
