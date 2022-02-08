@@ -170,6 +170,8 @@ while True:
         publish_date = row[ipublish_date]
 
         if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
+            if publish_date == '08/04/2021' and value in ['3379501','3099180']:
+                continue
             data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
     vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['All Doses'])))
@@ -384,25 +386,41 @@ while True:
     sheetData = [headers]
 
     def daily(region, field, i):
-        if dates[i] not in data[region][field]:
+        if dates[i] not in data[region][field] or dates[i-1] not in data[region][field]:
             return ''
 
         today = data[region][field][dates[i]]
-        if i > 0 and dates[i-1] in data[region][field]:
+        if i > 0:
             yesterday = data[region][field][dates[i-1]]
         else:
             yesterday = 0
+
+        if field == 'First Dose' and today > 4360000 and yesterday < 4330000:
+            return ''
+        if field == 'All Doses'  and today > 3910000 and yesterday < 3890000:
+            return ''
+
         return max(0, today - yesterday)
 
     def weekly(region, field, i):
-        if dates[i] not in data[region][field]:
+        if dates[i] not in data[region][field] or dates[i-7] not in data[region][field]:
             return ''
 
         today = data[region][field][dates[i]]
-        if i > 6 and dates[i-7] in data[region][field]:
+        if i > 6:
             lastweek = data[region][field][dates[i-7]]
         else:
             lastweek = 0
+
+        if field == 'First Dose' and today > 3500000 and lastweek < 3380000:
+            return ''
+        if field == 'All Doses'  and today > 3200000 and lastweek < 3100000:
+            return ''
+        if field == 'First Dose' and today > 4360000 and lastweek < 4330000:
+            return ''
+        if field == 'All Doses'  and today > 3910000 and lastweek < 3890000:
+            return ''
+
         return max(0, today - lastweek)
 
     def strRound(num):
@@ -419,6 +437,8 @@ while True:
 
         if i>0:
             for field in stateFields:
+                if fieldMap[field] in ['First Dose', 'All Doses', 'Additional Doses']:
+                    continue
                 if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
                     for j in range(i+1, len(dates)):
                         if dates[j] in data['Colorado'][fieldMap[field]]:
