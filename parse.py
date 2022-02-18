@@ -143,36 +143,36 @@ while True:
         printNow('Getting    vaccine  data')
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0.csv')
+        vaccineData = reader(iterdecode(response, 'utf-8-sig'))
+        if logging:
+            printNow('Processing vaccine  data')
+
+        readFields = True
+        for row in vaccineData:
+            if readFields:
+                isection      = row.index('section')
+                icategory     = row.index('category')
+                imetric       = row.index('metric')
+                ivalue        = row.index('value')
+                ipublish_date = row.index('publish_date')
+                readFields = False
+
+            section      = row[isection]
+            category     = row[icategory]
+            metric       = row[imetric]
+            value        = row[ivalue]
+            publish_date = row[ipublish_date]
+
+            if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
+                if publish_date == '08/04/2021' and value in ['3379501','3099180']:
+                    continue
+                data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
     except HTTPError as e:
         printNow(now, '-- Error getting vaccine data:', e.code)
         continue
     except Exception as e:
         printNow(now, '-- Error getting vaccine data:', str(e))
         continue
-    vaccineData = reader(iterdecode(response, 'utf-8-sig'))
-    if logging:
-        printNow('Processing vaccine  data')
-
-    readFields = True
-    for row in vaccineData:
-        if readFields:
-            isection      = row.index('section')
-            icategory     = row.index('category')
-            imetric       = row.index('metric')
-            ivalue        = row.index('value')
-            ipublish_date = row.index('publish_date')
-            readFields = False
-
-        section      = row[isection]
-        category     = row[icategory]
-        metric       = row[imetric]
-        value        = row[ivalue]
-        publish_date = row[ipublish_date]
-
-        if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
-            if publish_date == '08/04/2021' and value in ['3379501','3099180']:
-                continue
-            data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
 
     vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['All Doses'])))
     if vaccineDates[-1] != lastVaccineDate:
