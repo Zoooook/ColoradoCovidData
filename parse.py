@@ -190,6 +190,34 @@ while True:
             while not downloader.next_chunk():
                 pass
             fh.close()
+
+            with open('hospitalData.csv') as file:
+                hospitalData = reader(file)
+                if logging:
+                    printNow('Processing hospital data')
+
+                readFields = True
+                for row in hospitalData:
+                    if readFields:
+                        icategory    = row.index('category')
+                        idescription = row.index('description')
+                        iregion      = row.index('region')
+                        idate        = row.index('date')
+                        imetric      = row.index('metric')
+                        ivalue       = row.index('value')
+                        readFields = False
+
+                    category    = row[icategory]
+                    description = row[idescription]
+                    region      = row[iregion]
+                    date        = row[idate]
+                    metric      = row[imetric]
+                    value       = row[ivalue]
+
+                    if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
+                        data['Colorado'][fieldMap[metric]][date] = int(value)
+            remove('hospitalData.csv')
+
             return True
         except HTTPError as e:
             printNow(now, '-- Error getting hospital data:', e.code)
@@ -207,33 +235,6 @@ while True:
     if not getHospitalData():
         continue
 
-    with open('hospitalData.csv') as file:
-        hospitalData = reader(file)
-        if logging:
-            printNow('Processing hospital data')
-
-        readFields = True
-        for row in hospitalData:
-            if readFields:
-                icategory    = row.index('category')
-                idescription = row.index('description')
-                iregion      = row.index('region')
-                idate        = row.index('date')
-                imetric      = row.index('metric')
-                ivalue       = row.index('value')
-                readFields = False
-
-            category    = row[icategory]
-            description = row[idescription]
-            region      = row[iregion]
-            date        = row[idate]
-            metric      = row[imetric]
-            value       = row[ivalue]
-
-            if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
-                data['Colorado'][fieldMap[metric]][date] = int(value)
-    remove('hospitalData.csv')
-
     hospitalDates = sorted(list(set(data['Colorado']['Confirmed']) | set(data['Colorado']['Under Investigation'])))
     if hospitalDates[-1] != lastHospitalDate:
         updateData = True
@@ -247,30 +248,30 @@ while True:
         printNow('Getting    state    data')
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/a0f52ab12eb4466bb6a76cc175923e62_0.csv')
+        stateData = reader(iterdecode(response, 'utf-8-sig'))
+        if logging:
+            printNow('Processing state    data')
+
+        readFields = True
+        for row in stateData:
+            if readFields:
+                idescription = row.index('description')
+                idate        = row.index('date')
+                ivalue       = row.index('value')
+                readFields = False
+
+            description = row[idescription]
+            date        = row[idate]
+            value       = row[ivalue]
+
+            if description in stateFields:
+                data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
     except HTTPError as e:
         printNow(now, '-- Error getting state data:', e.code)
         continue
     except Exception as e:
         printNow(now, '-- Error getting state data:', str(e))
         continue
-    stateData = reader(iterdecode(response, 'utf-8-sig'))
-    if logging:
-        printNow('Processing state    data')
-
-    readFields = True
-    for row in stateData:
-        if readFields:
-            idescription = row.index('description')
-            idate        = row.index('date')
-            ivalue       = row.index('value')
-            readFields = False
-
-        description = row[idescription]
-        date        = row[idate]
-        value       = row[ivalue]
-
-        if description in stateFields:
-            data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
 
     stateDates = sorted(list(set(data['Colorado']['Cases by Onset']) | set(data['Colorado']['Cases']) | set(data['Colorado']['Deaths'])))
     if stateDates[-1] != lastStateDate:
@@ -285,36 +286,36 @@ while True:
         printNow('Getting    testing  data')
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/75d55e87fdc2430baf445fb29cec6de0_0.csv')
+        testingData = reader(iterdecode(response, 'utf-8-sig'))
+        if logging:
+            printNow('Processing testing  data')
+
+        field = 'Cumulative People Tested at Lab'
+        readFields = True
+        for row in testingData:
+            if readFields:
+                iDesc_     = row.index('Desc_')
+                iAttr_Date = row.index('Attr_Date')
+                iMetric    = row.index('Metric')
+                iValue     = row.index('Value')
+                readFields = False
+
+            Desc_     = row[iDesc_]
+            Attr_Date = row[iAttr_Date]
+            Metric    = row[iMetric]
+            Value     = row[iValue]
+
+            if Desc_ == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and Metric in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
+                date = formatDate(Attr_Date)
+                if date not in data['Colorado'][fieldMap[field]]:
+                    data['Colorado'][fieldMap[field]][date] = 0
+                data['Colorado'][fieldMap[field]][date] += int(Value)
     except HTTPError as e:
         printNow(now, '-- Error getting testing data:', e.code)
         continue
     except Exception as e:
         printNow(now, '-- Error getting testing data:', str(e))
         continue
-    testingData = reader(iterdecode(response, 'utf-8-sig'))
-    if logging:
-        printNow('Processing testing  data')
-
-    field = 'Cumulative People Tested at Lab'
-    readFields = True
-    for row in testingData:
-        if readFields:
-            iDesc_     = row.index('Desc_')
-            iAttr_Date = row.index('Attr_Date')
-            iMetric    = row.index('Metric')
-            iValue     = row.index('Value')
-            readFields = False
-
-        Desc_     = row[iDesc_]
-        Attr_Date = row[iAttr_Date]
-        Metric    = row[iMetric]
-        Value     = row[iValue]
-
-        if Desc_ == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and Metric in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
-            date = formatDate(Attr_Date)
-            if date not in data['Colorado'][fieldMap[field]]:
-                data['Colorado'][fieldMap[field]][date] = 0
-            data['Colorado'][fieldMap[field]][date] += int(Value)
 
     testDates = sorted(list(data['Colorado']['Tests']))
     if testDates[-1] != lastTestDate:
@@ -329,43 +330,43 @@ while True:
         printNow('Getting    county   data')
     try:
         response = urlopen('https://opendata.arcgis.com/datasets/efd7f5f77efa4122a70a0c5c405ce8be_0.csv')
+        countyData = reader(iterdecode(response, 'utf-8-sig'))
+        if logging:
+            printNow('Processing county   data')
+
+        readFields = True
+        for row in countyData:
+            if readFields:
+                iLABEL  = row.index('LABEL')
+                iDesc_  = row.index('Desc_')
+                iMetric = row.index('Metric')
+                iValue  = row.index('Value')
+                iDate   = row.index('Date')
+                readFields = False
+
+            LABEL  = row[iLABEL]
+            Desc_  = row[iDesc_]
+            Metric = row[iMetric]
+            Value  = row[iValue]
+            Date   = row[iDate]
+
+            if LABEL not in counties + ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
+                LABEL = 'Other'
+            if Desc_ == 'Cases of COVID-19 in Colorado by County' and Metric == 'Deaths': # errors in the data
+                Desc_ = 'Deaths Among COVID-19 Cases in Colorado by County'
+            date = formatDate(Date)
+            if LABEL in counties and Desc_ in countyFields and Metric not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
+                if date not in data[LABEL][fieldMap[Desc_]]:
+                    data[LABEL][fieldMap[Desc_]][date] = 0
+                if Value == '1.00E+06':
+                    Value = '1000000'
+                data[LABEL][fieldMap[Desc_]][date] += int(Value)
     except HTTPError as e:
         printNow(now, '-- Error getting county data:', e.code)
         continue
     except Exception as e:
         printNow(now, '-- Error getting county data:', str(e))
         continue
-    countyData = reader(iterdecode(response, 'utf-8-sig'))
-    if logging:
-        printNow('Processing county   data')
-
-    readFields = True
-    for row in countyData:
-        if readFields:
-            iLABEL  = row.index('LABEL')
-            iDesc_  = row.index('Desc_')
-            iMetric = row.index('Metric')
-            iValue  = row.index('Value')
-            iDate   = row.index('Date')
-            readFields = False
-
-        LABEL  = row[iLABEL]
-        Desc_  = row[iDesc_]
-        Metric = row[iMetric]
-        Value  = row[iValue]
-        Date   = row[iDate]
-
-        if LABEL not in counties + ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
-            LABEL = 'Other'
-        if Desc_ == 'Cases of COVID-19 in Colorado by County' and Metric == 'Deaths': # errors in the data
-            Desc_ = 'Deaths Among COVID-19 Cases in Colorado by County'
-        date = formatDate(Date)
-        if LABEL in counties and Desc_ in countyFields and Metric not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
-            if date not in data[LABEL][fieldMap[Desc_]]:
-                data[LABEL][fieldMap[Desc_]][date] = 0
-            if Value == '1.00E+06':
-                Value = '1000000'
-            data[LABEL][fieldMap[Desc_]][date] += int(Value)
 
     countyDates = []
     for county in counties:
