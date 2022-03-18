@@ -1,0 +1,1449 @@
+section,category,description,region,date,metric,value
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-22,Confirmed COVID-19,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-23,Confirmed COVID-19,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-24,Confirmed COVID-19,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-25,Confirmed COVID-19,152
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-26,Confirmed COVID-19,230
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-27,Confirmed COVID-19,278
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-28,Confirmed COVID-19,307
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-29,Confirmed COVID-19,332
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-30,Confirmed COVID-19,358
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-31,Confirmed COVID-19,503
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-01,Confirmed COVID-19,574
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-02,Confirmed COVID-19,698
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-03,Confirmed COVID-19,739
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-04,Confirmed COVID-19,777
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-05,Confirmed COVID-19,783
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-06,Confirmed COVID-19,786
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-07,Confirmed COVID-19,786
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-08,Confirmed COVID-19,833
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-09,Confirmed COVID-19,848
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-10,Confirmed COVID-19,842
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-11,Confirmed COVID-19,841
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-12,Confirmed COVID-19,822
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-13,Confirmed COVID-19,842
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-14,Confirmed COVID-19,888
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-15,Confirmed COVID-19,878
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-16,Confirmed COVID-19,859
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-17,Confirmed COVID-19,858
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-18,Confirmed COVID-19,843
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-19,Confirmed COVID-19,874
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-20,Confirmed COVID-19,861
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-21,Confirmed COVID-19,851
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-22,Confirmed COVID-19,859
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-23,Confirmed COVID-19,873
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-24,Confirmed COVID-19,866
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-25,Confirmed COVID-19,834
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-26,Confirmed COVID-19,812
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-27,Confirmed COVID-19,776
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-28,Confirmed COVID-19,784
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-29,Confirmed COVID-19,782
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-30,Confirmed COVID-19,756
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-01,Confirmed COVID-19,737
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-02,Confirmed COVID-19,737
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-03,Confirmed COVID-19,722
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-04,Confirmed COVID-19,689
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-05,Confirmed COVID-19,650
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-06,Confirmed COVID-19,636
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-07,Confirmed COVID-19,628
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-08,Confirmed COVID-19,610
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-09,Confirmed COVID-19,586
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-10,Confirmed COVID-19,573
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-11,Confirmed COVID-19,557
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-12,Confirmed COVID-19,563
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-13,Confirmed COVID-19,522
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-14,Confirmed COVID-19,514
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-15,Confirmed COVID-19,497
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-16,Confirmed COVID-19,517
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-17,Confirmed COVID-19,486
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-18,Confirmed COVID-19,460
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-19,Confirmed COVID-19,463
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-20,Confirmed COVID-19,466
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-21,Confirmed COVID-19,445
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-22,Confirmed COVID-19,444
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-23,Confirmed COVID-19,426
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-24,Confirmed COVID-19,409
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-25,Confirmed COVID-19,397
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-26,Confirmed COVID-19,367
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-27,Confirmed COVID-19,362
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-28,Confirmed COVID-19,335
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-29,Confirmed COVID-19,321
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-30,Confirmed COVID-19,308
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-31,Confirmed COVID-19,297
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-01,Confirmed COVID-19,272
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-02,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-03,Confirmed COVID-19,261
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-04,Confirmed COVID-19,231
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-05,Confirmed COVID-19,215
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-06,Confirmed COVID-19,207
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-07,Confirmed COVID-19,204
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-08,Confirmed COVID-19,198
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-09,Confirmed COVID-19,180
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-10,Confirmed COVID-19,182
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-11,Confirmed COVID-19,168
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-12,Confirmed COVID-19,167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-13,Confirmed COVID-19,166
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-14,Confirmed COVID-19,162
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-15,Confirmed COVID-19,166
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-16,Confirmed COVID-19,158
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-17,Confirmed COVID-19,164
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-18,Confirmed COVID-19,151
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-19,Confirmed COVID-19,156
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-20,Confirmed COVID-19,151
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-21,Confirmed COVID-19,160
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-22,Confirmed COVID-19,149
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-23,Confirmed COVID-19,141
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-24,Confirmed COVID-19,134
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-25,Confirmed COVID-19,135
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-26,Confirmed COVID-19,129
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-27,Confirmed COVID-19,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-28,Confirmed COVID-19,135
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-29,Confirmed COVID-19,132
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-30,Confirmed COVID-19,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-01,Confirmed COVID-19,144
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-02,Confirmed COVID-19,147
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-03,Confirmed COVID-19,147
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-04,Confirmed COVID-19,155
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-05,Confirmed COVID-19,171
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-06,Confirmed COVID-19,165
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-07,Confirmed COVID-19,173
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-08,Confirmed COVID-19,184
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-09,Confirmed COVID-19,202
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-10,Confirmed COVID-19,211
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-11,Confirmed COVID-19,215
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-12,Confirmed COVID-19,220
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-13,Confirmed COVID-19,220
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-14,Confirmed COVID-19,252
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-15,Confirmed COVID-19,247
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-16,Confirmed COVID-19,260
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-17,Confirmed COVID-19,273
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-18,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-19,Confirmed COVID-19,273
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-20,Confirmed COVID-19,275
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-21,Confirmed COVID-19,248
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-22,Confirmed COVID-19,247
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-23,Confirmed COVID-19,237
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-24,Confirmed COVID-19,247
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-25,Confirmed COVID-19,246
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-26,Confirmed COVID-19,241
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-27,Confirmed COVID-19,250
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-28,Confirmed COVID-19,251
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-29,Confirmed COVID-19,244
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-30,Confirmed COVID-19,239
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-31,Confirmed COVID-19,232
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-01,Confirmed COVID-19,218
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-02,Confirmed COVID-19,221
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-03,Confirmed COVID-19,209
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-04,Confirmed COVID-19,202
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-05,Confirmed COVID-19,203
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-06,Confirmed COVID-19,203
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-07,Confirmed COVID-19,201
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-08,Confirmed COVID-19,212
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-09,Confirmed COVID-19,207
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-10,Confirmed COVID-19,185
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-11,Confirmed COVID-19,184
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-12,Confirmed COVID-19,184
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-13,Confirmed COVID-19,172
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-14,Confirmed COVID-19,170
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-15,Confirmed COVID-19,167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-16,Confirmed COVID-19,167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-17,Confirmed COVID-19,163
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-18,Confirmed COVID-19,153
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-19,Confirmed COVID-19,151
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-20,Confirmed COVID-19,146
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-21,Confirmed COVID-19,156
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-22,Confirmed COVID-19,148
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-23,Confirmed COVID-19,157
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-24,Confirmed COVID-19,143
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-25,Confirmed COVID-19,137
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-26,Confirmed COVID-19,146
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-27,Confirmed COVID-19,131
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-28,Confirmed COVID-19,134
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-29,Confirmed COVID-19,140
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-30,Confirmed COVID-19,140
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-31,Confirmed COVID-19,148
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-01,Confirmed COVID-19,144
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-02,Confirmed COVID-19,145
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-03,Confirmed COVID-19,136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-04,Confirmed COVID-19,132
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-05,Confirmed COVID-19,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-06,Confirmed COVID-19,146
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-07,Confirmed COVID-19,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-08,Confirmed COVID-19,137
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-09,Confirmed COVID-19,141
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-10,Confirmed COVID-19,141
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-11,Confirmed COVID-19,142
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-12,Confirmed COVID-19,136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-13,Confirmed COVID-19,136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-14,Confirmed COVID-19,138
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-15,Confirmed COVID-19,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-16,Confirmed COVID-19,134
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-17,Confirmed COVID-19,138
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-18,Confirmed COVID-19,147
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-19,Confirmed COVID-19,144
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-20,Confirmed COVID-19,150
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-21,Confirmed COVID-19,152
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-22,Confirmed COVID-19,148
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-23,Confirmed COVID-19,158
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-24,Confirmed COVID-19,167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-25,Confirmed COVID-19,171
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-26,Confirmed COVID-19,186
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-27,Confirmed COVID-19,177
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-28,Confirmed COVID-19,177
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-29,Confirmed COVID-19,174
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-30,Confirmed COVID-19,178
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-01,Confirmed COVID-19,200
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-02,Confirmed COVID-19,219
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-03,Confirmed COVID-19,205
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-04,Confirmed COVID-19,213
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-05,Confirmed COVID-19,233
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-06,Confirmed COVID-19,246
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-07,Confirmed COVID-19,244
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-08,Confirmed COVID-19,256
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-09,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-10,Confirmed COVID-19,265
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-11,Confirmed COVID-19,284
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-12,Confirmed COVID-19,288
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-13,Confirmed COVID-19,290
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-14,Confirmed COVID-19,317
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-15,Confirmed COVID-19,329
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-16,Confirmed COVID-19,352
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-17,Confirmed COVID-19,337
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-18,Confirmed COVID-19,348
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-19,Confirmed COVID-19,381
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-20,Confirmed COVID-19,417
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-21,Confirmed COVID-19,435
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-22,Confirmed COVID-19,446
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-23,Confirmed COVID-19,458
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-24,Confirmed COVID-19,507
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-25,Confirmed COVID-19,515
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-26,Confirmed COVID-19,513
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-27,Confirmed COVID-19,538
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-28,Confirmed COVID-19,596
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-29,Confirmed COVID-19,622
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-30,Confirmed COVID-19,663
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-31,Confirmed COVID-19,687
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-01,Confirmed COVID-19,686
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-02,Confirmed COVID-19,755
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-03,Confirmed COVID-19,814
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-04,Confirmed COVID-19,847
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-05,Confirmed COVID-19,894
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-06,Confirmed COVID-19,936
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-07,Confirmed COVID-19,985
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-08,Confirmed COVID-19,1023
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-09,Confirmed COVID-19,1060
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-10,Confirmed COVID-19,1116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-11,Confirmed COVID-19,1169
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-12,Confirmed COVID-19,1183
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-13,Confirmed COVID-19,1159
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-14,Confirmed COVID-19,1187
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-15,Confirmed COVID-19,1278
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-16,Confirmed COVID-19,1294
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-17,Confirmed COVID-19,1378
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-18,Confirmed COVID-19,1428
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-19,Confirmed COVID-19,1500
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-20,Confirmed COVID-19,1564
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-21,Confirmed COVID-19,1563
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,Confirmed COVID-19,1539
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,Confirmed COVID-19,1597
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,Confirmed COVID-19,1613
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,Confirmed COVID-19,1652
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-26,Confirmed COVID-19,1665
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-27,Confirmed COVID-19,1682
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-28,Confirmed COVID-19,1725
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-29,Confirmed COVID-19,1749
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-30,Confirmed COVID-19,1834
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-01,Confirmed COVID-19,1847
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-02,Confirmed COVID-19,1841
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-03,Confirmed COVID-19,1796
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-04,Confirmed COVID-19,1740
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-05,Confirmed COVID-19,1685
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-06,Confirmed COVID-19,1633
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-07,Confirmed COVID-19,1643
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-08,Confirmed COVID-19,1629
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-09,Confirmed COVID-19,1565
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-10,Confirmed COVID-19,1545
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-11,Confirmed COVID-19,1559
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-12,Confirmed COVID-19,1514
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-13,Confirmed COVID-19,1513
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-14,Confirmed COVID-19,1466
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-15,Confirmed COVID-19,1445
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-16,Confirmed COVID-19,1428
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-17,Confirmed COVID-19,1403
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-18,Confirmed COVID-19,1370
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-19,Confirmed COVID-19,1331
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-20,Confirmed COVID-19,1293
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-21,Confirmed COVID-19,1253
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-22,Confirmed COVID-19,1243
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-23,Confirmed COVID-19,1222
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-24,Confirmed COVID-19,1163
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-25,Confirmed COVID-19,1091
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-26,Confirmed COVID-19,1110
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-27,Confirmed COVID-19,1091
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-28,Confirmed COVID-19,1094
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-29,Confirmed COVID-19,1086
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-30,Confirmed COVID-19,1045
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-31,Confirmed COVID-19,989
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-01,Confirmed COVID-19,952
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-02,Confirmed COVID-19,918
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-03,Confirmed COVID-19,908
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-04,Confirmed COVID-19,924
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-05,Confirmed COVID-19,911
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-06,Confirmed COVID-19,911
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-07,Confirmed COVID-19,857
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-08,Confirmed COVID-19,833
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-09,Confirmed COVID-19,817
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-10,Confirmed COVID-19,801
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-11,Confirmed COVID-19,833
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-12,Confirmed COVID-19,832
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-13,Confirmed COVID-19,814
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-14,Confirmed COVID-19,822
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-15,Confirmed COVID-19,818
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-16,Confirmed COVID-19,806
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-17,Confirmed COVID-19,796
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-18,Confirmed COVID-19,780
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-19,Confirmed COVID-19,727
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-20,Confirmed COVID-19,744
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-21,Confirmed COVID-19,712
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-22,Confirmed COVID-19,708
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-23,Confirmed COVID-19,679
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-24,Confirmed COVID-19,696
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-25,Confirmed COVID-19,644
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-26,Confirmed COVID-19,674
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-27,Confirmed COVID-19,662
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-28,Confirmed COVID-19,644
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-29,Confirmed COVID-19,596
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-30,Confirmed COVID-19,583
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-31,Confirmed COVID-19,558
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-01,Confirmed COVID-19,556
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-02,Confirmed COVID-19,529
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-03,Confirmed COVID-19,521
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-04,Confirmed COVID-19,538
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-05,Confirmed COVID-19,502
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-06,Confirmed COVID-19,479
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-07,Confirmed COVID-19,467
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-08,Confirmed COVID-19,474
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-09,Confirmed COVID-19,464
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-10,Confirmed COVID-19,472
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-11,Confirmed COVID-19,456
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-12,Confirmed COVID-19,430
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-13,Confirmed COVID-19,432
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-14,Confirmed COVID-19,428
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-15,Confirmed COVID-19,411
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-16,Confirmed COVID-19,406
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-17,Confirmed COVID-19,440
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-18,Confirmed COVID-19,425
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-19,Confirmed COVID-19,404
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-20,Confirmed COVID-19,389
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-21,Confirmed COVID-19,399
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-22,Confirmed COVID-19,392
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-23,Confirmed COVID-19,387
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-24,Confirmed COVID-19,376
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-25,Confirmed COVID-19,374
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-26,Confirmed COVID-19,358
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-27,Confirmed COVID-19,349
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-28,Confirmed COVID-19,358
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-01,Confirmed COVID-19,369
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-02,Confirmed COVID-19,355
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-03,Confirmed COVID-19,341
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-04,Confirmed COVID-19,314
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-05,Confirmed COVID-19,311
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-06,Confirmed COVID-19,288
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-07,Confirmed COVID-19,306
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-08,Confirmed COVID-19,311
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-09,Confirmed COVID-19,299
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-10,Confirmed COVID-19,300
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-11,Confirmed COVID-19,286
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-12,Confirmed COVID-19,303
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-13,Confirmed COVID-19,293
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-14,Confirmed COVID-19,283
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-15,Confirmed COVID-19,328
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-16,Confirmed COVID-19,341
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-17,Confirmed COVID-19,345
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-18,Confirmed COVID-19,337
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-19,Confirmed COVID-19,331
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-20,Confirmed COVID-19,328
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-21,Confirmed COVID-19,333
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-22,Confirmed COVID-19,329
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-23,Confirmed COVID-19,317
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-24,Confirmed COVID-19,304
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-25,Confirmed COVID-19,311
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-26,Confirmed COVID-19,319
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-27,Confirmed COVID-19,325
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-28,Confirmed COVID-19,323
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-29,Confirmed COVID-19,324
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-30,Confirmed COVID-19,329
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-31,Confirmed COVID-19,320
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-01,Confirmed COVID-19,326
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-02,Confirmed COVID-19,335
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-03,Confirmed COVID-19,322
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-04,Confirmed COVID-19,324
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-05,Confirmed COVID-19,351
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-06,Confirmed COVID-19,374
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-07,Confirmed COVID-19,392
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-08,Confirmed COVID-19,393
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-09,Confirmed COVID-19,404
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-10,Confirmed COVID-19,417
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-11,Confirmed COVID-19,421
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-12,Confirmed COVID-19,429
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-13,Confirmed COVID-19,439
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-14,Confirmed COVID-19,469
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-15,Confirmed COVID-19,488
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-16,Confirmed COVID-19,500
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-17,Confirmed COVID-19,520
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-18,Confirmed COVID-19,509
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-19,Confirmed COVID-19,510
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-20,Confirmed COVID-19,553
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-21,Confirmed COVID-19,561
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-22,Confirmed COVID-19,551
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-23,Confirmed COVID-19,573
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-24,Confirmed COVID-19,563
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-25,Confirmed COVID-19,570
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-26,Confirmed COVID-19,606
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-27,Confirmed COVID-19,622
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-28,Confirmed COVID-19,634
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-29,Confirmed COVID-19,628
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-30,Confirmed COVID-19,617
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-01,Confirmed COVID-19,612
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-02,Confirmed COVID-19,625
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-03,Confirmed COVID-19,631
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-04,Confirmed COVID-19,639
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-05,Confirmed COVID-19,666
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-06,Confirmed COVID-19,661
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-07,Confirmed COVID-19,667
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-08,Confirmed COVID-19,679
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-09,Confirmed COVID-19,664
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-10,Confirmed COVID-19,653
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-11,Confirmed COVID-19,631
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-12,Confirmed COVID-19,624
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-13,Confirmed COVID-19,603
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-14,Confirmed COVID-19,582
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-15,Confirmed COVID-19,577
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-16,Confirmed COVID-19,563
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-17,Confirmed COVID-19,530
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-18,Confirmed COVID-19,528
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-19,Confirmed COVID-19,521
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-20,Confirmed COVID-19,516
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-21,Confirmed COVID-19,538
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-22,Confirmed COVID-19,525
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-23,Confirmed COVID-19,516
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-24,Confirmed COVID-19,511
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-25,Confirmed COVID-19,509
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-26,Confirmed COVID-19,528
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-27,Confirmed COVID-19,508
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-28,Confirmed COVID-19,453
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-29,Confirmed COVID-19,462
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-30,Confirmed COVID-19,471
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-31,Confirmed COVID-19,469
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-01,Confirmed COVID-19,456
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-02,Confirmed COVID-19,429
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-03,Confirmed COVID-19,435
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-04,Confirmed COVID-19,431
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-05,Confirmed COVID-19,415
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-06,Confirmed COVID-19,411
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-07,Confirmed COVID-19,403
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-08,Confirmed COVID-19,396
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-09,Confirmed COVID-19,371
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-10,Confirmed COVID-19,358
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-11,Confirmed COVID-19,352
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-12,Confirmed COVID-19,340
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-13,Confirmed COVID-19,334
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-14,Confirmed COVID-19,326
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-15,Confirmed COVID-19,340
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-16,Confirmed COVID-19,330
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-17,Confirmed COVID-19,345
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-18,Confirmed COVID-19,333
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-19,Confirmed COVID-19,314
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-20,Confirmed COVID-19,323
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-21,Confirmed COVID-19,300
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-22,Confirmed COVID-19,287
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-23,Confirmed COVID-19,303
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-24,Confirmed COVID-19,285
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-25,Confirmed COVID-19,279
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-26,Confirmed COVID-19,266
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-27,Confirmed COVID-19,262
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-28,Confirmed COVID-19,266
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-29,Confirmed COVID-19,266
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-30,Confirmed COVID-19,270
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-01,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-02,Confirmed COVID-19,269
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-03,Confirmed COVID-19,276
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-04,Confirmed COVID-19,271
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-05,Confirmed COVID-19,281
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-06,Confirmed COVID-19,284
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-07,Confirmed COVID-19,285
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-08,Confirmed COVID-19,284
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-09,Confirmed COVID-19,282
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-10,Confirmed COVID-19,271
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-11,Confirmed COVID-19,275
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-12,Confirmed COVID-19,263
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-13,Confirmed COVID-19,269
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-14,Confirmed COVID-19,266
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-15,Confirmed COVID-19,264
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-16,Confirmed COVID-19,267
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-17,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-18,Confirmed COVID-19,261
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-19,Confirmed COVID-19,273
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-20,Confirmed COVID-19,298
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-21,Confirmed COVID-19,277
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-22,Confirmed COVID-19,266
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-23,Confirmed COVID-19,275
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-24,Confirmed COVID-19,279
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-25,Confirmed COVID-19,281
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-26,Confirmed COVID-19,291
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-27,Confirmed COVID-19,292
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-28,Confirmed COVID-19,297
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-29,Confirmed COVID-19,313
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-30,Confirmed COVID-19,314
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-31,Confirmed COVID-19,321
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-01,Confirmed COVID-19,327
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-02,Confirmed COVID-19,353
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-03,Confirmed COVID-19,383
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-04,Confirmed COVID-19,367
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-05,Confirmed COVID-19,384
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-06,Confirmed COVID-19,408
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-07,Confirmed COVID-19,422
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-08,Confirmed COVID-19,428
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-09,Confirmed COVID-19,478
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-10,Confirmed COVID-19,494
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-11,Confirmed COVID-19,501
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-12,Confirmed COVID-19,514
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-13,Confirmed COVID-19,520
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-14,Confirmed COVID-19,508
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-15,Confirmed COVID-19,519
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-16,Confirmed COVID-19,566
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-17,Confirmed COVID-19,586
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-18,Confirmed COVID-19,606
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-19,Confirmed COVID-19,612
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-20,Confirmed COVID-19,627
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-21,Confirmed COVID-19,648
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-22,Confirmed COVID-19,643
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-23,Confirmed COVID-19,665
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-24,Confirmed COVID-19,676
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-25,Confirmed COVID-19,680
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-26,Confirmed COVID-19,682
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-27,Confirmed COVID-19,705
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-28,Confirmed COVID-19,756
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-29,Confirmed COVID-19,756
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-30,Confirmed COVID-19,796
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-31,Confirmed COVID-19,808
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-01,Confirmed COVID-19,796
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-02,Confirmed COVID-19,816
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-03,Confirmed COVID-19,833
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-04,Confirmed COVID-19,833
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-05,Confirmed COVID-19,840
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-06,Confirmed COVID-19,855
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-07,Confirmed COVID-19,862
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-08,Confirmed COVID-19,891
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-09,Confirmed COVID-19,894
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-10,Confirmed COVID-19,902
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-11,Confirmed COVID-19,904
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-12,Confirmed COVID-19,895
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-13,Confirmed COVID-19,914
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-14,Confirmed COVID-19,921
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-15,Confirmed COVID-19,898
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-16,Confirmed COVID-19,887
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-17,Confirmed COVID-19,868
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-18,Confirmed COVID-19,847
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-19,Confirmed COVID-19,849
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-20,Confirmed COVID-19,890
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-21,Confirmed COVID-19,876
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-22,Confirmed COVID-19,877
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-23,Confirmed COVID-19,900
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-24,Confirmed COVID-19,881
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-25,Confirmed COVID-19,871
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-26,Confirmed COVID-19,879
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-27,Confirmed COVID-19,884
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-28,Confirmed COVID-19,866
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-29,Confirmed COVID-19,865
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-30,Confirmed COVID-19,846
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-01,Confirmed COVID-19,829
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-02,Confirmed COVID-19,815
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-03,Confirmed COVID-19,829
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-04,Confirmed COVID-19,864
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-05,Confirmed COVID-19,881
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-06,Confirmed COVID-19,922
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-07,Confirmed COVID-19,909
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-08,Confirmed COVID-19,890
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-09,Confirmed COVID-19,880
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-10,Confirmed COVID-19,892
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-11,Confirmed COVID-19,944
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-12,Confirmed COVID-19,976
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-13,Confirmed COVID-19,964
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-14,Confirmed COVID-19,982
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-15,Confirmed COVID-19,983
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-16,Confirmed COVID-19,1007
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-17,Confirmed COVID-19,1004
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-18,Confirmed COVID-19,1021
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-19,Confirmed COVID-19,1042
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-20,Confirmed COVID-19,1094
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-21,Confirmed COVID-19,1130
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-22,Confirmed COVID-19,1093
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-23,Confirmed COVID-19,1095
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-24,Confirmed COVID-19,1108
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-25,Confirmed COVID-19,1170
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-26,Confirmed COVID-19,1187
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-27,Confirmed COVID-19,1191
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-28,Confirmed COVID-19,1167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-29,Confirmed COVID-19,1184
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-30,Confirmed COVID-19,1188
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-31,Confirmed COVID-19,1197
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-01,Confirmed COVID-19,1236
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-02,Confirmed COVID-19,1254
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-03,Confirmed COVID-19,1280
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-04,Confirmed COVID-19,1267
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-05,Confirmed COVID-19,1296
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-06,Confirmed COVID-19,1303
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-07,Confirmed COVID-19,1296
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-08,Confirmed COVID-19,1394
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-09,Confirmed COVID-19,1426
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-10,Confirmed COVID-19,1431
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-11,Confirmed COVID-19,1466
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-12,Confirmed COVID-19,1476
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-13,Confirmed COVID-19,1460
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-14,Confirmed COVID-19,1460
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-15,Confirmed COVID-19,1431
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-16,Confirmed COVID-19,1470
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-17,Confirmed COVID-19,1526
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-18,Confirmed COVID-19,1535
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-19,Confirmed COVID-19,1518
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-20,Confirmed COVID-19,1514
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-21,Confirmed COVID-19,1519
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-22,Confirmed COVID-19,1565
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-23,Confirmed COVID-19,1576
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-24,Confirmed COVID-19,1556
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-25,Confirmed COVID-19,1527
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-26,Confirmed COVID-19,1504
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-27,Confirmed COVID-19,1500
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-28,Confirmed COVID-19,1507
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-29,Confirmed COVID-19,1473
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-30,Confirmed COVID-19,1466
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-01,Confirmed COVID-19,1432
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-02,Confirmed COVID-19,1400
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-03,Confirmed COVID-19,1368
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-04,Confirmed COVID-19,1362
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-05,Confirmed COVID-19,1381
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-06,Confirmed COVID-19,1379
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-07,Confirmed COVID-19,1419
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-08,Confirmed COVID-19,1383
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-09,Confirmed COVID-19,1356
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-10,Confirmed COVID-19,1329
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-11,Confirmed COVID-19,1317
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-12,Confirmed COVID-19,1312
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-13,Confirmed COVID-19,1294
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-14,Confirmed COVID-19,1270
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-15,Confirmed COVID-19,1227
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-16,Confirmed COVID-19,1212
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-17,Confirmed COVID-19,1172
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-18,Confirmed COVID-19,1161
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-19,Confirmed COVID-19,1136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-20,Confirmed COVID-19,1086
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-21,Confirmed COVID-19,1030
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-22,Confirmed COVID-19,1026
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-23,Confirmed COVID-19,1020
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-24,Confirmed COVID-19,1006
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-25,Confirmed COVID-19,992
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-26,Confirmed COVID-19,997
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-27,Confirmed COVID-19,1018
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-28,Confirmed COVID-19,1057
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-29,Confirmed COVID-19,1088
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-30,Confirmed COVID-19,1103
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-31,Confirmed COVID-19,1125
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-01,Confirmed COVID-19,1136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-02,Confirmed COVID-19,1116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-03,Confirmed COVID-19,1167
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-04,Confirmed COVID-19,1292
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-05,Confirmed COVID-19,1308
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-06,Confirmed COVID-19,1355
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-07,Confirmed COVID-19,1374
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-08,Confirmed COVID-19,1416
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-09,Confirmed COVID-19,1416
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-10,Confirmed COVID-19,1402
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-11,Confirmed COVID-19,1488
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-12,Confirmed COVID-19,1577
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-13,Confirmed COVID-19,1623
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-14,Confirmed COVID-19,1663
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-15,Confirmed COVID-19,1657
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-16,Confirmed COVID-19,1676
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-17,Confirmed COVID-19,1655
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-18,Confirmed COVID-19,1676
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-19,Confirmed COVID-19,1674
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-20,Confirmed COVID-19,1641
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-21,Confirmed COVID-19,1629
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-22,Confirmed COVID-19,1583
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-23,Confirmed COVID-19,1595
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-24,Confirmed COVID-19,1581
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-25,Confirmed COVID-19,1547
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-26,Confirmed COVID-19,1526
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-27,Confirmed COVID-19,1444
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-28,Confirmed COVID-19,1363
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-29,Confirmed COVID-19,1350
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-30,Confirmed COVID-19,1337
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-31,Confirmed COVID-19,1300
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-01,Confirmed COVID-19,1227
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-02,Confirmed COVID-19,1195
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-03,Confirmed COVID-19,1162
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-04,Confirmed COVID-19,1070
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-05,Confirmed COVID-19,1044
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-06,Confirmed COVID-19,1037
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-07,Confirmed COVID-19,979
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-08,Confirmed COVID-19,945
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-09,Confirmed COVID-19,861
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-10,Confirmed COVID-19,805
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-11,Confirmed COVID-19,773
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-12,Confirmed COVID-19,736
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-13,Confirmed COVID-19,743
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-14,Confirmed COVID-19,705
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-15,Confirmed COVID-19,645
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-16,Confirmed COVID-19,641
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-17,Confirmed COVID-19,563
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-18,Confirmed COVID-19,536
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-19,Confirmed COVID-19,514
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-20,Confirmed COVID-19,515
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-21,Confirmed COVID-19,471
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-22,Confirmed COVID-19,446
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-23,Confirmed COVID-19,415
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-24,Confirmed COVID-19,372
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-25,Confirmed COVID-19,369
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-26,Confirmed COVID-19,374
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-27,Confirmed COVID-19,369
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-28,Confirmed COVID-19,348
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-01,Confirmed COVID-19,321
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-02,Confirmed COVID-19,362
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-03,Confirmed COVID-19,283
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-04,Confirmed COVID-19,273
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-05,Confirmed COVID-19,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-06,Confirmed COVID-19,273
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-07,Confirmed COVID-19,265
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-08,Confirmed COVID-19,246
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-09,Confirmed COVID-19,240
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-10,Confirmed COVID-19,234
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-11,Confirmed COVID-19,211
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-12,Confirmed COVID-19,206
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-13,Confirmed COVID-19,191
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-14,Confirmed COVID-19,179
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-15,Confirmed COVID-19,151
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-22,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-23,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-24,COVID-19 Persons Under Investigation,176
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-25,COVID-19 Persons Under Investigation,268
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-26,COVID-19 Persons Under Investigation,379
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-27,COVID-19 Persons Under Investigation,456
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-28,COVID-19 Persons Under Investigation,540
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-29,COVID-19 Persons Under Investigation,533
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-30,COVID-19 Persons Under Investigation,530
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-03-31,COVID-19 Persons Under Investigation,577
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-01,COVID-19 Persons Under Investigation,622
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-02,COVID-19 Persons Under Investigation,560
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-03,COVID-19 Persons Under Investigation,467
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-04,COVID-19 Persons Under Investigation,434
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-05,COVID-19 Persons Under Investigation,489
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-06,COVID-19 Persons Under Investigation,442
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-07,COVID-19 Persons Under Investigation,470
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-08,COVID-19 Persons Under Investigation,433
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-09,COVID-19 Persons Under Investigation,429
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-10,COVID-19 Persons Under Investigation,398
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-11,COVID-19 Persons Under Investigation,345
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-12,COVID-19 Persons Under Investigation,361
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-13,COVID-19 Persons Under Investigation,376
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-14,COVID-19 Persons Under Investigation,331
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-15,COVID-19 Persons Under Investigation,307
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-16,COVID-19 Persons Under Investigation,336
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-17,COVID-19 Persons Under Investigation,359
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-18,COVID-19 Persons Under Investigation,267
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-19,COVID-19 Persons Under Investigation,222
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-20,COVID-19 Persons Under Investigation,223
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-21,COVID-19 Persons Under Investigation,238
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-22,COVID-19 Persons Under Investigation,218
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-23,COVID-19 Persons Under Investigation,211
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-24,COVID-19 Persons Under Investigation,218
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-25,COVID-19 Persons Under Investigation,212
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-26,COVID-19 Persons Under Investigation,195
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-27,COVID-19 Persons Under Investigation,176
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-28,COVID-19 Persons Under Investigation,210
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-29,COVID-19 Persons Under Investigation,182
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-04-30,COVID-19 Persons Under Investigation,210
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-01,COVID-19 Persons Under Investigation,222
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-02,COVID-19 Persons Under Investigation,194
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-03,COVID-19 Persons Under Investigation,161
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-04,COVID-19 Persons Under Investigation,145
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-05,COVID-19 Persons Under Investigation,142
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-06,COVID-19 Persons Under Investigation,154
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-07,COVID-19 Persons Under Investigation,170
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-08,COVID-19 Persons Under Investigation,211
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-09,COVID-19 Persons Under Investigation,204
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-10,COVID-19 Persons Under Investigation,184
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-11,COVID-19 Persons Under Investigation,189
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-12,COVID-19 Persons Under Investigation,175
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-13,COVID-19 Persons Under Investigation,166
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-14,COVID-19 Persons Under Investigation,171
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-15,COVID-19 Persons Under Investigation,189
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-16,COVID-19 Persons Under Investigation,154
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-17,COVID-19 Persons Under Investigation,164
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-18,COVID-19 Persons Under Investigation,156
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-19,COVID-19 Persons Under Investigation,163
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-20,COVID-19 Persons Under Investigation,175
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-21,COVID-19 Persons Under Investigation,168
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-22,COVID-19 Persons Under Investigation,176
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-23,COVID-19 Persons Under Investigation,145
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-24,COVID-19 Persons Under Investigation,129
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-25,COVID-19 Persons Under Investigation,163
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-26,COVID-19 Persons Under Investigation,140
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-27,COVID-19 Persons Under Investigation,122
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-28,COVID-19 Persons Under Investigation,129
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-29,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-30,COVID-19 Persons Under Investigation,113
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-05-31,COVID-19 Persons Under Investigation,117
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-01,COVID-19 Persons Under Investigation,110
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-02,COVID-19 Persons Under Investigation,127
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-03,COVID-19 Persons Under Investigation,128
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-04,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-05,COVID-19 Persons Under Investigation,105
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-06,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-07,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-08,COVID-19 Persons Under Investigation,94
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-09,COVID-19 Persons Under Investigation,125
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-10,COVID-19 Persons Under Investigation,124
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-11,COVID-19 Persons Under Investigation,110
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-12,COVID-19 Persons Under Investigation,113
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-13,COVID-19 Persons Under Investigation,109
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-14,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-15,COVID-19 Persons Under Investigation,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-16,COVID-19 Persons Under Investigation,143
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-17,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-18,COVID-19 Persons Under Investigation,119
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-19,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-20,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-21,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-22,COVID-19 Persons Under Investigation,107
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-23,COVID-19 Persons Under Investigation,108
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-24,COVID-19 Persons Under Investigation,104
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-25,COVID-19 Persons Under Investigation,112
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-26,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-27,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-28,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-29,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-06-30,COVID-19 Persons Under Investigation,132
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-01,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-02,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-03,COVID-19 Persons Under Investigation,123
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-04,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-05,COVID-19 Persons Under Investigation,112
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-06,COVID-19 Persons Under Investigation,121
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-07,COVID-19 Persons Under Investigation,154
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-08,COVID-19 Persons Under Investigation,151
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-09,COVID-19 Persons Under Investigation,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-10,COVID-19 Persons Under Investigation,117
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-11,COVID-19 Persons Under Investigation,113
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-12,COVID-19 Persons Under Investigation,104
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-13,COVID-19 Persons Under Investigation,113
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-14,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-15,COVID-19 Persons Under Investigation,121
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-16,COVID-19 Persons Under Investigation,129
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-17,COVID-19 Persons Under Investigation,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-18,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-19,COVID-19 Persons Under Investigation,128
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-20,COVID-19 Persons Under Investigation,122
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-21,COVID-19 Persons Under Investigation,138
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-22,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-23,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-24,COVID-19 Persons Under Investigation,109
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-25,COVID-19 Persons Under Investigation,111
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-26,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-27,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-28,COVID-19 Persons Under Investigation,108
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-29,COVID-19 Persons Under Investigation,109
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-30,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-07-31,COVID-19 Persons Under Investigation,118
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-01,COVID-19 Persons Under Investigation,129
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-02,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-03,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-04,COVID-19 Persons Under Investigation,138
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-05,COVID-19 Persons Under Investigation,132
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-06,COVID-19 Persons Under Investigation,117
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-07,COVID-19 Persons Under Investigation,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-08,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-09,COVID-19 Persons Under Investigation,111
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-10,COVID-19 Persons Under Investigation,134
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-11,COVID-19 Persons Under Investigation,125
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-12,COVID-19 Persons Under Investigation,131
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-13,COVID-19 Persons Under Investigation,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-14,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-15,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-16,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-17,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-18,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-19,COVID-19 Persons Under Investigation,111
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-20,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-21,COVID-19 Persons Under Investigation,80
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-22,COVID-19 Persons Under Investigation,110
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-23,COVID-19 Persons Under Investigation,68
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-24,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-25,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-26,COVID-19 Persons Under Investigation,107
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-27,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-28,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-29,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-30,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-08-31,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-01,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-02,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-03,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-04,COVID-19 Persons Under Investigation,87
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-05,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-06,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-07,COVID-19 Persons Under Investigation,98
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-08,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-09,COVID-19 Persons Under Investigation,85
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-10,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-11,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-12,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-13,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-14,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-15,COVID-19 Persons Under Investigation,135
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-16,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-17,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-18,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-19,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-20,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-21,COVID-19 Persons Under Investigation,87
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-22,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-23,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-24,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-25,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-26,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-27,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-28,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-29,COVID-19 Persons Under Investigation,94
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-09-30,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-01,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-02,COVID-19 Persons Under Investigation,85
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-03,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-04,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-05,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-06,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-07,COVID-19 Persons Under Investigation,125
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-08,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-09,COVID-19 Persons Under Investigation,112
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-10,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-11,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-12,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-13,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-14,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-15,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-16,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-17,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-18,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-19,COVID-19 Persons Under Investigation,84
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-20,COVID-19 Persons Under Investigation,99
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-21,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-22,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-23,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-24,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-25,COVID-19 Persons Under Investigation,71
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-26,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-27,COVID-19 Persons Under Investigation,110
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-28,COVID-19 Persons Under Investigation,125
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-29,COVID-19 Persons Under Investigation,120
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-30,COVID-19 Persons Under Investigation,118
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-10-31,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-01,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-02,COVID-19 Persons Under Investigation,103
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-03,COVID-19 Persons Under Investigation,111
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-04,COVID-19 Persons Under Investigation,123
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-05,COVID-19 Persons Under Investigation,122
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-06,COVID-19 Persons Under Investigation,105
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-07,COVID-19 Persons Under Investigation,107
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-08,COVID-19 Persons Under Investigation,111
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-09,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-10,COVID-19 Persons Under Investigation,154
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-11,COVID-19 Persons Under Investigation,135
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-12,COVID-19 Persons Under Investigation,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-13,COVID-19 Persons Under Investigation,156
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-14,COVID-19 Persons Under Investigation,138
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-15,COVID-19 Persons Under Investigation,139
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-16,COVID-19 Persons Under Investigation,130
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-17,COVID-19 Persons Under Investigation,165
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-18,COVID-19 Persons Under Investigation,165
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-19,COVID-19 Persons Under Investigation,145
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-20,COVID-19 Persons Under Investigation,159
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-21,COVID-19 Persons Under Investigation,140
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-22,COVID-19 Persons Under Investigation,131
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-23,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-24,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-25,COVID-19 Persons Under Investigation,142
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-26,COVID-19 Persons Under Investigation,112
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-27,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-28,COVID-19 Persons Under Investigation,127
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-29,COVID-19 Persons Under Investigation,98
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-11-30,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-01,COVID-19 Persons Under Investigation,130
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-02,COVID-19 Persons Under Investigation,154
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-03,COVID-19 Persons Under Investigation,160
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-04,COVID-19 Persons Under Investigation,143
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-05,COVID-19 Persons Under Investigation,127
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-06,COVID-19 Persons Under Investigation,117
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-07,COVID-19 Persons Under Investigation,136
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-08,COVID-19 Persons Under Investigation,126
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-09,COVID-19 Persons Under Investigation,119
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-10,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-11,COVID-19 Persons Under Investigation,116
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-12,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-13,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-14,COVID-19 Persons Under Investigation,119
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-15,COVID-19 Persons Under Investigation,109
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-16,COVID-19 Persons Under Investigation,113
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-17,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-18,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-19,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-20,COVID-19 Persons Under Investigation,105
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-21,COVID-19 Persons Under Investigation,133
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-22,COVID-19 Persons Under Investigation,115
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-23,COVID-19 Persons Under Investigation,114
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-24,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-25,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-26,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-27,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-28,COVID-19 Persons Under Investigation,79
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-29,COVID-19 Persons Under Investigation,102
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-30,COVID-19 Persons Under Investigation,105
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2020-12-31,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-01,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-02,COVID-19 Persons Under Investigation,98
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-03,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-04,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-05,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-06,COVID-19 Persons Under Investigation,68
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-07,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-08,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-09,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-10,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-11,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-12,COVID-19 Persons Under Investigation,98
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-13,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-14,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-15,COVID-19 Persons Under Investigation,73
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-16,COVID-19 Persons Under Investigation,105
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-17,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-18,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-19,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-20,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-21,COVID-19 Persons Under Investigation,71
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-22,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-23,COVID-19 Persons Under Investigation,37
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-24,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-25,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-26,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-27,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-28,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-29,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-30,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-01-31,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-01,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-02,COVID-19 Persons Under Investigation,70
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-03,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-04,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-05,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-06,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-07,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-08,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-09,COVID-19 Persons Under Investigation,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-10,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-11,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-12,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-13,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-14,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-15,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-16,COVID-19 Persons Under Investigation,35
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-17,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-18,COVID-19 Persons Under Investigation,37
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-19,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-20,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-21,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-22,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-23,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-24,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-25,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-26,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-27,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-02-28,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-01,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-02,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-03,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-04,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-05,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-06,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-07,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-08,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-09,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-10,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-11,COVID-19 Persons Under Investigation,39
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-12,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-13,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-14,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-15,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-16,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-17,COVID-19 Persons Under Investigation,35
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-18,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-19,COVID-19 Persons Under Investigation,39
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-20,COVID-19 Persons Under Investigation,35
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-21,COVID-19 Persons Under Investigation,36
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-22,COVID-19 Persons Under Investigation,36
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-23,COVID-19 Persons Under Investigation,32
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-24,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-25,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-26,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-27,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-28,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-29,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-30,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-03-31,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-01,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-02,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-03,COVID-19 Persons Under Investigation,36
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-04,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-05,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-06,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-07,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-08,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-09,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-10,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-11,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-12,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-13,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-14,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-15,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-16,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-17,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-18,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-19,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-20,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-21,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-22,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-23,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-24,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-25,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-26,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-27,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-28,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-29,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-04-30,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-01,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-02,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-03,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-04,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-05,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-06,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-07,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-08,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-09,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-10,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-11,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-12,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-13,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-14,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-15,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-16,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-17,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-18,COVID-19 Persons Under Investigation,37
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-19,COVID-19 Persons Under Investigation,39
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-20,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-21,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-22,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-23,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-24,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-25,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-26,COVID-19 Persons Under Investigation,73
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-27,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-28,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-29,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-30,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-05-31,COVID-19 Persons Under Investigation,37
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-01,COVID-19 Persons Under Investigation,32
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-02,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-03,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-04,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-05,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-06,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-07,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-08,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-09,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-10,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-11,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-12,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-13,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-14,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-15,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-16,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-17,COVID-19 Persons Under Investigation,34
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-18,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-19,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-20,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-21,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-22,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-23,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-24,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-25,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-26,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-27,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-28,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-29,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-06-30,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-01,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-02,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-03,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-04,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-05,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-06,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-07,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-08,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-09,COVID-19 Persons Under Investigation,39
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-10,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-11,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-12,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-13,COVID-19 Persons Under Investigation,58
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-14,COVID-19 Persons Under Investigation,38
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-15,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-16,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-17,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-18,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-19,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-20,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-21,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-22,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-23,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-24,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-25,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-26,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-27,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-28,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-29,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-30,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-07-31,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-01,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-02,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-03,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-04,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-05,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-06,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-07,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-08,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-09,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-10,COVID-19 Persons Under Investigation,70
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-11,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-12,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-13,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-14,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-15,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-16,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-17,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-18,COVID-19 Persons Under Investigation,87
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-19,COVID-19 Persons Under Investigation,79
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-20,COVID-19 Persons Under Investigation,73
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-21,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-22,COVID-19 Persons Under Investigation,80
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-23,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-24,COVID-19 Persons Under Investigation,108
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-25,COVID-19 Persons Under Investigation,133
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-26,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-27,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-28,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-29,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-30,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-08-31,COVID-19 Persons Under Investigation,94
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-01,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-02,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-03,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-04,COVID-19 Persons Under Investigation,70
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-05,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-06,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-07,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-08,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-09,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-10,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-11,COVID-19 Persons Under Investigation,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-12,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-13,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-14,COVID-19 Persons Under Investigation,100
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-15,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-16,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-17,COVID-19 Persons Under Investigation,84
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-18,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-19,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-20,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-21,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-22,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-23,COVID-19 Persons Under Investigation,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-24,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-25,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-26,COVID-19 Persons Under Investigation,93
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-27,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-28,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-29,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-09-30,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-01,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-02,COVID-19 Persons Under Investigation,92
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-03,COVID-19 Persons Under Investigation,80
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-04,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-05,COVID-19 Persons Under Investigation,101
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-06,COVID-19 Persons Under Investigation,96
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-07,COVID-19 Persons Under Investigation,81
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-08,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-09,COVID-19 Persons Under Investigation,94
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-10,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-11,COVID-19 Persons Under Investigation,68
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-12,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-13,COVID-19 Persons Under Investigation,70
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-14,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-15,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-16,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-17,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-18,COVID-19 Persons Under Investigation,80
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-19,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-20,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-21,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-22,COVID-19 Persons Under Investigation,82
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-23,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-24,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-25,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-26,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-27,COVID-19 Persons Under Investigation,96
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-28,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-29,COVID-19 Persons Under Investigation,95
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-30,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-10-31,COVID-19 Persons Under Investigation,84
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-01,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-02,COVID-19 Persons Under Investigation,91
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-03,COVID-19 Persons Under Investigation,78
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-04,COVID-19 Persons Under Investigation,106
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-05,COVID-19 Persons Under Investigation,87
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-06,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-07,COVID-19 Persons Under Investigation,89
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-08,COVID-19 Persons Under Investigation,90
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-09,COVID-19 Persons Under Investigation,97
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-10,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-11,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-12,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-13,COVID-19 Persons Under Investigation,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-14,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-15,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-16,COVID-19 Persons Under Investigation,86
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-17,COVID-19 Persons Under Investigation,80
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-18,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-19,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-20,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-21,COVID-19 Persons Under Investigation,73
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-22,COVID-19 Persons Under Investigation,87
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-23,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-24,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-25,COVID-19 Persons Under Investigation,60
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-26,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-27,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-28,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-29,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-11-30,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-01,COVID-19 Persons Under Investigation,72
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-02,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-03,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-04,COVID-19 Persons Under Investigation,70
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-05,COVID-19 Persons Under Investigation,71
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-06,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-07,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-08,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-09,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-10,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-11,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-12,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-13,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-14,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-15,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-16,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-17,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-18,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-19,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-20,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-21,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-22,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-23,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-24,COVID-19 Persons Under Investigation,62
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-25,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-26,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-27,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-28,COVID-19 Persons Under Investigation,83
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-29,COVID-19 Persons Under Investigation,74
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-30,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2021-12-31,COVID-19 Persons Under Investigation,68
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-01,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-02,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-03,COVID-19 Persons Under Investigation,67
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-04,COVID-19 Persons Under Investigation,88
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-05,COVID-19 Persons Under Investigation,76
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-06,COVID-19 Persons Under Investigation,85
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-07,COVID-19 Persons Under Investigation,73
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-08,COVID-19 Persons Under Investigation,65
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-09,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-10,COVID-19 Persons Under Investigation,64
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-11,COVID-19 Persons Under Investigation,71
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-12,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-13,COVID-19 Persons Under Investigation,75
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-14,COVID-19 Persons Under Investigation,67
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-15,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-16,COVID-19 Persons Under Investigation,66
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-17,COVID-19 Persons Under Investigation,69
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-18,COVID-19 Persons Under Investigation,68
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-19,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-20,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-21,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-22,COVID-19 Persons Under Investigation,53
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-23,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-24,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-25,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-26,COVID-19 Persons Under Investigation,55
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-27,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-28,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-29,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-30,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-01-31,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-01,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-02,COVID-19 Persons Under Investigation,56
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-03,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-04,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-05,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-06,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-07,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-08,COVID-19 Persons Under Investigation,67
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-09,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-10,COVID-19 Persons Under Investigation,57
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-11,COVID-19 Persons Under Investigation,39
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-12,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-13,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-14,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-15,COVID-19 Persons Under Investigation,61
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-16,COVID-19 Persons Under Investigation,63
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-17,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-18,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-19,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-20,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-21,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-22,COVID-19 Persons Under Investigation,77
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-23,COVID-19 Persons Under Investigation,48
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-24,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-25,COVID-19 Persons Under Investigation,47
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-26,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-27,COVID-19 Persons Under Investigation,51
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-02-28,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-01,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-02,COVID-19 Persons Under Investigation,41
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-03,COVID-19 Persons Under Investigation,52
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-04,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-05,COVID-19 Persons Under Investigation,45
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-06,COVID-19 Persons Under Investigation,42
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-07,COVID-19 Persons Under Investigation,40
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-08,COVID-19 Persons Under Investigation,44
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-09,COVID-19 Persons Under Investigation,49
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-10,COVID-19 Persons Under Investigation,54
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-11,COVID-19 Persons Under Investigation,43
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-12,COVID-19 Persons Under Investigation,50
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-13,COVID-19 Persons Under Investigation,46
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-14,COVID-19 Persons Under Investigation,59
+Hospital Data,Hospital Level,Currently Hospitalized,Colorado,2022-03-15,COVID-19 Persons Under Investigation,75

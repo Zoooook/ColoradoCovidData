@@ -43,6 +43,7 @@ headers = [
     'First Dose'              , '%       ', '',
     'All Doses'               , '%       ', '',
     'Additional Doses'        , '%       ',
+    'Date'                    ,
     'Confirmed Cases'         ,
     'Under Investigation'     , '',
     'by date of illness onset', '       ',
@@ -181,6 +182,33 @@ while True:
         lastUpdated[0] = now
         printNow('Vaccine  data updated to', lastVaccineDate[5:])
 
+    def parseHospitalData(filename):
+        with open(filename) as file:
+            hospitalData = reader(file)
+            if logging:
+                printNow('Processing hospital data')
+
+            readFields = True
+            for row in hospitalData:
+                if readFields:
+                    icategory    = row.index('category')
+                    idescription = row.index('description')
+                    iregion      = row.index('region')
+                    idate        = row.index('date')
+                    imetric      = row.index('metric')
+                    ivalue       = row.index('value')
+                    readFields = False
+
+                category    = row[icategory]
+                description = row[idescription]
+                region      = row[iregion]
+                date        = row[idate]
+                metric      = row[imetric]
+                value       = row[ivalue]
+
+                if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
+                    data['Colorado'][fieldMap[metric]][date] = int(value)
+
     # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
     def getHospitalData():
         try:
@@ -190,34 +218,8 @@ while True:
             while not downloader.next_chunk():
                 pass
             fh.close()
-
-            with open('hospitalData.csv') as file:
-                hospitalData = reader(file)
-                if logging:
-                    printNow('Processing hospital data')
-
-                readFields = True
-                for row in hospitalData:
-                    if readFields:
-                        icategory    = row.index('category')
-                        idescription = row.index('description')
-                        iregion      = row.index('region')
-                        idate        = row.index('date')
-                        imetric      = row.index('metric')
-                        ivalue       = row.index('value')
-                        readFields = False
-
-                    category    = row[icategory]
-                    description = row[idescription]
-                    region      = row[iregion]
-                    date        = row[idate]
-                    metric      = row[imetric]
-                    value       = row[ivalue]
-
-                    if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
-                        data['Colorado'][fieldMap[metric]][date] = int(value)
+            parseHospitalData('hospitalData.csv')
             remove('hospitalData.csv')
-
             return True
         except HTTPError as e:
             printNow(now, '-- Error getting hospital data:', e.code)
@@ -237,6 +239,7 @@ while True:
 
     hospitalDates = sorted(list(set(data['Colorado']['Confirmed']) | set(data['Colorado']['Under Investigation'])))
     if hospitalDates[-1] != lastHospitalDate:
+        parseHospitalData('covid19_hospital_data_2022-03-15.csv')
         updateData = True
         lastHospitalDate = hospitalDates[-1]
         lastUpdated[1] = now
@@ -438,7 +441,7 @@ while True:
 
         if i>0:
             for field in stateFields:
-                if fieldMap[field] in ['First Dose', 'All Doses', 'Additional Doses']:
+                if fieldMap[field] in ['First Dose', 'All Doses', 'Additional Doses', 'Confirmed']:
                     continue
                 if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
                     for j in range(i+1, len(dates)):
@@ -465,6 +468,11 @@ while True:
                 row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
             else:
                 row.append('')
+
+        if date in data['Colorado']['Confirmed'] or date == dates[-1]:
+            row.append(date)
+        else:
+            row.append('')
 
         for field in ['Confirmed', 'Under Investigation']:
             if date in data['Colorado'][field]:
@@ -527,7 +535,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!A1:EM',
+                range = 'Data!A1:EN',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = sheetData
