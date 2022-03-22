@@ -220,6 +220,7 @@ while True:
             fh.close()
             parseHospitalData('hospitalData.csv')
             remove('hospitalData.csv')
+            parseHospitalData('covid19_hospital_data_2022-03-15.csv')
             return True
         except HTTPError as e:
             printNow(now, '-- Error getting hospital data:', e.code)
@@ -239,7 +240,6 @@ while True:
 
     hospitalDates = sorted(list(set(data['Colorado']['Confirmed']) | set(data['Colorado']['Under Investigation'])))
     if hospitalDates[-1] != lastHospitalDate:
-        parseHospitalData('covid19_hospital_data_2022-03-15.csv')
         updateData = True
         lastHospitalDate = hospitalDates[-1]
         lastUpdated[1] = now
