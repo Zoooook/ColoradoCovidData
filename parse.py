@@ -424,6 +424,8 @@ while True:
             return ''
         if field == 'All Doses'  and today > 3910000 and lastweek < 3890000:
             return ''
+        if field == 'All Doses'  and today > 4020000 and lastweek < 4010000:
+            return ''
 
         return max(0, today - lastweek)
 
