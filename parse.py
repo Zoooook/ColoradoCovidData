@@ -473,7 +473,7 @@ while True:
             else:
                 row.append('')
 
-        if date in data['Colorado']['Confirmed'] or date == dates[-1]:
+        if date in data['Colorado']['Confirmed'] or date == '2020-03-01' or date == dates[-1]:
             row.append(date)
         else:
             row.append('')
