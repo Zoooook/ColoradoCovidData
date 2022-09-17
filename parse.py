@@ -10,7 +10,8 @@ from codecs import iterdecode
 from csv import reader
 from os import listdir, remove
 from time import sleep
-from datetime import datetime
+import datetime
+from math import floor
 
 with open('token.pickle', 'rb') as token:
     creds = load(token)
@@ -30,12 +31,31 @@ fieldMap = {
     'Cumulative COVID-19 Cases in Colorado by Date Reported to the State': 'Cases',
     'Cumulative Deaths Among COVID-19 Cases in Colorado by Date of Death': 'Deaths',
     'Cumulative People Tested at Lab'                                    : 'Tests',
+
     'Cases of COVID-19 in Colorado by County'                            : 'Cases',
     'Deaths Among COVID-19 Cases in Colorado by County'                  : 'Deaths',
     'Total COVID-19 Tests Performed in Colorado by County'               : 'Tests',
+
+    'Other'                                                              : 'Other',
+    'B.1.1.7 Alpha'                                                      : 'B.1.1.7',
+    'B.1.351 Beta'                                                       : 'B.1.351',
+    'P.1 Gamma'                                                          : 'P.1',
+    'B.1.617.2 Delta'                                                    : 'B.1.617.2',
+    'AY.2 Delta'                                                         : 'AY.2',
+    'AY.1 Delta'                                                         : 'AY.1',
+    'B.1.429'                                                            : 'B.1.429',
+    'B.1.427'                                                            : 'B.1.427',
+    'B.1.1.529 Omicron (BA.1)'                                           : 'BA.1',
+    'B.1.1.529 Omicron (BA.2)'                                           : 'BA.2',
+    'BA.2.12.1 Omicron'                                                  : 'BA.2.12.1',
+    'BA.4 Omicron'                                                       : 'BA.4',
+    'BA.5 Omicron'                                                       : 'BA.5',
+    'BA.4.6 Omicron'                                                     : 'BA.4.6',
+    'BA.2.75 Omicron'                                                    : 'BA.2.75',
 }
 stateFields = list(fieldMap)[:9]
-countyFields = list(fieldMap)[9:]
+countyFields = list(fieldMap)[9:12]
+variantFields = list(fieldMap)[12:]
 
 headers = [
     'Last Updated'            ,
@@ -83,6 +103,8 @@ extendHeaders(['Weekly Tests'     , 'Colorado'])
 extendHeaders(['Positive %'       , 'Colorado'])
 extendHeaders(['Weekly Positive %', 'Colorado'])
 
+variantHeaders = [fieldMap[field] for field in variantFields]
+
 def printNow(*message):
     print(*message, flush=True)
 
@@ -93,24 +115,26 @@ lastHospitalDate = ''
 lastStateDate    = ''
 lastTestDate     = ''
 lastCountyDate   = ''
-lastUpdated      = ['', '', '', '', '']
+lastVariantDate  = ''
+lastVariantData  = []
+lastUpdated      = ['', '', '', '', '', '']
 
 while True:
     if not firstRun:
         sleep(3)
     firstRun = False
 
-    thisRun = str(datetime.now())[:15]
+    thisRun = str(datetime.datetime.now())[:15]
     if thisRun == lastRun:
         continue
     lastRun = thisRun
 
-    now = str(datetime.now())[:16]
+    now = str(datetime.datetime.now())[:16]
 
     if now[-5:] == '00:00':
         printNow('')
 
-    for i in range(5):
+    for i in range(len(lastUpdated)):
         if not lastUpdated[i]:
             lastUpdated[i] = now
 
@@ -135,8 +159,16 @@ while True:
             'Tests' : {},
         }
 
+    for variant in variantHeaders:
+        data['Colorado'][variant] = {}
+
     def formatDate(date):
         return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
+
+    def saturday(date):
+        return str(datetime.date(int(date[6:10]), int(date[0:2]), int(date[3:5])) + datetime.timedelta(days=6))
+
+
 
     # CDPHE COVID19 Vaccine Daily Summary Statistics
     # https://data-cdphe.opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0
@@ -157,6 +189,7 @@ while True:
                 ivalue        = row.index('value')
                 ipublish_date = row.index('publish_date')
                 readFields = False
+                continue
 
             section      = row[isection]
             category     = row[icategory]
@@ -198,6 +231,7 @@ while True:
                     imetric      = row.index('metric')
                     ivalue       = row.index('value')
                     readFields = False
+                    continue
 
                 category    = row[icategory]
                 description = row[idescription]
@@ -262,6 +296,7 @@ while True:
                 idate        = row.index('date')
                 ivalue       = row.index('value')
                 readFields = False
+                continue
 
             description = row[idescription]
             date        = row[idate]
@@ -302,6 +337,7 @@ while True:
                 iMetric    = row.index('Metric')
                 iValue     = row.index('Value')
                 readFields = False
+                continue
 
             Desc_     = row[iDesc_]
             Attr_Date = row[iAttr_Date]
@@ -346,6 +382,7 @@ while True:
                 iValue  = row.index('Value')
                 iDate   = row.index('Date')
                 readFields = False
+                continue
 
             LABEL  = row[iLABEL]
             Desc_  = row[iDesc_]
@@ -379,6 +416,64 @@ while True:
         lastCountyDate = countyDates[-1]
         lastUpdated[4] = now
         printNow('County   data updated to', lastCountyDate[5:])
+
+    # Colorado SARS-CoV-2 Variant Sentinel Surveillance
+    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::colorado-sars-cov-2-variant-sentinel-surveillance
+    data['Colorado']['Other']['2020-03-01'] = 1
+    week = datetime.date(2020,3,7)
+    while week < datetime.date(2021,1,2):
+        data['Colorado']['Other'][str(week)] = 1
+        week += datetime.timedelta(days=7)
+
+    if logging:
+        printNow('Getting    variant  data')
+    try:
+        response = urlopen('https://opendata.arcgis.com/datasets/8706d5ea533c483b93b3676c8abd6cb3_0.csv')
+        variantData = reader(iterdecode(response, 'utf-8-sig'))
+        if logging:
+            printNow('Processing variant  data')
+
+        newVariants = {}
+        readFields = True
+        for row in variantData:
+            if readFields:
+                ispecimen_collection_week = row.index('specimen_collection_week')
+                ivariant_of_concern       = row.index('variant_of_concern')
+                iproportion               = row.index('proportion')
+                readFields = False
+                continue
+
+            specimen_collection_week = row[ispecimen_collection_week]
+            variant_of_concern       = row[ivariant_of_concern]
+            proportion               = row[iproportion]
+
+            if variant_of_concern in variantFields:
+                data['Colorado'][fieldMap[variant_of_concern]][saturday(specimen_collection_week)] = float(proportion)
+            else:
+                newVariants[variant_of_concern] = True
+        if len(newVariants):
+            printNow('New variants:', list(newVariants))
+
+    except HTTPError as e:
+        printNow(now, '-- Error getting variant data:', e.code)
+        continue
+    except Exception as e:
+        printNow(now, '-- Error getting variant data:', str(e))
+        continue
+
+    variantDates = []
+    for variant in variantHeaders:
+        variantDates = sorted(list(set(variantDates) | set(data['Colorado'][variant])))
+    latestVariantData = []
+    for variant in variantHeaders:
+        if variantDates[-1] in data['Colorado'][variant]:
+            latestVariantData.append(data['Colorado'][variant][variantDates[-1]])
+    if variantDates[-1] != lastVariantDate or latestVariantData != lastVariantData:
+        updateData = True
+        lastVariantDate = variantDates[-1]
+        lastVariantData = latestVariantData
+        lastUpdated[5] = now
+        printNow('Variant  data updated to', lastVariantDate[5:])
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
@@ -531,8 +626,48 @@ while True:
 
         sheetData.append(row)
 
-    for i in range(5):
+    for i in range(len(lastUpdated)):
         sheetData[i+1][0] = '\'' + lastUpdated[i]
+
+
+
+    variantData = [['Date', 'All Cases'] + variantHeaders + ['Sampled %']]
+    for date in variantDates:
+        row = [date, strRound(weekly('Colorado', 'Cases by Onset', dates.index(date)))]
+        for variant in variantHeaders:
+            if date in data['Colorado'][variant]:
+                row.append(str(data['Colorado'][variant][date]))
+            else:
+                row.append('')
+        if dates.index(date) < dates.index('2021-01-02'):
+            row.append('0')
+        else:
+            sample = 0
+            while True:
+                sample += 1
+                goodSample = True
+                for variant in variantHeaders:
+                    if date not in data['Colorado'][variant]:
+                        continue
+                    variantCount = floor((data['Colorado'][variant][date]-.0001)*sample)
+                    while goodSample:
+                        variantCount += 1
+                        proportion = round(variantCount/sample, 4)
+                        if proportion == data['Colorado'][variant][date]:
+                            break
+                        if proportion > data['Colorado'][variant][date]:
+                            goodSample = False
+                if goodSample:
+                    row.append(str(round(sample/weekly('Colorado', 'Cases by Onset', dates.index(date))*100,3)))
+                    break
+        variantData.append(row)
+    i = dates.index(variantDates[-1]) + 7
+    while i+7 < len(dates) and dates[i+7] in data['Colorado']['Cases by Onset']:
+        variantData.append([dates[i], strRound(weekly('Colorado', 'Cases by Onset', i))])
+        i += 7
+    variantData.append([dates[-1]])
+
+
 
     def updateSpreadsheet():
         try:
@@ -542,8 +677,17 @@ while True:
                 range = 'Data!A1:EN',
                 body = dict(
                     majorDimension = 'ROWS',
-                    values = sheetData
-                )
+                    values = sheetData,
+                ),
+            ).execute()
+            service.spreadsheets().values().update(
+                spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
+                valueInputOption = 'USER_ENTERED',
+                range = 'Data!JI1:KA',
+                body = dict(
+                    majorDimension = 'ROWS',
+                    values = variantData,
+                ),
             ).execute()
             return True
         except Exception as e:
