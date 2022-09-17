@@ -484,47 +484,34 @@ while True:
 
     sheetData = [headers]
 
+    def skip(field, i, j):
+        badDates = {
+            'First Dose'      : ['2021-08-05', '2022-01-29'],
+            'All Doses'       : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27'],
+            'Additional Doses': ['2022-09-02', '2022-09-05', '2022-09-06']
+        }
+        if field not in badDates:
+            return False
+        for date in badDates[field]:
+            if i >= dates.index(date) and j < dates.index(date):
+                return True
+        return False
+
     def daily(region, field, i):
-        if dates[i] not in data[region][field] or dates[i-1] not in data[region][field]:
+        if dates[i] not in data[region][field] or dates[i-1] not in data[region][field] or skip(field, i, i-1):
             return ''
-
-        today = data[region][field][dates[i]]
         if i > 0:
-            yesterday = data[region][field][dates[i-1]]
+            return max(0, data[region][field][dates[i]] - data[region][field][dates[i-1]])
         else:
-            yesterday = 0
-
-        if field == 'First Dose' and today > 4360000 and yesterday < 4330000:
-            return ''
-        if field == 'All Doses'  and today > 3910000 and yesterday < 3890000:
-            return ''
-
-        return max(0, today - yesterday)
+            return max(0, data[region][field][dates[i]])
 
     def weekly(region, field, i):
-        if dates[i] not in data[region][field] or dates[i-7] not in data[region][field]:
+        if dates[i] not in data[region][field] or dates[i-7] not in data[region][field] or skip(field, i, i-7):
             return ''
-
-        today = data[region][field][dates[i]]
         if i > 6:
-            lastweek = data[region][field][dates[i-7]]
+            return max(0, data[region][field][dates[i]] - data[region][field][dates[i-7]])
         else:
-            lastweek = 0
-
-        if field == 'First Dose' and today > 3500000 and lastweek < 3380000:
-            return ''
-        if field == 'All Doses'  and today > 3200000 and lastweek < 3100000:
-            return ''
-        if field == 'First Dose' and today > 4360000 and lastweek < 4330000:
-            return ''
-        if field == 'All Doses'  and today > 3910000 and lastweek < 3890000:
-            return ''
-        if field == 'All Doses'  and today > 4020000 and lastweek < 4010000:
-            return ''
-        if field == 'All Doses'  and today < 4065000 and lastweek > 4062000:
-            return ''
-
-        return max(0, today - lastweek)
+            return max(0, data[region][field][dates[i]])
 
     def strRound(num):
         if num == '':
@@ -537,6 +524,9 @@ while True:
 
     for i in range(len(dates)):
         date = dates[i]
+        # for field in ['First Dose', 'All Doses', 'Additional Doses']:
+        #     if date in data['Colorado'][field]:
+        #         printNow(field, date, data['Colorado'][field][date])
 
         if i>0:
             for field in stateFields:
@@ -563,7 +553,9 @@ while True:
         for field in ['First Dose', 'All Doses', 'Additional Doses']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
-            if date in data['Colorado'][field]:
+            if field == 'Additional Doses' and date in ['2022-09-02', '2022-09-05']:
+                row.append('')
+            elif date in data['Colorado'][field]:
                 row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
             else:
                 row.append('')
