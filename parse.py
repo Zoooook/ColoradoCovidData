@@ -52,6 +52,7 @@ fieldMap = {
     'BA.5 Omicron'                                                       : 'BA.5',
     'BA.4.6 Omicron'                                                     : 'BA.4.6',
     'BA.2.75 Omicron'                                                    : 'BA.2.75',
+    'BF.7 Omicron'                                                       : 'BF.7',
 }
 stateFields = list(fieldMap)[:9]
 countyFields = list(fieldMap)[9:12]
@@ -675,7 +676,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JI1:KA',
+                range = 'Data!JI1:KB',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
