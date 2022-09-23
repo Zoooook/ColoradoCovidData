@@ -125,12 +125,12 @@ while True:
         sleep(3)
     firstRun = False
 
-    thisRun = str(datetime.datetime.now())[:15]
+    now = str(datetime.datetime.now())[:16]
+
+    thisRun = now[:15] + str(floor(int(now[15])/5)*5)
     if thisRun == lastRun:
         continue
     lastRun = thisRun
-
-    now = str(datetime.datetime.now())[:16]
 
     if now[-5:] == '00:00':
         printNow('')
