@@ -47,14 +47,16 @@ fieldMap = {
     'AY.1 Delta'                                                         : 'AY.1',
     'B.1.429'                                                            : 'B.1.429',
     'B.1.427'                                                            : 'B.1.427',
-    'B.1.1.529 Omicron (BA.1)'                                           : 'BA.1',
-    'B.1.1.529 Omicron (BA.2)'                                           : 'BA.2',
+    'B.1.1.529 Omicron'                                                  : 'BA.1',
+    'BA.2 Omicron'                                                       : 'BA.2',
     'BA.2.12.1 Omicron'                                                  : 'BA.2.12.1',
     'BA.4 Omicron'                                                       : 'BA.4',
     'BA.5 Omicron'                                                       : 'BA.5',
     'BA.4.6 Omicron'                                                     : 'BA.4.6',
-    'BA.2.75 Omicron'                                                    : 'BA.2.75',
     'BF.7 Omicron'                                                       : 'BF.7',
+    'BA.2.75 Omicron'                                                    : 'BA.2.75',
+    'BA.2.75.2 Omicron'                                                  : 'BA.2.75.2',
+    'BQ.1 Omicron'                                                       : 'BQ.1',
 }
 stateFields = list(fieldMap)[:11]
 countyFields = list(fieldMap)[11:14]
@@ -692,7 +694,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JO1:KH',
+                range = 'Data!JO1:KJ',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
