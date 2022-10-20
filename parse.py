@@ -24,7 +24,9 @@ drive = build('drive', 'v3', developerKey=apiKey)
 fieldMap = {
     'People Immunized with One Dose'                                     : 'First Dose',
     'People Fully Immunized'                                             : 'All Doses',
-    'People with Additional Doses'                                       : 'Additional Doses',
+    '1+ Booster'                                                         : 'First Booster',
+    '2+ Booster'                                                         : 'Second Booster',
+    'Omicron Doses'                                                      : 'Omicron Doses',
     'Confirmed COVID-19'                                                 : 'Confirmed',
     'COVID-19 Persons Under Investigation'                               : 'Under Investigation',
     'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset'     : 'Cases by Onset',
@@ -54,16 +56,18 @@ fieldMap = {
     'BA.2.75 Omicron'                                                    : 'BA.2.75',
     'BF.7 Omicron'                                                       : 'BF.7',
 }
-stateFields = list(fieldMap)[:9]
-countyFields = list(fieldMap)[9:12]
-variantFields = list(fieldMap)[12:]
+stateFields = list(fieldMap)[:11]
+countyFields = list(fieldMap)[11:14]
+variantFields = list(fieldMap)[14:]
 
 headers = [
     'Last Updated'            ,
     'Date'                    , '',
     'First Dose'              , '%       ', '',
     'All Doses'               , '%       ', '',
-    'Additional Doses'        , '%       ',
+    'First Booster'           , '%       ', '',
+    'Second Booster'          , '%       ', '',
+    'Omicron Doses'           , '%       ',
     'Date'                    ,
     'Confirmed Cases'         ,
     'Under Investigation'     , '',
@@ -143,7 +147,9 @@ while True:
         'Colorado': {
             'First Dose'         : {},
             'All Doses'          : {},
-            'Additional Doses'   : {},
+            'First Booster'      : {},
+            'Second Booster'     : {},
+            'Omicron Doses'      : {},
             'Confirmed'          : {},
             'Under Investigation': {},
             'Cases by Onset'     : {},
@@ -187,6 +193,8 @@ while True:
                 isection      = row.index('section')
                 icategory     = row.index('category')
                 imetric       = row.index('metric')
+                itype         = row.index('type')
+                idate         = row.index('date')
                 ivalue        = row.index('value')
                 ipublish_date = row.index('publish_date')
                 readFields = False
@@ -194,14 +202,24 @@ while True:
 
             section      = row[isection]
             category     = row[icategory]
-            metric       = row[imetric]
+            metric       = row[imetric].replace('With', 'with').replace('People with Additional Doses', '1+ Booster')
+            type         = row[itype]
+            date         = row[idate]
             value        = row[ivalue]
             publish_date = row[ipublish_date]
 
             if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
-                if publish_date == '08/04/2021' and value in ['3379501','3099180']:
+                if publish_date == '08/04/2021' and metric == 'People Immunized with One Dose' and value == '3379501' or \
+                   publish_date == '08/04/2021' and metric == 'People Fully Immunized'         and value == '3099180' or \
+                   publish_date == '09/02/2022' and metric == '1+ Booster'                     and value == '2094378' or \
+                   publish_date == '09/05/2022' and metric == '1+ Booster'                     and value == '2094839':
                     continue
                 data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
+            if section == 'Vaccine Administration' and category == 'Administration' and metric == 'Daily Cumulative' and type.startswith('Omicron Doses') and formatDate(date) >= '2022-09-01':
+                if formatDate(date) in data['Colorado']['Omicron Doses']:
+                    data['Colorado']['Omicron Doses'][formatDate(date)] += int(value)
+                else:
+                    data['Colorado']['Omicron Doses'][formatDate(date)] = int(value)
     except HTTPError as e:
         printNow(now, '-- Error getting vaccine data:', e.code)
         continue
@@ -474,7 +492,7 @@ while True:
         lastVariantDate = variantDates[-1]
         lastVariantData = latestVariantData
         lastUpdated[5] = now
-        printNow('Variant  data updated to', lastVariantDate[5:])
+        printNow('Variant  data updated to', lastVariantDate[5:], '<--------------------------------')
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
@@ -487,9 +505,9 @@ while True:
 
     def skip(field, i, j):
         badDates = {
-            'First Dose'      : ['2021-08-05', '2022-01-29'],
-            'All Doses'       : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27'],
-            'Additional Doses': ['2022-09-02', '2022-09-05', '2022-09-06']
+            'First Dose'   : ['2021-08-05', '2022-01-29'],
+            'All Doses'    : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27'],
+            'First Booster': ['2022-09-02', '2022-09-05', '2022-09-06', '2022-10-11'],
         }
         if field not in badDates:
             return False
@@ -525,13 +543,13 @@ while True:
 
     for i in range(len(dates)):
         date = dates[i]
-        # for field in ['First Dose', 'All Doses', 'Additional Doses']:
+        # for field in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses']:
         #     if date in data['Colorado'][field]:
         #         printNow(field, date, data['Colorado'][field][date])
 
         if i>0:
             for field in stateFields:
-                if fieldMap[field] in ['First Dose', 'All Doses', 'Additional Doses', 'Confirmed']:
+                if fieldMap[field] in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses', 'Confirmed']:
                     continue
                 if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
                     for j in range(i+1, len(dates)):
@@ -551,12 +569,10 @@ while True:
 
         row = ['', date]
 
-        for field in ['First Dose', 'All Doses', 'Additional Doses']:
+        for field in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses']:
             row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
 
-            if field == 'Additional Doses' and date in ['2022-09-02', '2022-09-05']:
-                row.append('')
-            elif date in data['Colorado'][field]:
+            if date in data['Colorado'][field]:
                 row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
             else:
                 row.append('')
@@ -667,7 +683,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!A1:EN',
+                range = 'Data!A1:ET',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = sheetData,
@@ -676,7 +692,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JI1:KB',
+                range = 'Data!JO1:KH',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
