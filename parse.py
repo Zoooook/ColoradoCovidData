@@ -65,11 +65,11 @@ variantFields = list(fieldMap)[14:]
 
 headers = [
     'Last Updated'            ,
-    'Date'                    , '',
-    'First Dose'              , '%       ', '',
-    'All Doses'               , '%       ', '',
-    'First Booster'           , '%       ', '',
-    'Second Booster'          , '%       ', '',
+    'Date'                    , '', '',
+    'First Dose'              , '%       ', '', '',
+    'All Doses'               , '%       ', '', '',
+    'First Booster'           , '%       ', '', '',
+    'Second Booster'          , '%       ', '', '',
     'Omicron Doses'           , '%       ',
     'Date'                    ,
     'Confirmed Cases'         ,
@@ -218,7 +218,7 @@ while True:
                    publish_date == '09/05/2022' and metric == '1+ Booster'                     and value == '2094839':
                     continue
                 data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
-            if section == 'Vaccine Administration' and category == 'Administration' and metric == 'Daily Cumulative' and type.startswith('Omicron Doses') and formatDate(date) >= '2022-09-01':
+            if section == 'Vaccine Administration' and category == 'Administration' and metric == 'Daily Cumulative' and type.startswith('Omicron Doses'):
                 if formatDate(date) in data['Colorado']['Omicron Doses']:
                     data['Colorado']['Omicron Doses'][formatDate(date)] += int(value)
                 else:
@@ -508,9 +508,9 @@ while True:
 
     def skip(field, i, j):
         badDates = {
-            'First Dose'   : ['2021-08-05', '2022-01-29'],
-            'All Doses'    : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27'],
-            'First Booster': ['2022-09-02', '2022-09-05', '2022-09-06', '2022-10-11'],
+            'First Dose'   : ['2021-08-05', '2022-01-29', '2022-10-11', '2022-10-14'],
+            'All Doses'    : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27', '2022-10-11', '2022-10-14'],
+            'First Booster': ['2022-09-02', '2022-09-05', '2022-09-06', '2022-10-11', '2022-10-14'],
         }
         if field not in badDates:
             return False
@@ -546,9 +546,6 @@ while True:
 
     for i in range(len(dates)):
         date = dates[i]
-        # for field in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses']:
-        #     if date in data['Colorado'][field]:
-        #         printNow(field, date, data['Colorado'][field][date])
 
         if i>0:
             for field in stateFields:
@@ -567,18 +564,25 @@ while True:
                                 data[county][fieldMap[field]][date] = 0
                                 break
 
-        if i < dates.index('2020-03-01'):
+        if date < '2020-03-01':
             continue
 
         row = ['', date]
 
         for field in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses']:
-            row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
-
             if date in data['Colorado'][field]:
-                row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
+                row.append(str(data['Colorado'][field][date]))
             else:
                 row.append('')
+
+            if field == 'Omicron Doses' and date < '2022-09-01':
+                row.extend(['', '', ''])
+            else:
+                row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
+                if date in data['Colorado'][field]:
+                    row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
+                else:
+                    row.append('')
 
         if date in data['Colorado']['Confirmed'] or date == '2020-03-01' or date == dates[-1]:
             row.append(date)
@@ -686,7 +690,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!A1:ET',
+                range = 'Data!A1:EY',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = sheetData,
@@ -695,7 +699,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JO1:KK',
+                range = 'Data!JT1:KP',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
