@@ -57,6 +57,7 @@ fieldMap = {
     'BA.2.75 Omicron'                                                    : 'BA.2.75',
     'BA.2.75.2 Omicron'                                                  : 'BA.2.75.2',
     'BQ.1 Omicron'                                                       : 'BQ.1',
+    'BQ.1.1 Omicron'                                                     : 'BQ.1.1',
 }
 stateFields = list(fieldMap)[:11]
 countyFields = list(fieldMap)[11:14]
@@ -472,8 +473,6 @@ while True:
                 data['Colorado'][fieldMap[variant_of_concern]][saturday(specimen_collection_week)] = float(proportion)
             else:
                 newVariants[variant_of_concern] = True
-        if len(newVariants):
-            printNow('New variants:', list(newVariants))
 
     except HTTPError as e:
         printNow(now, '-- Error getting variant data:', e.code)
@@ -495,6 +494,8 @@ while True:
         lastVariantData = latestVariantData
         lastUpdated[5] = now
         printNow('Variant  data updated to', lastVariantDate[5:], '<--------------------------------')
+        if len(newVariants):
+            printNow('New variants:', list(newVariants))
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
@@ -694,7 +695,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JO1:KJ',
+                range = 'Data!JO1:KK',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
