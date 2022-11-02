@@ -181,11 +181,11 @@ while True:
 
 
     # CDPHE COVID19 Vaccine Daily Summary Statistics
-    # https://data-cdphe.opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0
+    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-vaccine-daily-summary-statistics
     if logging:
         printNow('Getting    vaccine  data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/fa9730c29ee24c7b8b52361ae3e5ca53_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/19a33a70865a416fb50c9db2f7adbeb4_0.csv')
         vaccineData = reader(iterdecode(response, 'utf-8-sig'))
         if logging:
             printNow('Processing vaccine  data')
