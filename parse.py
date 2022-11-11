@@ -648,7 +648,7 @@ while True:
 
 
 
-    variantData = [['Date', 'All Cases'] + variantHeaders + ['Sampled %']]
+    variantData = [['Date', 'All Cases'] + variantHeaders + ['Sampled %', 'Samples'] + variantHeaders]
     for date in variantDates:
         row = [date, strRound(weekly('Colorado', 'Cases by Onset', dates.index(date)))]
         for variant in variantHeaders:
@@ -663,6 +663,7 @@ while True:
             while True:
                 sample += 1
                 goodSample = True
+                variantCounts = {}
                 for variant in variantHeaders:
                     if date not in data['Colorado'][variant]:
                         continue
@@ -671,11 +672,17 @@ while True:
                         variantCount += 1
                         proportion = round(variantCount/sample, 4)
                         if proportion == data['Colorado'][variant][date]:
+                            variantCounts[variant] = variantCount
                             break
                         if proportion > data['Colorado'][variant][date]:
                             goodSample = False
                 if goodSample:
-                    row.append(str(round(sample/weekly('Colorado', 'Cases by Onset', dates.index(date))*100,3)))
+                    row.extend([str(round(sample/weekly('Colorado', 'Cases by Onset', dates.index(date))*100,3)), str(sample)])
+                    for variant in variantHeaders:
+                        if date in data['Colorado'][variant]:
+                            row.append(variantCounts[variant])
+                        else:
+                            row.append('')
                     break
         variantData.append(row)
     i = dates.index(variantDates[-1]) + 7
@@ -700,7 +707,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:KQ',
+                range = 'Data!JT1:LM',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
