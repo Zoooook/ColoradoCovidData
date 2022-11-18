@@ -59,6 +59,7 @@ fieldMap = {
     'BQ.1 Omicron'                                                       : 'BQ.1',
     'BQ.1.1 Omicron'                                                     : 'BQ.1.1',
     'BA.5.2.6 Omicron'                                                   : 'BA.5.2.6',
+    'BN.1 Omicron'                                                       : 'BN.1',
 }
 stateFields = list(fieldMap)[:11]
 countyFields = list(fieldMap)[11:14]
@@ -656,8 +657,8 @@ while True:
                 row.append(str(data['Colorado'][variant][date]))
             else:
                 row.append('')
-        if dates.index(date) < dates.index('2021-01-02'):
-            row.append('0')
+        if date < '2021-01-02':
+            row.extend(['0', '', date, '0'])
         else:
             sample = 0
             while True:
@@ -707,7 +708,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:LO',
+                range = 'Data!JT1:LQ',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
