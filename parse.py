@@ -672,7 +672,7 @@ while True:
                     variantCount = floor((data['Colorado'][variant][date]-.0001)*sample)
                     while goodSample:
                         variantCount += 1
-                        proportion = round(variantCount/sample, 4)
+                        proportion = floor(10000 * variantCount/sample + .5) / 10000
                         if proportion == data['Colorado'][variant][date]:
                             variantCounts[variant] = variantCount
                             break
