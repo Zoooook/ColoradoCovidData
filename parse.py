@@ -395,7 +395,7 @@ while True:
     if logging:
         printNow('Getting    county   data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/efd7f5f77efa4122a70a0c5c405ce8be_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/e3c41e3c7c464e11a6c3279f0934f11b_0.csv')
         countyData = reader(iterdecode(response, 'utf-8-sig'))
         if logging:
             printNow('Processing county   data')
