@@ -191,7 +191,7 @@ while True:
     if logging:
         printNow('Getting    vaccine  data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/19a33a70865a416fb50c9db2f7adbeb4_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/7926b93cacd245eba8e5ee6c7ab1f102_0.csv')
         vaccineData = reader(iterdecode(response, 'utf-8-sig'))
         if logging:
             printNow('Processing vaccine  data')
@@ -218,17 +218,17 @@ while True:
             publish_date = row[ipublish_date]
 
             if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
-                if publish_date == '08/04/2021' and metric == 'People Immunized with One Dose' and value == '3379501' or \
-                   publish_date == '08/04/2021' and metric == 'People Fully Immunized'         and value == '3099180' or \
-                   publish_date == '09/02/2022' and metric == '1+ Booster'                     and value == '2094378' or \
-                   publish_date == '09/05/2022' and metric == '1+ Booster'                     and value == '2094839':
+                if publish_date[:10] == '2021/08/04' and metric == 'People Immunized with One Dose' and value == '3379501' or \
+                   publish_date[:10] == '2021/08/04' and metric == 'People Fully Immunized'         and value == '3099180' or \
+                   publish_date[:10] == '2022/09/02' and metric == '1+ Booster'                     and value == '2094378' or \
+                   publish_date[:10] == '2022/09/05' and metric == '1+ Booster'                     and value == '2094839':
                     continue
-                data['Colorado'][fieldMap[metric]][formatDate(publish_date)] = int(value)
+                data['Colorado'][fieldMap[metric]][publish_date[:10].replace('/','-')] = int(value)
             if section == 'Vaccine Administration' and category == 'Administration' and metric == 'Daily Cumulative' and type.startswith('Omicron Doses'):
-                if formatDate(date) in data['Colorado']['Omicron Doses']:
-                    data['Colorado']['Omicron Doses'][formatDate(date)] += int(value)
+                if date[:10].replace('/','-') in data['Colorado']['Omicron Doses']:
+                    data['Colorado']['Omicron Doses'][date[:10].replace('/','-')] += int(value)
                 else:
-                    data['Colorado']['Omicron Doses'][formatDate(date)] = int(value)
+                    data['Colorado']['Omicron Doses'][date[:10].replace('/','-')] = int(value)
     except HTTPError as e:
         printNow(now, '-- Error getting vaccine data:', e.code)
         continue
