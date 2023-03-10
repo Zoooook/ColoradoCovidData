@@ -122,16 +122,17 @@ variantHeaders = [fieldMap[field] for field in variantFields]
 def printNow(*message):
     print(*message, flush=True)
 
-firstRun         = True
-lastRun          = ''
-lastVaccineDate  = ''
-lastHospitalDate = ''
-lastStateDate    = ''
-lastTestDate     = ''
-lastCountyDate   = ''
-lastVariantDate  = ''
-lastVariantData  = []
-lastUpdated      = ['', '', '', '', '', '']
+firstRun              = True
+lastRun               = ''
+lastVaccineDate       = ''
+lastHospitalDate      = ''
+lastStateDate         = ''
+lastTestDate          = ''
+lastCountyDate        = ''
+lastVariantDate       = ''
+lastVariantReportDate = ''
+lastVariantData       = []
+lastUpdated           = ['', '', '', '', '', '']
 
 while True:
     if not firstRun:
@@ -468,12 +469,14 @@ while True:
                 ispecimen_collection_week = row.index('specimen_collection_week')
                 ivariant_of_concern       = row.index('variant_of_concern')
                 iproportion               = row.index('proportion')
+                ireport_date              = row.index('report_date')
                 readFields = False
                 continue
 
             specimen_collection_week = row[ispecimen_collection_week]
             variant_of_concern       = row[ivariant_of_concern]
             proportion               = row[iproportion]
+            report_date              = row[ireport_date]
 
             if variant_of_concern in variantFields:
                 data['Colorado'][fieldMap[variant_of_concern]][saturday(specimen_collection_week)] = float(proportion)
@@ -494,6 +497,9 @@ while True:
     for variant in variantHeaders:
         if variantDates[-1] in data['Colorado'][variant]:
             latestVariantData.append(data['Colorado'][variant][variantDates[-1]])
+    if lastVariantReportDate != report_date:
+        lastVariantReportDate = report_date
+        printNow('Variant report published for', lastVariantReportDate[:5])
     if variantDates[-1] != lastVariantDate or latestVariantData != lastVariantData:
         updateData = True
         lastVariantDate = variantDates[-1]
