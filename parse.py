@@ -1,17 +1,14 @@
-logging = False
-
 from pickle import load
 from googleapiclient.discovery import build
-from io import FileIO
-from googleapiclient.http import MediaIoBaseDownload
-from urllib.request import urlopen
-from urllib.error import HTTPError
-from codecs import iterdecode
 from csv import reader
-from os import listdir, remove
+import json
 from time import sleep
 import datetime
 from math import floor
+from urllib.request import urlopen
+from codecs import iterdecode
+from urllib.error import HTTPError
+from copy import deepcopy
 
 with open('token.pickle', 'rb') as token:
     creds = load(token)
@@ -22,21 +19,11 @@ with open('api.key', 'r') as key:
 drive = build('drive', 'v3', developerKey=apiKey)
 
 fieldMap = {
-    'People Immunized with One Dose'                                     : 'First Dose',
-    'People Fully Immunized'                                             : 'All Doses',
-    '1+ Booster'                                                         : 'First Booster',
-    '2+ Booster'                                                         : 'Second Booster',
-    'Omicron Doses'                                                      : 'Omicron Doses',
     'Confirmed COVID-19'                                                 : 'Confirmed',
     'COVID-19 Persons Under Investigation'                               : 'Under Investigation',
     'Cumulative COVID-19 Cases in Colorado by Date of Illness Onset'     : 'Cases by Onset',
     'Cumulative COVID-19 Cases in Colorado by Date Reported to the State': 'Cases',
     'Cumulative Deaths Among COVID-19 Cases in Colorado by Date of Death': 'Deaths',
-    'Cumulative People Tested at Lab'                                    : 'Tests',
-
-    'Cases of COVID-19 in Colorado by County'                            : 'Cases',
-    'Deaths Among COVID-19 Cases in Colorado by County'                  : 'Deaths',
-    'Total COVID-19 Tests Performed in Colorado by County'               : 'Tests',
 
     'Other'            : 'Other',
     'B.1.1.7 Alpha'    : 'B.1.1.7',
@@ -69,10 +56,10 @@ fieldMap = {
     'XBB.1.9.2 Omicron': 'XBB.1.9.2',
     'XBB.1.16 Omicron' : 'XBB.1.16',
     'FD.2 Omicron'     : 'FD.2',
+    'XBB.2.3 Omicron'  : 'XBB.2.3',
 }
-stateFields = list(fieldMap)[:11]
-countyFields = list(fieldMap)[11:14]
-variantFields = list(fieldMap)[14:]
+stateFields = list(fieldMap)[:5]
+variantFields = list(fieldMap)[5:]
 
 headers = [
     'Last Updated'            ,
@@ -129,15 +116,39 @@ def printNow(*message):
 
 firstRun              = True
 lastRun               = ''
-lastVaccineDate       = ''
 lastHospitalDate      = ''
 lastStateDate         = ''
-lastTestDate          = ''
-lastCountyDate        = ''
 lastVariantDate       = ''
 lastVariantReportDate = ''
-lastVariantData       = []
-lastUpdated           = ['', '', '', '', '', '']
+lastVariantData       = {}
+lastUpdated           = ['', '', '']
+
+vaccineData = {}
+vaccineDates = []
+with open('vaccine_data.csv') as file:
+    vaccineCsv = reader(file)
+    for row in vaccineCsv:
+        vaccineDates.append(row[0])
+        vaccineData[row[0]] = row[1:]
+
+testingData = {}
+testDates = []
+with open('testing_data.csv') as file:
+    testingCsv = reader(file)
+    for row in testingCsv:
+        testDates.append(row[0])
+        testingData[row[0]] = row[1:]
+
+countyData = {}
+countyDates = []
+with open('county_data.csv') as file:
+    countyCsv = reader(file)
+    for row in countyCsv:
+        countyDates.append(row[0])
+        countyData[row[0]] = row[1:]
+
+with open('variant_data.json') as file:
+    variantJson = json.load(file)
 
 while True:
     if not firstRun:
@@ -174,121 +185,48 @@ while True:
         }
     }
 
-    for county in counties:
-        data[county] = {
-            'Cases' : {},
-            'Deaths': {},
-            'Tests' : {},
-        }
-
-    for variant in variantHeaders:
-        data['Colorado'][variant] = {}
-
     def formatDate(date):
         return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
-    def saturday(date):
-        return str(datetime.date(int(date[6:10]), int(date[0:2]), int(date[3:5])) + datetime.timedelta(days=6))
+    def nextSaturday(date):
+        return str(datetime.date(int(date[0:4]), int(date[5:7]), int(date[8:10])) + datetime.timedelta(days=13))
 
 
 
-    # CDPHE COVID19 Vaccine Daily Summary Statistics
-    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-vaccine-daily-summary-statistics
-    if logging:
-        printNow('Getting    vaccine  data')
-    try:
-        response = urlopen('https://opendata.arcgis.com/datasets/7926b93cacd245eba8e5ee6c7ab1f102_0.csv')
-        vaccineData = reader(iterdecode(response, 'utf-8-sig'))
-        if logging:
-            printNow('Processing vaccine  data')
-
+    def parseHospitalData(hospitalData):
         readFields = True
-        for row in vaccineData:
+        for row in hospitalData:
             if readFields:
-                isection      = row.index('section')
-                icategory     = row.index('category')
-                imetric       = row.index('metric')
-                itype         = row.index('type')
-                idate         = row.index('date')
-                ivalue        = row.index('value')
-                ipublish_date = row.index('publish_date')
+                icategory    = row.index('category')
+                idescription = row.index('description')
+                iregion      = row.index('region')
+                idate        = row.index('date')
+                imetric      = row.index('metric')
+                ivalue       = row.index('value')
                 readFields = False
                 continue
 
-            section      = row[isection]
-            category     = row[icategory]
-            metric       = row[imetric].replace('With', 'with').replace('People with Additional Doses', '1+ Booster')
-            type         = row[itype]
-            date         = row[idate]
-            value        = row[ivalue]
-            publish_date = row[ipublish_date]
+            category    = row[icategory]
+            description = row[idescription]
+            region      = row[iregion]
+            date        = row[idate]
+            metric      = row[imetric]
+            value       = row[ivalue]
 
-            if section == 'State Data' and category == 'Cumulative counts to date' and metric in stateFields:
-                if publish_date[:10] == '2021/08/04' and metric == 'People Immunized with One Dose' and value == '3379501' or \
-                   publish_date[:10] == '2021/08/04' and metric == 'People Fully Immunized'         and value == '3099180' or \
-                   publish_date[:10] == '2022/09/02' and metric == '1+ Booster'                     and value == '2094378' or \
-                   publish_date[:10] == '2022/09/05' and metric == '1+ Booster'                     and value == '2094839':
-                    continue
-                data['Colorado'][fieldMap[metric]][publish_date[:10].replace('/','-')] = int(value)
-            if section == 'Vaccine Administration' and category == 'Administration' and metric == 'Daily Cumulative' and type.startswith('Omicron Doses'):
-                if date[:10].replace('/','-') in data['Colorado']['Omicron Doses']:
-                    data['Colorado']['Omicron Doses'][date[:10].replace('/','-')] += int(value)
-                else:
-                    data['Colorado']['Omicron Doses'][date[:10].replace('/','-')] = int(value)
-    except HTTPError as e:
-        printNow(now, '-- Error getting vaccine data:', e.code)
-        continue
-    except Exception as e:
-        printNow(now, '-- Error getting vaccine data:', str(e))
-        continue
+            if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
+                data['Colorado'][fieldMap[metric]][date[:10].replace('/','-')] = int(value)
 
-    vaccineDates = sorted(list(set(data['Colorado']['First Dose']) | set(data['Colorado']['All Doses'])))
-    if vaccineDates[-1] != lastVaccineDate:
-        updateData = True
-        lastVaccineDate = vaccineDates[-1]
-        lastUpdated[0] = now
-        printNow('Vaccine  data updated to', lastVaccineDate[5:])
-
-    def parseHospitalData(filename):
-        with open(filename) as file:
-            hospitalData = reader(file)
-            if logging:
-                printNow('Processing hospital data')
-
-            readFields = True
-            for row in hospitalData:
-                if readFields:
-                    icategory    = row.index('category')
-                    idescription = row.index('description')
-                    iregion      = row.index('region')
-                    idate        = row.index('date')
-                    imetric      = row.index('metric')
-                    ivalue       = row.index('value')
-                    readFields = False
-                    continue
-
-                category    = row[icategory]
-                description = row[idescription]
-                region      = row[iregion]
-                date        = row[idate]
-                metric      = row[imetric]
-                value       = row[ivalue]
-
-                if category == 'Hospital Level' and description == 'Currently Hospitalized' and region == 'Colorado' and metric in stateFields:
-                    data['Colorado'][fieldMap[metric]][date] = int(value)
-
-    # https://drive.google.com/drive/folders/1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw
+    # CDPHE COVID19 Hospital Data
+    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-hospital-data
     def getHospitalData():
         try:
-            hospitalFileId = drive.files().list(q="'1bjQ7LnhU8pBR3Ly63341bCULHFqc7pMw' in parents", fields="files(id,name)", orderBy="name", pageSize=1000).execute()['files'][-1]['id']
-            fh = FileIO('hospitalData.csv', 'w')
-            downloader = MediaIoBaseDownload(fh, drive.files().get_media(fileId=hospitalFileId))
-            while not downloader.next_chunk():
-                pass
-            fh.close()
-            parseHospitalData('hospitalData.csv')
-            remove('hospitalData.csv')
-            parseHospitalData('covid19_hospital_data_2022-03-15.csv')
+            response = urlopen('https://opendata.arcgis.com/datasets/bdf90453c5ca46338c51143a2edd810d_0.csv')
+            hospitalData = reader(iterdecode(response, 'utf-8-sig'))
+
+            parseHospitalData(hospitalData)
+            with open('covid19_hospital_data_2022-03-15.csv') as file:
+                hospitalData = reader(file)
+                parseHospitalData(hospitalData)
             return True
         except HTTPError as e:
             printNow(now, '-- Error getting hospital data:', e.code)
@@ -301,8 +239,6 @@ while True:
                 printNow(now, '-- Error getting hospital data:', str(e))
                 return False
 
-    if logging:
-        printNow('Getting    hospital data')
     if not getHospitalData():
         continue
 
@@ -310,18 +246,14 @@ while True:
     if hospitalDates[-1] != lastHospitalDate:
         updateData = True
         lastHospitalDate = hospitalDates[-1]
-        lastUpdated[1] = now
+        lastUpdated[0] = now
         printNow('Hospital data updated to', lastHospitalDate[5:])
 
     # CDPHE COVID19 State-Level Expanded Case Data
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-state-level-expanded-case-data
-    if logging:
-        printNow('Getting    state    data')
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/a0f52ab12eb4466bb6a76cc175923e62_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/cc2c6500f01e460690a1a25aa41528d3_0.csv')
         stateData = reader(iterdecode(response, 'utf-8-sig'))
-        if logging:
-            printNow('Processing state    data')
 
         readFields = True
         for row in stateData:
@@ -337,7 +269,7 @@ while True:
             value       = row[ivalue]
 
             if description in stateFields:
-                data['Colorado'][fieldMap[description]][formatDate(date)] = int(value)
+                data['Colorado'][fieldMap[description]][date[:10].replace('/','-')] = int(value)
     except HTTPError as e:
         printNow(now, '-- Error getting state data:', e.code)
         continue
@@ -349,145 +281,41 @@ while True:
     if stateDates[-1] != lastStateDate:
         updateData = True
         lastStateDate = stateDates[-1]
-        lastUpdated[2] = now
+        lastUpdated[1] = now
         printNow('State    data updated to', lastStateDate[5:])
 
-    # COVID19 Positivity Data from Clinical Laboratories
-    # https://data-cdphe.opendata.arcgis.com/datasets/covid19-positivity-data-from-clinical-laboratories
-    if logging:
-        printNow('Getting    testing  data')
-    try:
-        response = urlopen('https://opendata.arcgis.com/datasets/75d55e87fdc2430baf445fb29cec6de0_0.csv')
-        testingData = reader(iterdecode(response, 'utf-8-sig'))
-        if logging:
-            printNow('Processing testing  data')
-
-        field = 'Cumulative People Tested at Lab'
-        readFields = True
-        for row in testingData:
-            if readFields:
-                iDesc_     = row.index('Desc_')
-                iAttr_Date = row.index('Attr_Date')
-                iMetric    = row.index('Metric')
-                iValue     = row.index('Value')
-                readFields = False
-                continue
-
-            Desc_     = row[iDesc_]
-            Attr_Date = row[iAttr_Date]
-            Metric    = row[iMetric]
-            Value     = row[iValue]
-
-            if Desc_ == 'Daily COVID-19 PCR Test Data From Clinical Laboratories' and Metric in ['Cumulative People Tested at CDPHE State Lab', 'Cumulative People Tested at Non-CDPHE (Commerical) Labs']:
-                date = formatDate(Attr_Date)
-                if date not in data['Colorado'][fieldMap[field]]:
-                    data['Colorado'][fieldMap[field]][date] = 0
-                data['Colorado'][fieldMap[field]][date] += int(Value)
-    except HTTPError as e:
-        printNow(now, '-- Error getting testing data:', e.code)
-        continue
-    except Exception as e:
-        printNow(now, '-- Error getting testing data:', str(e))
-        continue
-
-    testDates = sorted(list(data['Colorado']['Tests']))
-    if testDates[-1] != lastTestDate:
-        updateData = True
-        lastTestDate = testDates[-1]
-        lastUpdated[3] = now
-        printNow('Testing  data updated to', lastTestDate[5:])
-
-    # CDPHE COVID19 County-Level Open Data Repository
-    # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-county-level-open-data-repository
-    if logging:
-        printNow('Getting    county   data')
-    try:
-        response = urlopen('https://opendata.arcgis.com/datasets/e3c41e3c7c464e11a6c3279f0934f11b_0.csv')
-        countyData = reader(iterdecode(response, 'utf-8-sig'))
-        if logging:
-            printNow('Processing county   data')
-
-        readFields = True
-        for row in countyData:
-            if readFields:
-                iLABEL  = row.index('LABEL')
-                iDesc_  = row.index('Desc_')
-                iMetric = row.index('Metric')
-                iValue  = row.index('Value')
-                iDate   = row.index('Date')
-                readFields = False
-                continue
-
-            LABEL  = row[iLABEL]
-            Desc_  = row[iDesc_]
-            Metric = row[iMetric]
-            Value  = row[iValue]
-            Date   = row[iDate]
-
-            if LABEL not in counties + ['Note', 'Unknown Or Pending County', 'Out Of State County', 'International']:
-                LABEL = 'Other'
-            if Desc_ == 'Cases of COVID-19 in Colorado by County' and Metric == 'Deaths': # errors in the data
-                Desc_ = 'Deaths Among COVID-19 Cases in Colorado by County'
-            date = formatDate(Date)
-            if LABEL in counties and Desc_ in countyFields and Metric not in ['Percent of tests by PCR', 'Percent of tests by Serology']:
-                if date not in data[LABEL][fieldMap[Desc_]]:
-                    data[LABEL][fieldMap[Desc_]][date] = 0
-                if 'E+' in Value:
-                    Value = float(Value)
-                data[LABEL][fieldMap[Desc_]][date] += int(Value)
-    except HTTPError as e:
-        printNow(now, '-- Error getting county data:', e.code)
-        continue
-    except Exception as e:
-        printNow(now, '-- Error getting county data:', str(e))
-        continue
-
-    countyDates = []
-    for county in counties:
-        countyDates = sorted(list(set(countyDates) | set(data[county]['Cases']) | set(data[county]['Deaths']) | set(data[county]['Tests'])))
-    if countyDates[-1] != lastCountyDate:
-        updateData = True
-        lastCountyDate = countyDates[-1]
-        lastUpdated[4] = now
-        printNow('County   data updated to', lastCountyDate[5:])
-
     # Colorado SARS-CoV-2 Variant Sentinel Surveillance
-    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::colorado-sars-cov-2-variant-sentinel-surveillance
-    data['Colorado']['Other']['2020-03-01'] = 1
-    week = datetime.date(2020,3,7)
-    while week < datetime.date(2021,1,2):
-        data['Colorado']['Other'][str(week)] = 1
-        week += datetime.timedelta(days=7)
-
-    if logging:
-        printNow('Getting    variant  data')
+    # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-sentinel-surveillance
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/8706d5ea533c483b93b3676c8abd6cb3_0.csv')
+        response = urlopen('https://opendata.arcgis.com/datasets/2b58e4b5263342c6a6d75f3395bc18a9_0.csv')
         variantData = reader(iterdecode(response, 'utf-8-sig'))
-        if logging:
-            printNow('Processing variant  data')
 
-        newVariants = {}
+        newVariantData = {}
         readFields = True
         for row in variantData:
             if readFields:
-                ispecimen_collection_week = row.index('specimen_collection_week')
-                ivariant_of_concern       = row.index('variant_of_concern')
-                iproportion               = row.index('proportion')
-                ireport_date              = row.index('report_date')
+                iweek_start   = row.index('week_start')
+                ivariant      = row.index('variant')
+                inumber       = row.index('number')
+                ipublish_date = row.index('publish_date')
                 readFields = False
                 continue
 
-            specimen_collection_week = row[ispecimen_collection_week]
-            variant_of_concern       = row[ivariant_of_concern]
-            proportion               = row[iproportion]
-            report_date              = row[ireport_date]
+            week_start   = row[iweek_start]
+            variant      = row[ivariant].replace('\n', ' ')
+            number       = row[inumber]
+            publish_date = row[ipublish_date][:10].replace('/','-')
 
-            if variant_of_concern in variantFields:
-                data['Colorado'][fieldMap[variant_of_concern]][saturday(specimen_collection_week)] = float(proportion)
-            else:
-                newVariants[variant_of_concern] = True
+            two_week_end = nextSaturday(week_start)
+            if two_week_end >= '2023-04-01':
+                if two_week_end not in newVariantData:
+                    newVariantData[two_week_end] = {'Total': 0}
+                newVariantData[two_week_end]['Total'] += int(number)
 
+                if variant in variantFields:
+                    newVariantData[two_week_end][fieldMap[variant]] = int(number)
+                else:
+                    newVariantData[two_week_end][variant] = int(number)
     except HTTPError as e:
         printNow(now, '-- Error getting variant data:', e.code)
         continue
@@ -495,24 +323,35 @@ while True:
         printNow(now, '-- Error getting variant data:', str(e))
         continue
 
-    variantDates = []
-    for variant in variantHeaders:
-        variantDates = sorted(list(set(variantDates) | set(data['Colorado'][variant])))
-    latestVariantData = []
-    for variant in variantHeaders:
-        if variantDates[-1] in data['Colorado'][variant]:
-            latestVariantData.append(data['Colorado'][variant][variantDates[-1]])
-    if lastVariantReportDate != report_date:
-        lastVariantReportDate = report_date
-        printNow('Variant report published for', lastVariantReportDate[:5])
-    if variantDates[-1] != lastVariantDate or latestVariantData != lastVariantData:
+    if lastVariantReportDate != publish_date:
+        lastVariantReportDate = publish_date
+        printNow('Variant report published for', publish_date[5:])
+    if newVariantData != lastVariantData:
         updateData = True
-        lastVariantDate = variantDates[-1]
-        lastVariantData = latestVariantData
-        lastUpdated[5] = now
-        printNow('Variant  data updated to', lastVariantDate[5:], '<--------------------------------')
+        lastVariantData = deepcopy(newVariantData)
+        lastUpdated[2] = now
+        printNow('Variant  data updated to', sorted(list(set(newVariantData)))[-1][5:], '<--------------------------------')
+
+        with open('variant_data.json') as file:
+            variantJson = json.load(file)
+        for date in newVariantData:
+            variantJson[date] = newVariantData[date]
+
+        newVariants = {}
+        for date in variantJson:
+            for variant in variantJson[date]:
+                if variant != 'Total' and variant not in variantHeaders:
+                    if variant in variantFields:
+                        variantJson[date][fieldMap[variant]] = variantJson[date][variant]
+                        del variantJson[date][variant]
+                    else:
+                        newVariants[variant] = True
         if len(newVariants):
             printNow('New variants:', list(newVariants))
+
+        with open('variant_data.json', 'w') as file:
+            json.dump(variantJson, file)
+        variantDates = sorted(list(set(variantJson)))
 
     dates = sorted(list(set(vaccineDates) | set(hospitalDates) | set(stateDates) | set(testDates) | set(countyDates)))
 
@@ -521,85 +360,42 @@ while True:
 
 
 
-    sheetData = [headers]
-
-    def skip(field, i, j):
-        badDates = {
-            'First Dose'   : ['2021-08-05', '2022-01-29',                                           '2022-10-11', '2022-10-14',               '2023-01-03'],
-            'All Doses'    : ['2021-08-05', '2022-01-29', '2022-04-22', '2022-06-27',               '2022-10-11', '2022-10-14',               '2023-01-03'],
-            'First Booster': [                                                        '2022-09-06', '2022-10-11', '2022-10-14', '2022-12-02', '2023-01-03'],
-        }
-        if field not in badDates:
-            return False
-        for date in badDates[field]:
-            if i >= dates.index(date) and j < dates.index(date):
-                return True
-        return False
-
-    def daily(region, field, i):
-        if dates[i] not in data[region][field] or dates[i-1] not in data[region][field] or skip(field, i, i-1):
+    def daysDiff(region, field, i, days):
+        if dates[i] not in data[region][field] or dates[i-days] not in data[region][field]:
             return ''
-        if i > 0:
-            return max(0, data[region][field][dates[i]] - data[region][field][dates[i-1]])
+        if i > days - 1:
+            return max(0, data[region][field][dates[i]] - data[region][field][dates[i-days]])
         else:
             return max(0, data[region][field][dates[i]])
 
-    def weekly(region, field, i):
-        if dates[i] not in data[region][field] or dates[i-7] not in data[region][field] or skip(field, i, i-7):
-            return ''
-        if i > 6:
-            return max(0, data[region][field][dates[i]] - data[region][field][dates[i-7]])
-        else:
-            return max(0, data[region][field][dates[i]])
-
-    def strRound(num):
+    def strAverage(num, days):
         if num == '':
             return ''
 
-        return str(round(num/7, 3))
+        return str(round(num/days, 3))
 
-    if logging:
-        printNow('Building output')
+    sheetData = [headers]
 
     for i in range(len(dates)):
         date = dates[i]
 
         if i>0:
             for field in stateFields:
-                if fieldMap[field] in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses', 'Confirmed']:
-                    continue
-                if date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
+                if fieldMap[field] != 'Confirmed' and date not in data['Colorado'][fieldMap[field]] and dates[i-1] in data['Colorado'][fieldMap[field]]:
                     for j in range(i+1, len(dates)):
                         if dates[j] in data['Colorado'][fieldMap[field]]:
                             data['Colorado'][fieldMap[field]][date] = 0
                             break
-            for field in countyFields:
-                for county in counties:
-                    if date not in data[county][fieldMap[field]] and dates[i-1] in data[county][fieldMap[field]]:
-                        for j in range(i+1, len(dates)):
-                            if dates[j] in data[county][fieldMap[field]]:
-                                data[county][fieldMap[field]][date] = 0
-                                break
 
         if date < '2020-03-01':
             continue
 
         row = ['', date]
 
-        for field in ['First Dose', 'All Doses', 'First Booster', 'Second Booster', 'Omicron Doses']:
-            if date in data['Colorado'][field]:
-                row.append(str(data['Colorado'][field][date]))
-            else:
-                row.append('')
-
-            if field == 'Omicron Doses' and date < '2022-09-01':
-                row.extend(['', '', ''])
-            else:
-                row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
-                if date in data['Colorado'][field]:
-                    row.append(str(round(100 * data['Colorado'][field][date] / 5763976, 3)))
-                else:
-                    row.append('')
+        if date in vaccineDates:
+            row.extend(vaccineData[date])
+        else:
+            row.extend(['']*20)
 
         if date in data['Colorado']['Confirmed'] or date == '2020-03-01' or date == dates[-1]:
             row.append(date)
@@ -612,99 +408,46 @@ while True:
             else:
                 row.append('')
 
-        for field in ['Cases by Onset', 'Cases', 'Deaths', 'Tests']:
-            row.extend([str(daily('Colorado', field, i)), strRound(weekly('Colorado', field, i))])
+        for field in ['Cases by Onset', 'Cases', 'Deaths']:
+            row.extend([str(daysDiff('Colorado', field, i, 1)), strAverage(daysDiff('Colorado', field, i, 7), 7)])
 
-        if daily('Colorado', 'Tests', i) != '' and daily('Colorado', 'Tests', i) > 0:
-            if daily('Colorado', 'Cases', i) != '':
-                row.append(str(round(100 * daily('Colorado', 'Cases', i) / daily('Colorado', 'Tests', i) , 3)))
-            else:
-                row.append('0')
+        if date in testDates:
+            row.extend(testingData[date])
         else:
-            row.append('')
-        if weekly('Colorado', 'Tests', i) != '' and weekly('Colorado', 'Tests', i) > 0:
-            if weekly('Colorado', 'Cases', i) != '':
-                row.append(str(round(100 * weekly('Colorado', 'Cases', i) / weekly('Colorado', 'Tests', i), 3)))
-            else:
-                row.append('0')
+            row.extend(['']*4)
+
+        if date in countyDates:
+            row.extend(countyData[date])
         else:
-            row.append('')
-
-        for field in ['Cases', 'Deaths', 'Tests']:
-            row.append('')
-            for region in ['Colorado'] + counties:
-                row.append(str(daily(region, field, i)))
-            row.append('')
-            for region in ['Colorado'] + counties:
-                row.append(strRound(weekly(region, field, i)))
-
-        row.append('')
-        for region in ['Colorado'] + counties:
-            if daily(region, 'Tests', i) != '' and daily(region, 'Tests', i) > 0:
-                if daily(region, 'Cases', i) != '':
-                    row.append(str(round(100 * daily(region, 'Cases', i) / daily(region, 'Tests', i) , 3)))
-                else:
-                    row.append('0')
-            else:
-                row.append('')
-        row.append('')
-        for region in ['Colorado'] + counties:
-            if weekly(region, 'Tests', i) != '' and weekly(region, 'Tests', i) > 0:
-                if weekly(region, 'Cases', i) != '':
-                    row.append(str(round(100 * weekly(region, 'Cases', i) / weekly(region, 'Tests', i), 3)))
-                else:
-                    row.append('0')
-            else:
-                row.append('')
+            row.extend(['']*120)
 
         sheetData.append(row)
 
     for i in range(len(lastUpdated)):
         sheetData[i+1][0] = '\'' + lastUpdated[i]
 
-
-
-    variantData = [['Date', 'All Cases'] + variantHeaders + ['Sampled %', '', 'Date', 'Samples'] + variantHeaders]
+    variantData = [['Date', 'All Cases', 'Sampled %', 'Total'] + variantHeaders]
     for date in variantDates:
-        row = [date, strRound(weekly('Colorado', 'Cases by Onset', dates.index(date)))]
+        if date < '2023-04-01':
+            days = 7
+        else:
+            days = 14
+        allCases = daysDiff('Colorado', 'Cases by Onset', dates.index(date), days)
+
+        row = [
+            date,
+            strAverage(allCases, days),
+            str(round(variantJson[date]['Total']/allCases*100, 3)),
+            str(variantJson[date]['Total']),
+        ]
+
         for variant in variantHeaders:
-            if date in data['Colorado'][variant]:
-                row.append(str(data['Colorado'][variant][date]))
+            if variant in variantJson[date]:
+                row.append(str(variantJson[date][variant]))
             else:
                 row.append('')
-        if date < '2021-01-02':
-            row.extend(['0', '', date, '0'])
-        else:
-            sample = 0
-            while True:
-                sample += 1
-                goodSample = True
-                variantCounts = {}
-                for variant in variantHeaders:
-                    if date not in data['Colorado'][variant]:
-                        continue
-                    variantCount = floor((data['Colorado'][variant][date]-.0001)*sample)
-                    while goodSample:
-                        variantCount += 1
-                        proportion = floor(10000 * variantCount/sample + .5) / 10000
-                        if proportion == data['Colorado'][variant][date]:
-                            variantCounts[variant] = variantCount
-                            break
-                        if proportion > data['Colorado'][variant][date]:
-                            goodSample = False
-                if goodSample:
-                    row.extend([str(round(sample/weekly('Colorado', 'Cases by Onset', dates.index(date))*100,3)), '', date, str(sample)])
-                    for variant in variantHeaders:
-                        if date in data['Colorado'][variant]:
-                            row.append(variantCounts[variant])
-                        else:
-                            row.append('')
-                    break
+
         variantData.append(row)
-    i = dates.index(variantDates[-1]) + 7
-    while i+7 < len(dates) and dates[i+7] in data['Colorado']['Cases by Onset']:
-        variantData.append([dates[i], strRound(weekly('Colorado', 'Cases by Onset', i))])
-        i += 7
     variantData.append([dates[-1]])
 
 
@@ -723,7 +466,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:MI',
+                range = 'Data!JT1:LC',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
@@ -743,4 +486,3 @@ while True:
 
     printNow(now, '-- Spreadsheet updated')
     updateData = False
-    logging = False
