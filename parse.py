@@ -115,7 +115,7 @@ def printNow(*message):
     print(*message, flush=True)
 
 firstRun              = True
-lastRun               = ''
+lastHours             = ''
 lastHospitalDate      = ''
 lastStateDate         = ''
 lastVariantDate       = ''
@@ -152,15 +152,15 @@ with open('variant_data.json') as file:
 
 while True:
     if not firstRun:
-        sleep(3)
+        sleep(60)
     firstRun = False
 
     now = str(datetime.datetime.now())[:16]
 
-    thisRun = now[:15] + str(floor(int(now[15])/5)*5)
-    if thisRun == lastRun:
+    hours = now[11:13]
+    if hours == lastHours:
         continue
-    lastRun = thisRun
+    lastHours = hours
 
     if now[-5:] == '00:00':
         printNow('')
@@ -330,7 +330,7 @@ while True:
         updateData = True
         lastVariantData = deepcopy(newVariantData)
         lastUpdated[2] = now
-        printNow('Variant  data updated to', sorted(list(set(newVariantData)))[-1][5:], '<--------------------------------')
+        printNow('Variant  data updated to', sorted(list(set(newVariantData)))[-1][5:])
 
         with open('variant_data.json') as file:
             variantJson = json.load(file)
