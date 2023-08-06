@@ -59,6 +59,12 @@ fieldMap = {
     'XBB.2.3 Omicron'   : 'XBB.2.3',
     'XBB.1.5.10 Omicron': 'XBB.1.5.10',
     'XBB.1.16.1 Omicron': 'XBB.1.16.1',
+    'EU.1.1 Omicron'    : 'EU.1.1',
+    'XBB.1.5.68 Omicron': 'XBB.1.5.68',
+    'EG.5 Omicron'      : 'EG.5',
+    'XBB.1.5.59 Omicron': 'XBB.1.5.59',
+    'FE.1.1 Omicron'    : 'FE.1.1',
+    'XBB.1.16.6 Omicron': 'XBB.1.16.6',
 }
 stateFields = list(fieldMap)[:5]
 variantFields = list(fieldMap)[5:]
@@ -190,8 +196,8 @@ while True:
     def formatDate(date):
         return date[6:10] + '-' + date[0:2] + '-' + date[3:5]
 
-    def nextSaturday(date):
-        return str(datetime.date(int(date[0:4]), int(date[5:7]), int(date[8:10])) + datetime.timedelta(days=13))
+    def twoWeekEnd(date):
+        return str(datetime.date(int(date[0:4]), int(date[5:7]), int(date[8:10])) + datetime.timedelta(days=14))
 
 
 
@@ -308,7 +314,7 @@ while True:
             number       = row[inumber]
             publish_date = row[ipublish_date][:10].replace('/','-')
 
-            two_week_end = nextSaturday(week_start)
+            two_week_end = twoWeekEnd(week_start)
             if two_week_end >= '2023-04-01':
                 if two_week_end not in newVariantData:
                     newVariantData[two_week_end] = {'Total': 0}
@@ -468,7 +474,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:LE',
+                range = 'Data!JT1:LK',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
