@@ -66,6 +66,7 @@ fieldMap = {
     'FE.1.1 Omicron'    : 'FE.1.1',
     'XBB.1.16.6 Omicron': 'XBB.1.16.6',
     'XBB.1.5.72 Omicron': 'XBB.1.5.72',
+    'FL.1.5.1 Omicron'  : 'FL.1.5.1',
 }
 stateFields = list(fieldMap)[:5]
 variantFields = list(fieldMap)[5:]
@@ -475,7 +476,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:LL',
+                range = 'Data!JT1:LM',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
