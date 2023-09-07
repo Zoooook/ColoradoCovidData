@@ -25,48 +25,53 @@ fieldMap = {
     'Cumulative COVID-19 Cases in Colorado by Date Reported to the State': 'Cases',
     'Cumulative Deaths Among COVID-19 Cases in Colorado by Date of Death': 'Deaths',
 
-    'Other'             : 'Other',
-    'B.1.1.7 Alpha'     : 'B.1.1.7',
-    'B.1.351 Beta'      : 'B.1.351',
-    'P.1 Gamma'         : 'P.1',
-    'B.1.617.2 Delta'   : 'B.1.617.2',
-    'AY.2 Delta'        : 'AY.2',
-    'AY.1 Delta'        : 'AY.1',
-    'B.1.429'           : 'B.1.429',
-    'B.1.427'           : 'B.1.427',
-    'B.1.1.529 Omicron' : 'BA.1',
-    'BA.2 Omicron'      : 'BA.2',
-    'BA.2.12.1 Omicron' : 'BA.2.12.1',
-    'BA.4 Omicron'      : 'BA.4',
-    'BA.5 Omicron'      : 'BA.5',
-    'BA.4.6 Omicron'    : 'BA.4.6',
-    'BF.7 Omicron'      : 'BF.7',
-    'BA.2.75 Omicron'   : 'BA.2.75',
-    'BA.2.75.2 Omicron' : 'BA.2.75.2',
-    'BQ.1 Omicron'      : 'BQ.1',
-    'BQ.1.1 Omicron'    : 'BQ.1.1',
-    'BA.5.2.6 Omicron'  : 'BA.5.2.6',
-    'BN.1 Omicron'      : 'BN.1',
-    'BF.11 Omicron'     : 'BF.11',
-    'CH.1.1 Omicron'    : 'CH.1.1',
-    'XBB Omicron'       : 'XBB',
-    'XBB.1.5 Omicron'   : 'XBB.1.5',
-    'XBB.1.5.1 Omicron' : 'XBB.1.5.1',
-    'XBB.1.9.1 Omicron' : 'XBB.1.9.1',
-    'XBB.1.9.2 Omicron' : 'XBB.1.9.2',
-    'XBB.1.16 Omicron'  : 'XBB.1.16',
-    'FD.2 Omicron'      : 'FD.2',
-    'XBB.2.3 Omicron'   : 'XBB.2.3',
-    'XBB.1.5.10 Omicron': 'XBB.1.5.10',
-    'XBB.1.16.1 Omicron': 'XBB.1.16.1',
-    'EU.1.1 Omicron'    : 'EU.1.1',
-    'XBB.1.5.68 Omicron': 'XBB.1.5.68',
-    'EG.5 Omicron'      : 'EG.5',
-    'XBB.1.5.59 Omicron': 'XBB.1.5.59',
-    'FE.1.1 Omicron'    : 'FE.1.1',
-    'XBB.1.16.6 Omicron': 'XBB.1.16.6',
-    'XBB.1.5.72 Omicron': 'XBB.1.5.72',
-    'FL.1.5.1 Omicron'  : 'FL.1.5.1',
+    'Other'              : 'Other',
+    'B.1.1.7 Alpha'      : 'B.1.1.7',
+    'B.1.351 Beta'       : 'B.1.351',
+    'P.1 Gamma'          : 'P.1',
+    'B.1.617.2 Delta'    : 'B.1.617.2',
+    'AY.2 Delta'         : 'AY.2',
+    'AY.1 Delta'         : 'AY.1',
+    'B.1.429'            : 'B.1.429',
+    'B.1.427'            : 'B.1.427',
+    'B.1.1.529 Omicron'  : 'BA.1',
+    'BA.2 Omicron'       : 'BA.2',
+    'BA.2.12.1 Omicron'  : 'BA.2.12.1',
+    'BA.4 Omicron'       : 'BA.4',
+    'BA.5 Omicron'       : 'BA.5',
+    'BA.4.6 Omicron'     : 'BA.4.6',
+    'BF.7 Omicron'       : 'BF.7',
+    'BA.2.75 Omicron'    : 'BA.2.75',
+    'BA.2.75.2 Omicron'  : 'BA.2.75.2',
+    'BQ.1 Omicron'       : 'BQ.1',
+    'BQ.1.1 Omicron'     : 'BQ.1.1',
+    'BA.5.2.6 Omicron'   : 'BA.5.2.6',
+    'BN.1 Omicron'       : 'BN.1',
+    'BF.11 Omicron'      : 'BF.11',
+    'CH.1.1 Omicron'     : 'CH.1.1',
+    'XBB Omicron'        : 'XBB',
+    'XBB.1.5 Omicron'    : 'XBB.1.5',
+    'XBB.1.5.1 Omicron'  : 'XBB.1.5.1',
+    'XBB.1.9.1 Omicron'  : 'XBB.1.9.1',
+    'XBB.1.9.2 Omicron'  : 'XBB.1.9.2',
+    'XBB.1.16 Omicron'   : 'XBB.1.16',
+    'FD.2 Omicron'       : 'FD.2',
+    'XBB.2.3 Omicron'    : 'XBB.2.3',
+    'XBB.1.5.10 Omicron' : 'XBB.1.5.10',
+    'XBB.1.16.1 Omicron' : 'XBB.1.16.1',
+    'EU.1.1 Omicron'     : 'EU.1.1',
+    'XBB.1.5.68 Omicron' : 'XBB.1.5.68',
+    'EG.5 Omicron'       : 'EG.5',
+    'XBB.1.5.59 Omicron' : 'XBB.1.5.59',
+    'FE.1.1 Omicron'     : 'FE.1.1',
+    'XBB.1.16.6 Omicron' : 'XBB.1.16.6',
+    'XBB.1.5.72 Omicron' : 'XBB.1.5.72',
+    'FL.1.5.1 Omicron'   : 'FL.1.5.1',
+    'GE.1 Omicron'       : 'GE.1',
+    'FD.1.1 Omicron'     : 'FD.1.1',
+    'XBB.1.5.70 Omicron' : 'XBB.1.5.70',
+    'XBB.1.16.11 Omicron': 'XBB.1.16.11',
+    'EG.6.1 Omicron'     : 'EG.6.1',
 }
 stateFields = list(fieldMap)[:5]
 variantFields = list(fieldMap)[5:]
@@ -230,7 +235,7 @@ while True:
     # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-hospital-data
     def getHospitalData():
         try:
-            response = urlopen('https://opendata.arcgis.com/datasets/bdf90453c5ca46338c51143a2edd810d_0.csv')
+            response = urlopen('https://opendata.arcgis.com/api/v3/datasets/bdf90453c5ca46338c51143a2edd810d_0/downloads/data?format=csv&spatialRefId=4326&where=1=1')
             hospitalData = reader(iterdecode(response, 'utf-8-sig'))
 
             parseHospitalData(hospitalData)
@@ -262,7 +267,7 @@ while True:
     # CDPHE COVID19 State-Level Expanded Case Data
     # https://data-cdphe.opendata.arcgis.com/datasets/cdphe-covid19-state-level-expanded-case-data
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/cc2c6500f01e460690a1a25aa41528d3_0.csv')
+        response = urlopen('https://opendata.arcgis.com/api/v3/datasets/cc2c6500f01e460690a1a25aa41528d3_0/downloads/data?format=csv&spatialRefId=4326&where=1=1')
         stateData = reader(iterdecode(response, 'utf-8-sig'))
 
         readFields = True
@@ -297,7 +302,7 @@ while True:
     # Colorado SARS-CoV-2 Variant Sentinel Surveillance
     # https://data-cdphe.opendata.arcgis.com/datasets/CDPHE::cdphe-covid19-sentinel-surveillance
     try:
-        response = urlopen('https://opendata.arcgis.com/datasets/2b58e4b5263342c6a6d75f3395bc18a9_0.csv')
+        response = urlopen('https://opendata.arcgis.com/api/v3/datasets/2b58e4b5263342c6a6d75f3395bc18a9_0/downloads/data?format=csv&spatialRefId=4326&where=1=1')
         variantData = reader(iterdecode(response, 'utf-8-sig'))
 
         newVariantData = {}
@@ -372,7 +377,7 @@ while True:
 
     def daysDiff(region, field, i, days):
         if dates[i] not in data[region][field] or dates[i-days] not in data[region][field]:
-            return ''
+            return 0
         if i > days - 1:
             return max(0, data[region][field][dates[i]] - data[region][field][dates[i-days]])
         else:
@@ -476,7 +481,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:LM',
+                range = 'Data!JT1:LR',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
