@@ -72,6 +72,9 @@ fieldMap = {
     'XBB.1.5.70 Omicron' : 'XBB.1.5.70',
     'XBB.1.16.11 Omicron': 'XBB.1.16.11',
     'EG.6.1 Omicron'     : 'EG.6.1',
+    'XBB.2.3.8 Omicron'  : 'XBB.2.3.8',
+    'HV.1 Omicron'       : 'HV.1',
+    'XBB.1.42.2 Omicron' : 'XBB.1.42.2',
 }
 stateFields = list(fieldMap)[:5]
 variantFields = list(fieldMap)[5:]
@@ -447,7 +450,7 @@ while True:
             days = 7
         else:
             days = 14
-        allCases = daysDiff('Colorado', 'Cases by Onset', dates.index(date), days)
+        allCases = daysDiff('Colorado', 'Cases by Onset', dates.index(date), days) or daysDiff('Colorado', 'Cases', dates.index(date), days)
 
         row = [
             date,
@@ -481,7 +484,7 @@ while True:
             service.spreadsheets().values().update(
                 spreadsheetId = '1dfP3WLeU9T2InpIzNyo65R8d_e7NpPea9zKaldEdYRA',
                 valueInputOption = 'USER_ENTERED',
-                range = 'Data!JT1:LR',
+                range = 'Data!JT1:LU',
                 body = dict(
                     majorDimension = 'ROWS',
                     values = variantData,
